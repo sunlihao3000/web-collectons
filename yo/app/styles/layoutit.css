@@ -5,6 +5,7 @@ html {
 body {
 	padding-bottom: 40px;
 	margin-left:200px;
+	background-color: #f6f8f8;
 	-webkit-transition: margin 500ms ease;
 	-moz-transition: margin 500ms ease;
 	-ms-transition: margin 500ms ease;
@@ -20,8 +21,9 @@ body {
     margin: 0 10px 0 0;
 }
 .navbar {
-	background: #333;
+	background: #fff;
 	margin: 0;
+	border:none;
 }
 
 .btn-primary {
@@ -42,7 +44,7 @@ body {
 	left: 0px;
 	bottom: 0;
 	top: 0;
-	background: #ccc;
+	background: #1d212a;
 	padding: 9px 0;
 	z-index: 10;
 	-webkit-transition: all 500ms ease;
@@ -104,7 +106,12 @@ body {
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
-.sidebar-nav .nav-header { cursor:pointer; font-size:14px;  text-shadow:0 1px 0 rgba(0, 0, 0, 0.3);}
+.sidebar-nav .nav-header { 
+	cursor:pointer; 
+	font-size:14px;  
+	text-shadow:0 1px 0 rgba(0, 0, 0, 0.3);
+	color: #6c707c;
+}
 .sidebar-nav .nav-header span.label { font-size:10px; /*padding-bottom:0;*/ position:relative; top:-1px;}
 .sidebar-nav .nav-header i.icon-plus {}
 .sidebar-nav .nav-header .popover {color:#999; text-shadow:none;}
