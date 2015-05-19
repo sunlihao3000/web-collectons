@@ -15,11 +15,11 @@ jQuery(window).load(function(){
 			useCSS: true,
 			controlNav: true,   
 			directionNav: false,
-		    prevText: "",
-		    nextText: "",
+		    prevText: "prev",
+		    nextText: "next",
 			smoothHeight: false,
 			slideshowSpeed:8000,
-			animationSpeed:300,
+			animationSpeed:1000,
 			start: function( slider ) {
 				slider.find('.slide_description').children().css({'visibility': 'hidden'});
 				slider.find('.flex-active-slide .slide_description').children().each(function(index){
