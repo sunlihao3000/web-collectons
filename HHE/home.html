@@ -1,0 +1,1084 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE]>           <html class="no-js lt-ie10">  <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no">       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon"   />  
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|PT+Sans:400,700|Open+Sans:400,600' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
+    
+    <!--[if lt IE 9]>
+      <link href="files/css/plugins/bootstrap.min.css" rel='stylesheet' type='text/css'>   
+      <link href="files/css/plugins/font-awesome.min.css" rel='stylesheet' type='text/css'>           
+    <![endif]-->    
+
+    <link rel='stylesheet' type='text/css' href="files/css/styles.css?v=07/02/15" >
+
+    <script type="text/javascript" src="files/js/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>  
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+</head>
+
+<body id="home" class="home"  >
+ 
+    <noscript>Enable JavaScript in your browser</noscript>
+    
+    <div class="preloader" >
+
+      <div class="status">
+        <img src="files/images/logo-loading.png" alt="">
+      </div>
+    </div>    
+   
+    <div class="site-holder">
+
+        <header class="full-width">
+        
+            <nav class="pnav full-width ">          
+                <div class="container pos-r">                        
+                    <div class="row">
+
+                        <a href="" class="logo col-md-2 pos-a">
+                            <img src="files/images/logo.png" alt="">
+                        </a>                         
+                        <div class="hidden-sm hidden-xs col-md-10 col-md-offset-2">                                            
+                            <ul class="nav navbar-nav">
+                                <li class="first"><a href="">Home</a></li>
+                                <li><a href="">Destinations</a></li>
+                                <li><a href="">Hotel Offers</a></li>
+                                <li><a href="l">Cultural Routes</a></li>
+                                <li><a href="">Collections</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li class="last"><a href="">Gift  Vouchers</a></li>
+                            </ul>
+                        </div>                          
+                    </div>
+                </div>                 
+            </nav>
+            
+
+            <div class="search-box-holder hidden-sm hidden-xs">   
+                <div class="container">
+                     <div class="row">
+                        <div class="col-md-10 col-md-offset-2">
+                            
+                            <div class="search-box-nights-long full-width">  
+                            <script type="text/javascript">
+
+                                var padout = function(number) {
+                                  var number = String(number);
+                                  return (number.length < 2) ? '0' + number : number;
+                                }
+                                jQuery(document).ready(function(){
+                                jQuery('#arrival-date').val(padout(jQuery('#bke_arrival_day').val())+'/'+padout(jQuery('#bke_arrival_month').val())+'/'+padout(jQuery('#bke_arrival_year').val()));
+                                jQuery('#bke_arrival_day').val(padout(jQuery('#arrival-date').val().split('/')[0]));
+                                jQuery('#bke_arrival_month').val(padout(jQuery('#arrival-date').val().split('/')[1]));
+                                jQuery('#bke_arrival_year').val(padout(jQuery('#arrival-date').val().split('/')[2]));
+                                
+                                $("#arrival-date").datepicker({
+                                    onSelect: function(selectedDate) {
+                                    // custom callback logic here
+                                    //alert(selectedDate);
+                                    }
+                                });
+
+                            });  
+                            </script>
+
+                            <form  name="bke_search" method="post" action="">
+                                <div id="bke_searchbox_wrapper">
+                                    
+                                    <div class="field-wrapper country-holder">
+                                        <label for="bke_id">Where do you want to go?</label>
+                                        <select name="bke_id" class="bke_drop" id="bke_id">
+                                            <option value="">Select Country</option>
+                                            <option>Ireland</option>
+                                            <option>UK</option>     
+                                        </select>
+                                    </div>
+
+                                    <div class="field-wrapper cl-holder">
+                                        <label for="loc_id">Select Your Location</label>
+                                        <select id="loc_id" class="bke_drop" name="loc_id">
+                                            <option value="" class="searchbox-col-none">Choose your city</option>
+                                            <option value="antrim-belfast" class="searchbox-col-location">Antrim - Belfast</option>
+                                            <option value="clare-ennistymon" class="searchbox-col-location">Clare - Ennistymon</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field-wrapper">
+                                        <div class="label">Check in date:</div>
+                                        <input type="text" id="arrival-date" class="">
+                                        <input type="hidden" name="bke_arrival_day" value="06" id="bke_arrival_day">
+                                        <input type="hidden" name="bke_arrival_month" value="07" id="bke_arrival_month">
+                                        <input type="hidden" name="bke_arrival_year" value="2015" id="bke_arrival_year">                                
+                                    </div>
+                                    <div class="field-wrapper">
+                                        <div class="label">Nights:</div>
+                                        <select name="bke_nights" class="bke_dropdown">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field-wrapper">
+                                        <input type="submit" name="bke_submit" class="submit-button" value="Book Now">
+                                    </div>
+                                        
+                                </div>
+
+                               </form>
+                   
+                            </div>                  
+                        </div>                            
+                     </div>
+                </div>             
+             
+            </div>
+
+            <div class="menu-button-holder hidden-md hidden-lg mobile-layout text-shd">
+                <i class="fa fa-bars "></i>
+                <span>Menu</span>
+                <i class="c-icon-cal-text"></i>      
+            </div>
+
+            <div class="full-screen-pop-up main-nav-overlay">     
+                <a class="full-screen-pop-up__close main-nav-overlay "><i class="c-icon-close"></i></a>  
+                <div id="pop-up-navs">   
+                    <div class="container">
+                        <div class="row">
+                            <nav class="col-md-8 col-md-offset-2">
+                                <ul>
+                                    <li class="first"><a href="">Home</a></li>
+                                    <li><a href="">Destinations</a></li>
+                                    <li><a href="">Hotel Offers</a></li>
+                                    <li><a href="l">Cultural Routes</a></li>
+                                    <li><a href="">Collections</a></li>
+                                    <li><a href="">About Us</a></li>
+                                    <li class="last"><a href="">Gift  Vouchers</a></li>
+                                </ul>                    
+                            </nav>  
+                        </div>                        
+                    </div> 
+                </div>
+            </div>
+
+
+            <div class="search-box-pop-up">                
+                <div class="search-box-pop-up-holder">
+                        <a class="search-box-pop-up__close"><i class="c-icon-close"></i></a>  
+                            <div class="search-box-nights-long pop-up">  
+                            <script type="text/javascript">
+
+                                var padout = function(number) {
+                                  var number = String(number);
+
+                                  return (number.length < 2) ? '0' + number : number;
+                                }
+                                jQuery(document).ready(function(){
+                                jQuery('#arrival-date').val(padout(jQuery('#bke_arrival_day').val())+'/'+padout(jQuery('#bke_arrival_month').val())+'/'+padout(jQuery('#bke_arrival_year').val()));
+                                jQuery('#bke_arrival_day').val(padout(jQuery('#arrival-date').val().split('/')[0]));
+                                jQuery('#bke_arrival_month').val(padout(jQuery('#arrival-date').val().split('/')[1]));
+                                jQuery('#bke_arrival_year').val(padout(jQuery('#arrival-date').val().split('/')[2]));
+                                
+                                $("#arrival-date").datepicker({
+                                    onSelect: function(selectedDate) {
+                                    // custom callback logic here
+                                    //alert(selectedDate);
+                                    }
+                                });
+
+                            });  
+                            </script>
+
+                            <form  name="bke_search" method="post" action="">
+                                <div id="bke_searchbox_wrapper">
+                                    
+                                    <div class="field-wrapper country-holder">
+                                        <label for="bke_id">Where do you want to go?</label>
+                                        <select name="bke_id" class="bke_drop" id="bke_id">
+                                            <option value="">Select Country</option>
+                                            <option>Ireland</option>
+                                            <option>UK</option>     
+                                        </select>
+                                    </div>
+
+                                    <div class="field-wrapper cl-holder">
+                                        <label for="loc_id">Select Your Location</label>
+                                        <select id="loc_id" class="bke_drop" name="loc_id">
+                                            <option value="" class="searchbox-col-none">Choose your city</option>
+                                            <option value="antrim-belfast" class="searchbox-col-location">Antrim - Belfast</option>
+                                            <option value="clare-ennistymon" class="searchbox-col-location">Clare - Ennistymon</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field-wrapper">
+                                        <div class="label">Check in date:</div>
+                                        <input type="text" id="arrival-date" class="">
+                                        <input type="hidden" name="bke_arrival_day" value="06" id="bke_arrival_day">
+                                        <input type="hidden" name="bke_arrival_month" value="07" id="bke_arrival_month">
+                                        <input type="hidden" name="bke_arrival_year" value="2015" id="bke_arrival_year">                                
+                                    </div>
+                                    <div class="field-wrapper">
+                                        <div class="label">Nights:</div>
+                                        <select name="bke_nights" class="bke_dropdown">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field-wrapper">
+                                        <input type="submit" name="bke_submit" class="submit-button" value="Book Now">
+                                    </div>
+                                        
+                                </div>
+
+                               </form>
+                   
+                            </div>           
+                </div>
+            </div>
+          
+
+        </header>
+
+        <div id="mainslider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li class="item">
+                        <img src="files/images/1.jpg" title="" alt="" />                                               
+                        <div class="slide_description_wrapper">
+                            <div class="slide_description ">                                
+                                <h3 data-animation='fadeInLeft text-shd'>A Memorable Journey...</h3>    
+                            </div>
+                        </div> 
+                    </li>                
+                    <li class="item">
+                        <img src="files/images/2.jpg" title="" alt="" />                        
+                        <div class="slide_description_wrapper">
+                            <div class="slide_description">                                
+                                <h3 data-animation='fadeInLeft'>LIve Music</h3>     
+                            </div>
+                        </div> 
+                    </li>                
+                    <li class="item">
+                        <img src="files/images/3.jpg" title="" alt="" />                        
+                    </li>     
+                    <li class="item">
+                        <img src="files/images/4.jpg" title="" alt="" />                        
+                    </li>                                                       
+                </ul>
+            </div>
+            <div id="scroll-here"></div>
+            <div class="pulse_holder hidden-sm hidden-xs">                           
+                <div class="pulse_marker">
+                    <a href="#scroll-here" class="c-icon-down"></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="page-content full-width text-center padding40">
+            <div class="container">            
+                <div class="row fadeInUp css-animate">
+                    <h1>Historic Hotels of Europe</h1>
+                    <article class="main col-md-10 col-md-offset-1">
+                        <p>The Historic Hotels of Europe is the most prestigious hotel network in Europe representing the finest hotels operating in historical buildings.  With over 500 hotels in beautiful castles, palaces, abbeys and estates under one name of quality, the Historic Hotels of Europe, we safeguard the preservation of the European Cultural Heritage for the future generations. 
+                        Proud guardians of the past and outstanding hosts of the present, the hoteliers of HHE stay true to what they promise to the guests:  </p>
+
+                        <h4>A memorable journey to history with a true story to tell!</h4>             
+                    </article>
+                </div>
+            </div>
+        </section>
+ 
+        <div class="hotels full-width padding20 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="hotels-holder">
+                        <figure class="item css-animate fadeInLeft"  data-wow-delay="0.2s" >
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h1.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">City& <br>Hotels</a></h3> 
+                            </figcaption>                      
+                        </figure>
+                        <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h2.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">Country& <br>House</a></h3> 
+                            </figcaption>                      
+                        </figure>
+                        <figure class="item css-animate fadeInRight"  data-wow-delay="0.2s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h3.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">Hotels& <br>by the water</a></h3> 
+                            </figcaption>                      
+                        </figure>
+
+                        <figure class="item small css-animate fadeInUp" data-wow-delay="0.2s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h4.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">castle& <br>Hotels</a></h3> 
+                            </figcaption>                      
+                        </figure>
+
+                        <figure class="item small css-animate fadeInDown" data-wow-delay="0.2s" >
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h5.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">palace</a></h3> 
+                            </figcaption>                      
+                        </figure>
+
+                        <figure class="item small css-animate fadeInRight" data-wow-delay="0.2s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h6.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">City& <br>Hotels</a></h3> 
+                            </figcaption>                      
+                        </figure>
+
+                        <figure class="item small css-animate fadeInUp" data-wow-delay="0.2s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h7.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">Grand& <br>Hotels</a></h3> 
+                            </figcaption>                      
+                        </figure>
+
+                        <figure class="item css-animate fadeInLeft" data-wow-delay="0.2s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h8.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">Golf</a></h3> 
+                            </figcaption>                      
+                        </figure>
+
+                        <figure class="item css-animate fadeInUp" data-wow-delay="0.2s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h9.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">Spa& <br>Wellness</a></h3> 
+                            </figcaption>                      
+                        </figure>
+
+                        <figure class="item css-animate fadeInRight" data-wow-delay="0.2s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/h10.png" alt="">
+                            <figcaption class="item-content-overlay">
+                               <h3 class="item-title"><a href="">wedding</a></h3> 
+                            </figcaption>                      
+                        </figure>
+
+                        <div class="see-more-holder">
+                                                
+                            <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s">
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/h2.png" alt="">
+                                <figcaption class="item-content-overlay">
+                                   <h3 class="item-title"><a href="">Country& <br>House</a></h3> 
+                                </figcaption>                      
+                            </figure>
+
+                            <figure class="item css-animate fadeInLeft"  data-wow-delay="0.2s" >
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/h1.png" alt="">
+                                <figcaption class="item-content-overlay">
+                                   <h3 class="item-title"><a href="">City& <br>Hotels</a></h3> 
+                                </figcaption>                      
+                            </figure>
+
+                            <figure class="item css-animate fadeInUp see-more-item" data-wow-delay="0.2s">
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/h9.png" alt="">
+                                <figcaption class="item-content-overlay">
+                                   <h3 class="item-title"><a href="">Spa& <br>Wellness</a></h3> 
+                                </figcaption>                      
+                            </figure>
+
+
+                        </div>
+
+                        <div class="separator-holder">
+                            <div class="separator-icon">
+                                <div class="separator-icon-h">    
+                                    <span class="circle">      
+                                        <p class="see-more">see more</p>                        
+                                        <i class="fa fa-plus white"></i>  
+                                    </span>           
+                                </div>
+                            </div>  
+                        </div>                        
+
+                    </div>
+                </div>
+            </div>            
+        </div>       
+
+        <div class="clearfix"></div>
+        <div class="cultural-routes full-screen text-center padding40 css-animate fadeInUp">
+            <a class="title "><img src="files/images/title.png" alt=""></a>
+            <h2 class="h2toh1 ">Cultual Routes</h2>       
+            <div class="container">
+                <div class="row">
+                    <div class="description col-md-8 col-md-offset-2">
+                        <p>
+                            Lorem ipsum dolor sit amet, usu at ocurreret hendrerit reprehendunt, vis eu tation labore argumentum. Laudem mollis similique pri ex, mea ut clita dissentiunt. Appetere laboramus usu ut, eu nec omnis iusto debitis. Te vim fugit ullum eirmod.
+                           
+                        </p>
+                    </div>                    
+                </div>
+            
+
+                <div class="cultrual-routes-holder padding20">
+
+                    <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.1s">
+                        <a href="" class="click-link"></a>
+                        <img class="image-overlaid" src="files/images/c1.jpg" alt="">
+                        <figcaption class="item-content full-width text-left">
+                            <h4>A Taste of Sweden</h4>
+                            <p>Explore the Route</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.2s">
+                        <a href="" class="click-link"></a>
+                        <img class="image-overlaid" src="files/images/c2.jpg" alt="">
+                        <figcaption class="item-content full-width text-left">
+                            <h4>Alpine Route</h4>
+                            <p>Explore the Route</p>
+                        </figcaption>
+                    </figure> 
+
+                    <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.3s">
+                        <a href="" class="click-link"></a>
+                        <img class="image-overlaid" src="files/images/c3.jpg" alt="">
+                        <figcaption class="item-content full-width text-left">
+                            <h4>Habsburg Empire Route</h4>
+                            <p>Explore the Route</p>
+                        </figcaption>
+                    </figure>  
+
+                    <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.4s">
+                        <a href="" class="click-link"></a>
+                        <img class="image-overlaid" src="files/images/c4.jpg" alt="">
+                        <figcaption class="item-content full-width text-left">
+                            <h4>Major German Rivers' Route</h4>
+                            <p>Explore the Route</p>
+                        </figcaption>
+                    </figure> 
+
+                </div>   
+            </div> 
+
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="destintions full-width padding20 text-center">
+            <a class="title "><img src="files/images/title.png" alt=""></a>
+            <h2 class="h2toh1 ">DESTINATIONS</h2>  
+            
+            <div class="container">
+                <div class="row">
+                    <div class="destintions-holder">
+
+                        <figure class="item css-animate fadeInLeft effect-line gray-image" data-wow-delay="0.3s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/d1.jpg" alt="">
+                            <figcaption >
+                                <div class="item-content-overlay">
+                                    <h3>AUSTRIA</h3>
+                                    <i class="icon-flag-at"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item css-animate fadeInUp effect-line gray-image" data-wow-delay="0.3s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/d2.jpg" alt="">
+                            <figcaption >
+                                <div class="item-content-overlay">
+                                    <h3>BELGIUM</h3>
+                                    <i class="icon-flag-be"></i>
+                                </div>
+
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item css-animate fadeInDown effect-line gray-image" data-wow-delay="0.3s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/d3.jpg" alt="">
+                            <figcaption >
+                                <div class="item-content-overlay">
+                                    <h3>Croatia</h3>
+                                    <i class="icon-flag-hr"></i>
+                               </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item css-animate fadeInRight effect-line gray-image" data-wow-delay="0.3s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/d4.jpg" alt="">
+                            <figcaption>
+                                <div class="item-content-overlay">
+                                    <h3>Czech Republic</h3>
+                                    <i class="icon-flag-cz"></i>                                    
+                                </div>
+                            </figcaption>
+                        </figure>     
+
+                        <figure class="item css-animate fadeInLeft effect-line gray-image" data-wow-delay="0.3s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/d5.jpg" alt="">
+                            <figcaption >
+                                <div class="item-content-overlay">
+                                    <h3>France</h3>
+                                    <i class="icon-flag-fr"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item css-animate fadeInUp effect-line gray-image" data-wow-delay="0.3s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/d6.jpg" alt="">
+                            <figcaption >
+                                <div class="item-content-overlay">
+                                    <h3>Germany</h3>
+                                    <i class="icon-flag-de"></i>                                    
+                                </div>
+                            </figcaption>
+                        </figure>  
+
+                        <figure class="item css-animate fadeInDown effect-line gray-image" data-wow-delay="0.3s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/d7.jpg" alt="">
+                            <figcaption >
+                                <div class="item-content-overlay">
+                                    <h3>Greece</h3>
+                                    <i class="icon-flag-gr"></i>                                    
+                                </div>
+                            </figcaption>
+                        </figure>  
+
+                        <figure class="item css-animate fadeInRight effect-line gray-image" data-wow-delay="0.3s">
+                            <a href="" class="click-link"></a>
+                            <img class="image-overlaid" src="files/images/d8.jpg" alt="">
+                            <figcaption >
+                                <div class="item-content-overlay">
+                                    <h3>Hungary</h3>
+                                    <i class="icon-flag-hu"></i>                                    
+                                </div>
+                            </figcaption>
+                        </figure>  
+
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+
+        <div class="clearfix"></div>
+
+        <div class="hotel-offers full-width padding20 text-center">
+            <a class="title"><img src="files/images/title.png" alt=""></a>
+            <h2 class="h2toh1 ">Hotel Offers</h2>           
+          
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hotel-offers-holder">
+                            <div class="item css-animate fadeInLeft" data-wow-delay="0.1s" >
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/offer1.jpg" alt="">
+                                <div class="item-content-overlay">
+                                   <h3 class="item-title"><a href="">Wine & <br>Gourmet</a></h3> 
+                                </div>   
+                                <div class="offer-price css-animate fadeInDown" data-wow-delay=".5s" >
+                                    <p>from</p>
+                                    <span class="price"> &euro; 99</span>
+                                </div>                         
+                            </div>
+
+                            <div class="item css-animate fadeInLeft" data-wow-delay="0.2s">
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/offer2.jpg" alt="">
+                                <div class="item-content-overlay">
+                                   <h3 class="item-title"><a href="">SPA & <br>Wellness</a></h3> 
+                                </div>  
+
+                                <div class="offer-price css-animate fadeInDown" data-wow-delay=".6s">
+                                    <p>from</p>
+                                    <span class="price"> &euro; 99</span>
+                                </div>     
+                            </div>
+                            <div class="item css-animate fadeInLeft" data-wow-delay="0.3s"  >
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/offer3.jpg" alt="">
+                                <div class="item-content-overlay">
+                                   <h3 class="item-title"><a href="">ROMANTIC & <br>ESCAPES</a></h3> 
+                                </div> 
+
+                                <div class="offer-price css-animate fadeInDown" data-wow-delay=".7s">
+                                    <p>from</p>
+                                    <span class="price"> &euro; 120</span>
+                                </div>                                                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>   
+
+        <div class="clearfix"></div>
+        
+        <div class="our-members gray text-center full-width padding40 css-animate fadeInUp" data-wow-delay=".5" >
+            <a class="title "><img src="files/images/title.png" alt=""></a>
+            <h2 class="h2toh1 ">Our Members</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="our-menmbers-holder">
+
+                        <div class="item">
+                            <a href=""><img src="files/images/logo-ch.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="files/images/logo-dh.png" alt=""></a>
+                        </div>     
+                        <div class="item">
+                            <a href=""><img src="files/images/logo-hc.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="files/images/logo-sf.png" alt=""></a>
+                        </div>                                                   
+                        <div class="item">
+                            <a href=""><img src="files/images/logo-ibb.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="files/images/logo-hhp.png" alt=""></a>
+                        </div>   
+                        <div class="item">
+                            <a href=""><img src="files/images/logo-cs.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="files/images/logo-hl.png" alt=""></a>
+                        </div>                                                 
+                    </div>                    
+                </div>              
+            </div>
+                       
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="bottom-site-holder css-animate fadeInUp" data-wow-delay=".7">
+            
+
+            <div class="country-and-flag full-width dark">
+                <div class="container">
+                    
+                
+                <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">                                        
+
+                                <h4 class="col-sm-6 col-md-6 text-left"> <i class="c-icon-mark"></i> 500 Selected Historic Hotels in 20 European Countries</h4> 
+                                <div class="col-sm-6 social-icons col-md-6 text-right"> 
+
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/">                                
+                                                <span class="fa-stack fa-lg">
+                                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                                </span>                                
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/">                                
+                                                <span class="fa-stack fa-lg">
+                                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                                </span>                                    
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/">
+                                                <span class="fa-stack fa-lg">
+                                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                                      <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                                </span>                                    
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://plus.google.com">
+                                                <span class="fa-stack fa-lg">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                                </span>                                
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.pinterest.com/">
+                                                <span class="fa-stack fa-lg">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa fa-pinterest-p fa-stack-1x fa-inverse"></i>
+                                                </span>                                
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.sharethis.com/">
+                                                <span class="fa-stack fa-lg">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
+                                                </span>                                 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p>follow:</p>                                  
+                                </div> 
+
+                            </div>
+                        </div> 
+                        <div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-1">
+                            <div class="row ">
+                                <div class="flags-holder">
+
+                                <div class="flags">
+                                    <div class="item">
+                                        <a>
+                                            <span class="icon-flag-at"></span>
+                                            <span class="country">Austria</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-be"></span>
+                                            <span class="country">Belgium</span>
+                                        </a>
+                                    </div>
+
+         
+                                     <div class="item">
+                                        <a>
+                                        <span class="icon-flag-hr"></span>
+                                            <span class="country">Croatia</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-cz"></span>
+                                            <span class="country">Czech Republic</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="flags">
+                                    <div class="item">
+                                        <a>
+                                            <span class="icon-flag-dk"></span>
+                                            <span class="country">Denmark</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-fr"></span>
+                                            <span class="country">France</span>
+                                        </a>
+                                    </div>
+
+         
+                                     <div class="item">
+                                        <a>
+                                        <span class="icon-flag-de"></span>
+                                            <span class="country">Germany</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-gr"></span>
+                                            <span class="country">Greece</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="flags">
+                                    <div class="item">
+                                        <a>
+                                            <span class="icon-flag-hu"></span>
+                                            <span class="country">Hungary</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-ie"></span>
+                                            <span class="country">Ireland</span>
+                                        </a>
+                                    </div>
+
+         
+                                     <div class="item">
+                                        <a>
+                                        <span class="icon-flag-it"></span>
+                                            <span class="country">Italy</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-nl"></span>
+                                            <span class="country">Netherlands</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                              
+                                <div class="flags">
+                                    <div class="item">
+                                        <a>
+                                            <span class="icon-flag-no"></span>
+                                            <span class="country">Norway</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-pl"></span>
+                                            <span class="country">Poland</span>
+                                        </a>
+                                    </div>
+
+         
+                                     <div class="item">
+                                        <a>
+                                        <span class="icon-flag-pt"></span>
+                                            <span class="country">Portugal</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-sk"></span>
+                                            <span class="country">Slovakia</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                 <div class="flags">
+                                    <div class="item">
+                                        <a>
+                                            <span class="icon-flag-si"></span>
+                                            <span class="country">Slovenia</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-se"></span>
+                                            <span class="country">Sweden</span>
+                                        </a>
+                                    </div>
+
+         
+                                     <div class="item">
+                                        <a>
+                                        <span class="icon-flag-ch"></span>
+                                            <span class="country">Switzerland</span>
+                                        </a>
+                                    </div>
+
+                                     <div class="item">
+                                        <a>
+                                            <span class="icon-flag-wales"></span>
+                                            <span class="country">Wales</span>
+                                        </a>
+                                    </div>
+
+                                </div>                           
+
+                                </div>
+                            </div>
+
+                        </div>     
+                    </div>
+                </div>
+            </div>
+
+            <section class="newsletter-signup--footer full-width darker padding20" >
+                <div class="container">                                    
+                    <div class="row">                        
+                        <h2 class="col-sm-2 col-md-2 text-right"><i class="fa fa-envelope"></i></h2>
+                        <div class="col-sm-8 col-md-8  text-left">
+                            <div class="form-builder-wrapper">
+                                <noscript>
+                                <p class="frm-bldr-error">JavaScript must be enabled for this form to work.</p>
+                                </noscript>
+                                <link type="text/css" rel="stylesheet" href="http://www.themalton.com/global-css/form-builder.css">
+                                <link type="text/css" rel="stylesheet" href="http://www.themalton.com/global-css/jquery-ui.css">
+
+                                <form class="frm-bldr" enctype="multipart/form-data" method="post" action="">
+                                    <input type="hidden" name="data[Forms2][system][form_url]" value="" />
+                                    <ul>
+                                        <li class="input_text first odd" id="fld-name">
+                                            <div class="label-wrapper"><label for="name">Name<span class="required">*</span></label>
+                                            </div>
+                                            <div class="field-wrapper">
+                                                <input type="text" id="name" name="data[Forms2][name]"  value="" placeholder="Name" class="letterswithbasicpunc required" />
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>
+                                        <li class="input_text last even" id="fld-email">
+                                            <div class="label-wrapper">
+                                                <label for="email">Email<span class="required">*</span></label>
+                                            </div>
+                                            <div class="field-wrapper">
+                                                <input type="text"  id="email" name="data[Forms2][email]" value="" placeholder="Email" class="email required" />
+                                            </div>
+                                            <div class="clear">  </div>
+                                        </li>
+                                        <li class="btn-submit">
+                                            <input type="submit" name="data[Forms2][system][submit]" class="btn btn-default" value=" NEWSLETTER SIGNUP " />
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div> 
+                        </div>
+                    </div>
+                </div>          
+            </section>
+
+            <footer class="full-width black padding20 pos-r text-left" >
+                <div class="container">
+                    <div class="row no-padding">
+
+                        <div class="col-md-10 col-md-offset-1 pos-r">
+
+                            <nav class="footer-links">
+                                <ul>
+                                    <li class="first"> <a href="">Travel News</a> </li>
+                                    <li> <a href="">HHE Awards</a> </li>
+                                    <li> <a href="">Press</a> </li>
+                                    <li> <a href="">HHE digital</a> </li>
+                                    <li> <a href="">Hotel Newsletter</a> </li>
+                                    <li> <a href="">Disclaimers</a> </li>
+                                    <li class="last"> <a href="">Sitemap</a> </li>
+                                </ul> 
+                            </nav>
+                            <address>&#169; <span id="year"></span> Historic Hotels of Europe, All Rights Reserved. </address>
+                            <a href="" class="c-icon-NA"></a>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="files/js/plugins/plugins.js"></script>        
+    <!--[if gt IE 8]><!--> 
+    <script src="files/js/setting-gt-IE8.js"></script> 
+    <!--<![endif]-->
+    <script src="files/js/setting-shared.js"></script>         
+    <script src="files/js/setting-home.js?v=12032015"></script>  
+        
+
+</body>
+
+</html>

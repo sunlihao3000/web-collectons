@@ -1,0 +1,48 @@
+.site-holder > header {
+
+    position: fixed;
+    z-index: 10;
+    background-color:rgba(255,255,255,.9);
+
+    .pnav {
+        background-color:$primary-color;
+
+         ul.navbar-nav {
+            > li {
+               > a {
+                    color:#fff;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    padding-top: 22px;
+                    padding-bottom: 22px;
+                    font-size: 16px;
+
+                    &:hover{
+                        background-color:$secondary-color;
+                    };
+                }
+            }
+        }
+    }
+
+
+}
+
+.scroll-down .site-holder > header {
+
+    .pnav ul.navbar-nav > li > a {
+        padding-top: 5px;
+        padding-bottom: 5px; 
+    }   
+}
+
+
+@media (max-width:1199px) {
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 8px;
+    }
+}
+
+

@@ -1,0 +1,58 @@
+/*
+Site Name:
+Author: 
+*/
+
+
+/*--------------------------------------------------------------
+1.0 preset
+--------------------------------------------------------------*/
+
+@import "theme/_variables";
+@import "theme/_fonts";
+@import "plugins/_animation";
+@import "base/_mixins";
+@import "theme/_mixins.scss";
+
+/*--------------------------------------------------------------
+2.0 base
+--------------------------------------------------------------*/
+
+@import "base/_reset";
+@import "base/_base";
+@import "base/_typography";
+
+/*--------------------------------------------------------------
+3.0 plugins
+--------------------------------------------------------------*/
+
+@import "plugins/_fancybox";
+@import "plugins/_owl";
+@import "plugins/_custom-scroller";
+@import "plugins/_flex-slider";
+@import "plugins/_light_slider";
+@import "plugins/_light_gallery";
+
+
+/*--------------------------------------------------------------
+4.0 Components
+--------------------------------------------------------------*/
+@import "components/_components";
+@import "components/_forms";
+@import "components/_gallery";
+@import "components/_map";
+@import "components/_news";
+@import "components/_search-box-nights-long";
+@import "components/_full-screen-pop-up";
+
+
+/*--------------------------------------------------------------
+5.0 Theme & Layouts
+--------------------------------------------------------------*/
+@import "theme/_typography";
+@import "theme/_header";
+@import "theme/_main";
+@import "theme/_footer";
+
+@import "theme/_hotel-details";
+
