@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     background-color: #333;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255,255,255,0.8);
     z-index:-1;
     padding: 175px 0 ;
     visibility: hidden;
@@ -76,7 +76,7 @@
     position: fixed;
     top: 0;
     z-index: -1;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255,255,255,0.9);
     @include anim(.2s,linear); 
 
     .search-box-pop-up__close {
@@ -94,15 +94,15 @@
 
     .search-box-pop-up-holder {
         width: 100%;
-        max-width: 250px;
+        max-width: 266px;
         height: 100%;
-        max-height: 372px;
+        max-height: 460px;
         position: fixed;
         left: 50%;
         top: 20%;
-        margin-left: -120px;
-        background-color: #fff;
+        margin-left: -133px;
         padding: 20px;
+
 
         .field-wrapper {
             clear: both;
@@ -132,6 +132,14 @@
     width: 100%;
 }
 
+
+@media (max-width:768px) {
+
+    .search-box-pop-up .search-box-pop-up-holder {
+        top: 15%;
+    }
+
+}
 
 @media (max-width:480px) { 
 
@@ -176,4 +184,15 @@
 
     }
 
+    .search-box-nights-long .field-wrapper .submit-button {
+        margin-top: 0;
+    }
+
+    .search-box-pop-up .search-box-pop-up-holder {
+        top: 10%;
+    }
+
+    .search-box-pop-up .search-box-pop-up-holder {
+        max-height: 375px;
+    }
 }

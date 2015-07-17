@@ -1,0 +1,57 @@
+.hotel-details  {
+    margin-top: 160px;
+}
+
+
+.inner header.top {
+    border-bottom: 2px solid rgba(0,0,0,0.15)
+}
+
+
+.side-bar__right > div {
+    border: 1px solid #e5e5e5;
+    padding: 30px 20px;
+
+    .hotel-details-address,
+    .hotel-details-tel {
+        border: 1px solid #e5e5e5;
+        margin-top:10px;
+        padding:10px;
+
+        i,
+        p {
+            float: left;
+            margin: 0;
+        }
+
+        i {
+            padding:3px 10px;
+        }
+        p,a {
+            line-height: 17px;
+        }
+    }
+}
+
+.hotel-facility-icons {
+    list-style: none;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 10px;
+    padding: 10px;
+
+    li {
+        float: left;
+
+        a {
+            font-size: 26px;
+            padding: 10px;
+            color: #3f3f3f;
+        }
+    }
+
+}
+
+.side-bar__right > div.bottom {
+    margin-top: 20px;
+}

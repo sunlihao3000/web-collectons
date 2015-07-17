@@ -7,8 +7,6 @@ var isDesktop = !(ismobile);
 var docElem = window.document.documentElement;
 //var element =  document.getElementById("footer-logo-circle");
 
-
-
 (function() {
 
     // http://stackoverflow.com/a/11381730/989439
@@ -57,101 +55,6 @@ var docElem = window.document.documentElement;
     // javascript
     // 
     // 
-    function getViewportH() {
-        var client = docElem['clientHeight'],
-            inner = window['innerHeight'];
-         
-        if( client < inner )
-            return inner;
-        else
-            return client;
-    }
-
-    function scrollY() {
-        return window.pageYOffset || docElem.scrollTop;
-    }
-
-    function getOffset( el ) {
-        var offsetTop = 0, 
-        offsetLeft = 0;
-        do {
-            if ( !isNaN( el.offsetTop ) ) {
-                offsetTop += el.offsetTop;
-            }
-            if ( !isNaN( el.offsetLeft ) ) {
-                offsetLeft += el.offsetLeft;
-            }
-        } while( el = el.offsetParent )
- 
-        return {
-            top : offsetTop,
-            left : offsetLeft
-        };
-    }
-
- 
-    function inViewport( el, h ) {        
-        try {
-            
-            var elH = el.offsetHeight,
-                scrolled = scrollY(),
-                viewed = scrolled + getViewportH(),
-                elTop = getOffset(el).top,
-                elBottom = elTop + elH,
-                // if 0, the element is considered in the viewport as soon as it enters.
-                // if 1, the element is considered in the viewport only when it's fully inside
-                // value in percentage (1 >= h >= 0)
-                h = h || 0;
-     
-            return (elTop + elH * h) <= viewed && (elBottom) >= scrolled;
-
-
-        } catch (err) {
-
-        }
-
-    }
-
-    function into_veiew_init() {
-
-        var didScroll = false,
-            resizeTimeout,
-            fired = false;   
-            
-        var scrollHandler = function() {
-                if( !didScroll ) {
-                    didScroll = true;
-                    setTimeout( function() { scrollPage(); }, 60 );
-                }
-            },
-            scrollPage = function() {
-     
-                if ( typeof element !== 'undefined') { 
-                    if( inViewport(element,0.3 ) ) {
-                        logo_animate();
-                    }
-                }
-                didScroll = false;
-            },
-            resizeHandler = function() {
-                function delayed() {
-                    scrollPage();
-                    resizeTimeout = null;
-                }
-                if ( resizeTimeout ) {
-                    clearTimeout( resizeTimeout );
-                }
-                resizeTimeout = setTimeout( delayed, 200 );
-            };
-
-        window.addEventListener( 'scroll', scrollHandler, false );
-        window.addEventListener( 'resize', resizeHandler, false );
-    }
-    //
-
-    into_veiew_init();
-
-
  
     $(document).ready(function(){
 
@@ -161,8 +64,8 @@ var docElem = window.document.documentElement;
         wow = new WOW({
               boxClass:     'css-animate',      // default
               animateClass: 'animated', // default
-              offset:       0,          // default
-              mobile:       false,       // default
+              offset:       50,          // default
+              mobile:       true,       // default
               live:         true        // default
             }
         )
@@ -171,3 +74,5 @@ var docElem = window.document.documentElement;
     });
 
 }());  // end function strict
+
+

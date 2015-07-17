@@ -65,26 +65,29 @@ label {
 
 .btn-group,
 .submit-button {
-    background: $primary-color;
+    background-color: $secondary-color;
     border: none;
     border-radius: 0;
     color: #fff;
     font-size: 15px;
     padding: 5px 15px;
     text-transform: uppercase;
+    height: 36px;
     @include anim(.2s,linear); 
+    text-align: center;
 }
+
+
 
 .btn-group:hover,
-.btn-group:focus{ 
-  color: $secondary-color;
-}
+.btn-group:focus,
+.submit-button:hover {    
+    padding: 5px 20px;
+    font-size: 17px;   
 
-.submit-button {
-    background-color: $secondary-color;
 }
 .submit-button:hover {
-    background-color: $primary-color;
+   background-color: $primary-color; 
 }
 
 
@@ -275,21 +278,20 @@ button, html input[type=button], input[type=reset], input[type=submit] {
  ------------------------------------------- */
 
 .hasDatepicker {
-  background: url("../images/cal.png") no-repeat scroll 98.5% center #FFFFFF !important;
+  background: url("../images/cal.png") no-repeat scroll 98.5% 1px #FFFFFF !important;
   cursor: pointer;
 }
 
 /***jquery UI CALENDAR ***/
 
-
 .ui-datepicker {
-  background: none repeat scroll 0 0 transparent;
-  border: 8px solid rgba(0, 0, 0, 0.26);
-  margin: 20px 0;
-  padding: 0;
-  width: 20em;
-  border-radius:0;
-  z-index: 30!important;
+    background: none repeat scroll 0 0 transparent;
+    border: 8px solid rgba(0, 0, 0, 0.26);
+    margin: 20px 0;
+    padding: 0;
+    width: 20em;
+    border-radius:0;
+    z-index: 30!important;
 }
 
 .ui-widget-header .ui-icon {
@@ -319,13 +321,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 .ui-datepicker table {
   border-collapse: collapse;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin: 0;
   width: 100%;
 }
 
 .ui-datepicker td, .ui-datepicker th {
-  min-width: 30px;
+    min-width: 0.8em;
 }
 
 .ui-datepicker th {

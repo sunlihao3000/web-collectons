@@ -56,7 +56,6 @@
 
 /* image zooming in */
 .item .image-overlaid {
-  width: 100%;
   -webkit-transform: scale(1, 1); 
   -webkit-transition-duration: 500ms;
   -webkit-transition-timing-function: ease-out;
@@ -75,21 +74,23 @@
 
 .item:hover  .image-overlaid{
     /* Webkit for Chrome and Safari */
-  -webkit-transform: scale(1.03, 1.03); 
+  -webkit-transform: scale(1.06, 1.06); 
   -webkit-transition-duration: 500ms;
   -webkit-transition-timing-function: ease-out;
  
   /* Webkit for Mozila Firefox */
-  -moz-transform: scale(1.03, 1.03);
+  -moz-transform: scale(1.06, 1.06);
   -moz-transition-duration: 500ms;
   -moz-transition-timing-function: ease-out;
  
   /* Webkit for IE( Version: 11, 10 ) */
-  -ms-transform: scale(1.03, 1.03);
+  -ms-transform: scale(1.06, 1.06);
   -ms-transition-duration: 500ms;
   -ms-transition-timing-function: ease-out;
 
 }
+
+
 
 .item.gray-image .image-overlaid {
     filter: none; /* Applies to FF + IE */
@@ -97,14 +98,14 @@
     -webkit-filter: grayscale(0);   
 }
 .item.gray-image:hover  .image-overlaid{
-    transition: all .2s linear;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -o-transition: all .2s linear;    
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;    
     
-    filter: grayscale(80%);
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(80%);
+/*     filter: grayscale(80%);
+filter: gray; IE6-9
+-webkit-filter: grayscale(80%); */
 }
 
 /* image hover effect line */
@@ -153,14 +154,13 @@ figure.effect-line:hover figcaption::after {
 
 .pulse_holder {
     position: absolute;
-    bottom: 200px;
+    bottom: 110px;
     z-index: 10; 
     left: 50%;  
     margin-left: -36px;        
 }
 
 .pulse_holder .pulse_marker {
-    width: 72px;
     position: relative;
     margin: 0 auto; 
 }
@@ -174,7 +174,10 @@ figure.effect-line:hover figcaption::after {
     left: 17px;
     z-index: 10;
     color: #fff;
-    opacity: 0.5;
+    opacity:1;
+    visibility: visible;
+    opacity: 1;
+    @include anim(.2s,linear); 
 }
 
 .pulse_holder [class^="cir-"],
@@ -205,11 +208,13 @@ figure.effect-line:hover figcaption::after {
 .scroll-down .pulse_holder [class^="cir-"],
 .scroll-down .pulse_holder [class*=" cir-"],
 .scroll-down .pulse_holder .c-icon-down {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+
 }
 
 .pulse_holder .pulse_marker.on .c-icon-down {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .pulse_holder .pulse_marker.on .cir-h {
@@ -825,34 +830,216 @@ ul#thumb-list li:hover {
 
 /* Menu Button */
 
-.menu-button-holder {
-  position: fixed;
-  z-index: 14;
-  right: 10px;
-  top:10px;
-  text-align: center;
+
+.menu-button {
+    float: left;
+    width: 95px;
+    color: #fff;
+    margin-top:15px;
+    margin-left: 30px;
 
     i {
-        float: left;
-        color: #fff;
-        font-size: 40px;
-        margin-top: 10px;
-        clear: both;
+
+        float:left;
+        font-size: 31px;
     }
 
     span {
         float: left;
-        clear: both;
-        color: #fff;        
+        font-size: 17px;
+        font-family: "lato", sans-serif;
+        font-weight: lighter;
+        text-transform: uppercase;
+        margin-top: 3px;
+        margin-left: 11px;
     }
-    .c-icon-cal-text {
-        background-color: #c8950b;
-        padding: 5px;
-        margin-left: -7px;
+}
+
+
+.cal-button {
+    float: right;
+    margin-right: 30px;
+
+    i {
+        color: #fff;
+        color: #fff;
+        font-size: 25px;
+        margin-top: 10px;
+        float: right;
+        padding: 5px 15px 10px;
+        background-color: $secondary-color;        
+    }
+    .btn-group{
+        margin-top: 15px;
+        width: 167px;
+        padding: 7px 20px;        
     }
 
 }
 
+/*--------------------*/
+/* Fillpath (http://www.nizuka.fr/)*/
+/*--------------------*/
+.color-10 { background: #f3cf3f; }
+
+.nav-fillpath a.prev {
+    left: -35px;
+}
+
+.nav-fillpath a.next {
+    right: -35px;
+}
+
+@media (max-width:1280px) {
+    .nav-fillpath a.prev {
+        left: 0;
+    }
+
+    .nav-fillpath a.next {
+        right: 0;
+    }
+}
+
+.nav-fillpath a {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    outline: none;
+    text-align: left;
+    z-index: 2;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);    
+}
+
+.nav-fillpath .icon-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-fillpath a::before,
+.nav-fillpath a::after,
+.nav-fillpath .icon-wrap::before,
+.nav-fillpath .icon-wrap::after {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 40%;
+    background: #566475;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent; /* for FF */
+}
+
+.nav-fillpath .icon-wrap::before,
+.nav-fillpath .icon-wrap::after {
+    z-index: 100;
+    height: 0;
+    background: #dcdcdc;
+    -webkit-transition: height 0.3s, -webkit-transform 0.3s;
+    transition: height 0.3s, transform 0.3s;
+}
+
+.nav-fillpath a::before,
+.nav-fillpath .icon-wrap::before {
+    top: 50%;
+    -webkit-transform: translateX(-50%) rotate(-135deg);
+    transform: translateX(-50%) rotate(-135deg);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.nav-fillpath a.next::before,
+.nav-fillpath a.next .icon-wrap::before {
+    -webkit-transform: translateX(-50%) rotate(135deg);
+    transform: translateX(-50%) rotate(135deg);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.nav-fillpath a::after,
+.nav-fillpath .icon-wrap::after {
+    top: 50%;
+    -webkit-transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.nav-fillpath a.next::after,
+.nav-fillpath a.next .icon-wrap::after {
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+}
+
+.nav-fillpath h3 {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.85em;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-fillpath a.prev h3 {
+    left: 65%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.nav-fillpath a.next h3 {
+    right: 65%;
+    text-align: right;
+    -webkit-transform: translateY(-50%) translateX(50%);
+    transform: translateY(-50%) translateX(50%);
+}
+
+.nav-fillpath a:hover .icon-wrap::before,
+.nav-fillpath a:hover .icon-wrap::after {
+    height: 40%;
+}
+
+.nav-fillpath a:hover::before,
+.nav-fillpath a:hover .icon-wrap::before {
+    -webkit-transform: translateX(-50%) rotate(-125deg);
+    transform: translateX(-50%) rotate(-125deg);
+}
+
+.nav-fillpath a.next:hover::before,
+.nav-fillpath a.next:hover .icon-wrap::before {
+    -webkit-transform: translateX(-50%) rotate(125deg);
+    transform: translateX(-50%) rotate(125deg);
+}
+
+.nav-fillpath a:hover::after,
+.nav-fillpath a:hover .icon-wrap::after {
+    -webkit-transform: translateX(-50%) rotate(-55deg);
+    transform: translateX(-50%) rotate(-55deg);
+}
+
+.nav-fillpath a.next:hover::after,
+.nav-fillpath a.next:hover .icon-wrap::after {
+    -webkit-transform: translateX(-50%) rotate(55deg);
+    transform: translateX(-50%) rotate(55deg);
+}
+
+.nav-fillpath a:hover h3 {
+    opacity: 1;
+    -webkit-transform: translateY(-50%) translateX(0);
+    transform: translateY(-50%) translateX(0);
+}
 
 
 

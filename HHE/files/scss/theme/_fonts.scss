@@ -22,8 +22,34 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+.c-icon-hairdresser:before {
+    content: "\e60c";
+}
+.c-icon-hot:before {
+    content: "\e60d";
+}
+.c-icon-shower:before {
+    content: "\e60e";
+}
+.c-icon-telephone:before {
+    content: "\e60f";
+}
+.c-icon-wifi:before {
+    content: "\e611";
+}
+.c-icon-wiping:before {
+    content: "\e612";
+}
+.c-icon-rooms:before {
+    content: "\e610";
+}
 .c-icon-close:before {
     content: "\e60a";
+}
+.c-icon-menu:before {
+    content: "\e60b";
 }
 .c-icon-cal-text:before {
     content: "\e609";

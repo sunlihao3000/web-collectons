@@ -126,9 +126,10 @@
 
         hoverToggleClass($('.pulse_holder .c-icon-down'));
         //toggle($('.home .welcome .separator-holder .fa-stack-1x'), $('article.main'),'c-icon-plus','c-icon-minus', 'true' );
-        toggle($('.menu-button-holder.mobile-layout .fa'), $('.full-screen-pop-up.main-nav-overlay') );
+        toggle($('.menu-button .c-icon-menu'), $('.full-screen-pop-up.main-nav-overlay') );
         toggle($('.full-screen-pop-up__close.main-nav-overlay'), $('.full-screen-pop-up.main-nav-overlay ') );
-        toggle($('.c-icon-cal-text'), $('.search-box-pop-up') );
+        toggle($('.cal-button .btn-group'), $('.search-box-pop-up') );
+        toggle($('.cal-button .c-icon-cal-text'), $('.search-box-pop-up') );
         toggle($('.search-box-pop-up__close'), $('.search-box-pop-up') );
 
         
@@ -192,7 +193,6 @@
                   },mouseleave: function() {
 
                     $(this).removeClass('hover');
-
                       
                   }
               });
@@ -244,7 +244,7 @@
     });
 
     $(window).on('beforeunload', function(){
-        //$('body').removeClass('show-menu menu-opend').addClass('unloaded');
+        $('body').removeClass('loaded');
     });
 
     // for small height laptop
@@ -267,32 +267,36 @@
    var owl_our_members_inti = $('.our-menmbers-holder .item').size();
    var owl_our_members = $('.our-menmbers-holder');
 
+
     if (owl_our_members_inti > 0) {
 
          owl_our_members.owlCarousel({
             loop:true,
-            margin:0,
+            margin:10,
             autoplay: false,
             dots:false,
             nav:true,
             mouseDrag:true,
             center:false,
+            
             navText: [
                 '<i class="fa fa-angle-left"></i>',
                 '<i class="fa fa-angle-right"></i>'
             ], 
             responsive:{
                 0:{
-                    items:1
+                    items:2
                 },
                 768:{
-                    items:4
+                    items:5
                 },
                 1024:{
-                    items:6
+                    items:5,
+                    autoWidth:false
                 },
                 1200:{
-                    items:7
+                    items:7,
+                    autoWidth:true
                 }                
             }
         });
@@ -309,7 +313,9 @@ $(window).load(function() {
 
     $(".status").fadeOut('', function() {});
 
-    $(".preloader").delay(600).fadeOut("slow", function() {});
+    $(".preloader").delay(600).fadeOut("slow", function() {
+        $('body').addClass('loaded');  
+    });
 
 });
 // 

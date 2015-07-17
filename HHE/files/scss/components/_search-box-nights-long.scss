@@ -1,7 +1,7 @@
 
 .search-box-nights-long {
 
-    padding: 25px 0 15px;
+    padding: 19px 0 15px 8px;
 
     .field-wrapper {
         float: left;
@@ -29,14 +29,21 @@
         #arrival-date {
             border:1px solid #DAD7D7;
             border-radius: 5px;
-            line-height: 12px;
             font-size: 13px;
-            padding:8px 3px;
+            padding:6px 3px 6px 5px;
             color: #999;
-
-
+            font-family: 'Open Sans', sans-serif; 
+            height: 33px;
         }
-        
+
+        .bke_dropdown {
+            width: 65px;
+        }
+
+        #arrival-date {
+            width: 130px;
+        }
+
         .submit-button {
             margin-top: 20px;
             width: 167px;
@@ -49,10 +56,10 @@
     } 
 
     .cl-holder .bke_drop {
-        width: 170px; 
+        width: 175px; 
     }
 
-    @media (max-width:1024px) {
+    @media (max-width:1199px) {
 
         .country-holder .bke_drop {
             width: 200px;
@@ -80,15 +87,32 @@
 }
 
  
-.scroll-down  .search-box-nights-long .field-wrapper label,
-.scroll-down  .search-box-nights-long .field-wrapper .label {
+.scroll-down  .search-box-nights-long.full-width .field-wrapper label,
+.scroll-down  .search-box-nights-long.full-width .field-wrapper .label {
         height: 0;
         opacity: 0;
         visibility: hidden;
 }
 
-.scroll-down  .search-box-nights-long .field-wrapper .submit-button {
-    margin-top: 6px;
+.scroll-down  .search-box-nights-long.full-width .field-wrapper .submit-button {
+    margin-top: 5px;
+}
+  
+.scroll-down  .search-box-nights-long.full-width {
+    padding: 5px 0 7px 8px;
 }
 
-  
+.scroll-down .search-box-holder {
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-small {
+     padding-bottom: 10px;
+     display: inline-block;
+}
+
+ @media (max-width:359px) { 
+    .logo-small {
+        display: none;
+    }
+ }

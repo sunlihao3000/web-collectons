@@ -18,7 +18,7 @@
 
     <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon"   />  
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|PT+Sans:400,700|Open+Sans:400,600' rel='stylesheet' type='text/css'>    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|PT+Sans:400,700|Open+Sans:400,600|Tinos:400,400italic' rel='stylesheet' type='text/css'>    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
@@ -49,13 +49,13 @@
    
     <div class="site-holder">
 
-        <header class="full-width">
+        <header class="full-width top">
         
             <nav class="pnav full-width ">          
                 <div class="container pos-r">                        
                     <div class="row">
 
-                        <a href="" class="logo col-md-2 pos-a">
+                        <a href="/" class="logo col-md-2 pos-a hidden-xs hidden-sm">
                             <img src="files/images/logo.png" alt="">
                         </a>                         
                         <div class="hidden-sm hidden-xs col-md-10 col-md-offset-2">                                            
@@ -115,23 +115,23 @@
                                     </div>
 
                                     <div class="field-wrapper cl-holder">
-                                        <label for="loc_id">Select Your Location</label>
+                                        <label for="loc_id">Location</label>
                                         <select id="loc_id" class="bke_drop" name="loc_id">
-                                            <option value="" class="searchbox-col-none">Choose your city</option>
+                                            <option value="" class="searchbox-col-none">Select Location</option>
                                             <option value="antrim-belfast" class="searchbox-col-location">Antrim - Belfast</option>
                                             <option value="clare-ennistymon" class="searchbox-col-location">Clare - Ennistymon</option>
                                         </select>
                                     </div>
 
                                     <div class="field-wrapper">
-                                        <div class="label">Check in date:</div>
+                                        <div class="label">Check in date</div>
                                         <input type="text" id="arrival-date" class="">
                                         <input type="hidden" name="bke_arrival_day" value="06" id="bke_arrival_day">
                                         <input type="hidden" name="bke_arrival_month" value="07" id="bke_arrival_month">
                                         <input type="hidden" name="bke_arrival_year" value="2015" id="bke_arrival_year">                                
                                     </div>
                                     <div class="field-wrapper">
-                                        <div class="label">Nights:</div>
+                                        <div class="label">Nights</div>
                                         <select name="bke_nights" class="bke_dropdown">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -182,11 +182,22 @@
              
             </div>
 
-            <div class="menu-button-holder hidden-md hidden-lg mobile-layout text-shd">
-                <i class="fa fa-bars "></i>
-                <span>Menu</span>
-                <i class="c-icon-cal-text"></i>      
+            <div class="mobile-top hidden-md hidden-lg mobile-layout">
+
+                <div class="menu-button">
+                    <i class="c-icon-menu"></i>
+                    <span class="hidden-xs">Menu</span>                        
+                </div> 
+
+                <a href="/" class="logo-170"> <img src="files/images/logo-170.png" alt=""></a>
+
+                <div class="cal-button">
+                    <i class="c-icon-cal-text hidden-sm"></i> 
+                    <a class="btn-group hidden-xs"> Book Now</a>
+                </div>
+                
             </div>
+
 
             <div class="full-screen-pop-up main-nav-overlay">     
                 <a class="full-screen-pop-up__close main-nav-overlay "><i class="c-icon-close"></i></a>  
@@ -213,7 +224,10 @@
             <div class="search-box-pop-up">                
                 <div class="search-box-pop-up-holder">
                         <a class="search-box-pop-up__close"><i class="c-icon-close"></i></a>  
-                            <div class="search-box-nights-long pop-up">  
+                            <div class="search-box-nights-long pop-up text-center">  
+                            
+                            <a class="logo-small" href="/"><img src="files/images/logo-small.png" alt=""></a>
+
                             <script type="text/javascript">
 
                                 var padout = function(number) {
@@ -250,9 +264,9 @@
                                     </div>
 
                                     <div class="field-wrapper cl-holder">
-                                        <label for="loc_id">Select Your Location</label>
+                                        <label for="loc_id">Location</label>
                                         <select id="loc_id" class="bke_drop" name="loc_id">
-                                            <option value="" class="searchbox-col-none">Choose your city</option>
+                                            <option value="" class="searchbox-col-none">Select Location</option>
                                             <option value="antrim-belfast" class="searchbox-col-location">Antrim - Belfast</option>
                                             <option value="clare-ennistymon" class="searchbox-col-location">Clare - Ennistymon</option>
                                         </select>
@@ -317,8 +331,8 @@
 
         </header>
 
-        <div id="mainslider">
-            <div class="flexslider">
+        <div id="mainslider" >
+            <div class="flexslider" >
                 <ul class="slides">
                     <li class="item">
                         <img src="files/images/1.jpg" title="" alt="" />                                               
@@ -332,7 +346,7 @@
                         <img src="files/images/2.jpg" title="" alt="" />                        
                         <div class="slide_description_wrapper">
                             <div class="slide_description">                                
-                                <h3 data-animation='fadeInLeft'>LIve Music</h3>     
+                                <h3 data-animation='fadeInLeft'>A Memorable Journey...</h3>     
                             </div>
                         </div> 
                     </li>                
@@ -355,8 +369,8 @@
         <section class="page-content full-width text-center padding40">
             <div class="container">            
                 <div class="row fadeInUp css-animate">
-                    <h1>Historic Hotels of Europe</h1>
-                    <article class="main col-md-10 col-md-offset-1">
+                    <h1 class="css-animate fadeInUp" data-wow-delay="0.5" data-wow-duration="2.5s">Historic Hotels of Europe</h1>
+                    <article class="main col-md-10 col-md-offset-1 fadeInUp css-animate" data-wow-delay="1" data-wow-duration="2.5s">
                         <p>The Historic Hotels of Europe is the most prestigious hotel network in Europe representing the finest hotels operating in historical buildings.  With over 500 hotels in beautiful castles, palaces, abbeys and estates under one name of quality, the Historic Hotels of Europe, we safeguard the preservation of the European Cultural Heritage for the future generations. 
                         Proud guardians of the past and outstanding hosts of the present, the hoteliers of HHE stay true to what they promise to the guests:  </p>
 
@@ -374,21 +388,21 @@
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/h1.png" alt="">
                             <figcaption class="item-content-overlay">
-                               <h3 class="item-title"><a href="">City& <br>Hotels</a></h3> 
+                               <h3 class="item-title"><a href="">City <br>Hotels</a></h3> 
                             </figcaption>                      
                         </figure>
                         <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s">
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/h2.png" alt="">
                             <figcaption class="item-content-overlay">
-                               <h3 class="item-title"><a href="">Country& <br>House</a></h3> 
+                               <h3 class="item-title"><a href="">Country <br>House</a></h3> 
                             </figcaption>                      
                         </figure>
                         <figure class="item css-animate fadeInRight"  data-wow-delay="0.2s">
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/h3.png" alt="">
                             <figcaption class="item-content-overlay">
-                               <h3 class="item-title"><a href="">Hotels& <br>by the water</a></h3> 
+                               <h3 class="item-title"><a href="">Hotels <br>by the water</a></h3> 
                             </figcaption>                      
                         </figure>
 
@@ -396,7 +410,7 @@
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/h4.png" alt="">
                             <figcaption class="item-content-overlay">
-                               <h3 class="item-title"><a href="">castle& <br>Hotels</a></h3> 
+                               <h3 class="item-title"><a href="">castle <br>Hotels</a></h3> 
                             </figcaption>                      
                         </figure>
 
@@ -412,7 +426,7 @@
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/h6.png" alt="">
                             <figcaption class="item-content-overlay">
-                               <h3 class="item-title"><a href="">City& <br>Hotels</a></h3> 
+                               <h3 class="item-title"><a href="">City <br>Hotels</a></h3> 
                             </figcaption>                      
                         </figure>
 
@@ -420,7 +434,7 @@
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/h7.png" alt="">
                             <figcaption class="item-content-overlay">
-                               <h3 class="item-title"><a href="">Grand& <br>Hotels</a></h3> 
+                               <h3 class="item-title"><a href="">Grand <br>Hotels</a></h3> 
                             </figcaption>                      
                         </figure>
 
@@ -436,7 +450,7 @@
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/h9.png" alt="">
                             <figcaption class="item-content-overlay">
-                               <h3 class="item-title"><a href="">Spa& <br>Wellness</a></h3> 
+                               <h3 class="item-title"><a href="">Spa <br>Wellness</a></h3> 
                             </figcaption>                      
                         </figure>
 
@@ -454,7 +468,7 @@
                                 <a href="" class="click-link"></a>
                                 <img class="image-overlaid" src="files/images/h2.png" alt="">
                                 <figcaption class="item-content-overlay">
-                                   <h3 class="item-title"><a href="">Country& <br>House</a></h3> 
+                                   <h3 class="item-title"><a href="">Country <br>House</a></h3> 
                                 </figcaption>                      
                             </figure>
 
@@ -462,7 +476,7 @@
                                 <a href="" class="click-link"></a>
                                 <img class="image-overlaid" src="files/images/h1.png" alt="">
                                 <figcaption class="item-content-overlay">
-                                   <h3 class="item-title"><a href="">City& <br>Hotels</a></h3> 
+                                   <h3 class="item-title"><a href="">City <br>Hotels</a></h3> 
                                 </figcaption>                      
                             </figure>
 
@@ -470,7 +484,7 @@
                                 <a href="" class="click-link"></a>
                                 <img class="image-overlaid" src="files/images/h9.png" alt="">
                                 <figcaption class="item-content-overlay">
-                                   <h3 class="item-title"><a href="">Spa& <br>Wellness</a></h3> 
+                                   <h3 class="item-title"><a href="">Spa <br>Wellness</a></h3> 
                                 </figcaption>                      
                             </figure>
 
@@ -494,9 +508,9 @@
         </div>       
 
         <div class="clearfix"></div>
-        <div class="cultural-routes full-screen text-center padding40 css-animate fadeInUp">
-            <a class="title "><img src="files/images/title.png" alt=""></a>
-            <h2 class="h2toh1 ">Cultual Routes</h2>       
+        <div class="cultural-routes full-screen text-center padding40 ">
+            <a class="title css-animate fadeInLeft" data-wow-delay="1" data-wow-duration="2s"><img src="files/images/title.png" alt=""></a>
+            <h2 class="h2toh1 css-animate fadeInRight" data-wow-delay="2" data-wow-duration="2s">Cultual Routes</h2>       
             <div class="container">
                 <div class="row">
                     <div class="description col-md-8 col-md-offset-2">
@@ -507,60 +521,64 @@
                     </div>                    
                 </div>
             
+                <div class="row">
+                    <div class="cultrual-routes-holder col-xs-12 col-sm-12 col-md-12">
+                        <div class="cultrual-routes-carousel">
+                            
+                            <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.1s" data-wow-duration="2s">
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/c1.jpg" alt="">
+                                <figcaption class="item-content full-width text-left">
+                                    <h4>A Taste of Sweden</h4>
+                                    <p>Explore the Route</p>
+                                </figcaption>
+                            </figure>
 
-                <div class="cultrual-routes-holder padding20">
+                            <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.2s" data-wow-duration="2s">
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/c2.jpg" alt="">
+                                <figcaption class="item-content full-width text-left">
+                                    <h4>Alpine Route</h4>
+                                    <p>Explore the Route</p>
+                                </figcaption>
+                            </figure> 
 
-                    <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.1s">
-                        <a href="" class="click-link"></a>
-                        <img class="image-overlaid" src="files/images/c1.jpg" alt="">
-                        <figcaption class="item-content full-width text-left">
-                            <h4>A Taste of Sweden</h4>
-                            <p>Explore the Route</p>
-                        </figcaption>
-                    </figure>
+                            <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.3s" data-wow-duration="2s">
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/c3.jpg" alt="">
+                                <figcaption class="item-content full-width text-left">
+                                    <h4>Habsburg Empire Route</h4>
+                                    <p>Explore the Route</p>
+                                </figcaption>
+                            </figure>  
 
-                    <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.2s">
-                        <a href="" class="click-link"></a>
-                        <img class="image-overlaid" src="files/images/c2.jpg" alt="">
-                        <figcaption class="item-content full-width text-left">
-                            <h4>Alpine Route</h4>
-                            <p>Explore the Route</p>
-                        </figcaption>
-                    </figure> 
+                            <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.4s" data-wow-duration="2s">
+                                <a href="" class="click-link"></a>
+                                <img class="image-overlaid" src="files/images/c4.jpg" alt="">
+                                <figcaption class="item-content full-width text-left">
+                                    <h4>Major German Rivers' Route</h4>
+                                    <p>Explore the Route</p>
+                                </figcaption>
+                            </figure>
 
-                    <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.3s">
-                        <a href="" class="click-link"></a>
-                        <img class="image-overlaid" src="files/images/c3.jpg" alt="">
-                        <figcaption class="item-content full-width text-left">
-                            <h4>Habsburg Empire Route</h4>
-                            <p>Explore the Route</p>
-                        </figcaption>
-                    </figure>  
-
-                    <figure class="item box-shd css-animate fadeInRight gray-image" data-wow-delay="0.4s">
-                        <a href="" class="click-link"></a>
-                        <img class="image-overlaid" src="files/images/c4.jpg" alt="">
-                        <figcaption class="item-content full-width text-left">
-                            <h4>Major German Rivers' Route</h4>
-                            <p>Explore the Route</p>
-                        </figcaption>
-                    </figure> 
-
-                </div>   
+                        </div>
+                    </div>
+                </div>                   
             </div> 
 
         </div>
         <div class="clearfix"></div>
         
         <div class="destintions full-width padding20 text-center">
-            <a class="title "><img src="files/images/title.png" alt=""></a>
-            <h2 class="h2toh1 ">DESTINATIONS</h2>  
+            <a class="title css-animate fadeInLeft" data-wow-delay="1" data-wow-duration="2s"><img src="files/images/title.png" alt=""></a>
+            <h2 class="h2toh1 css-animate fadeInRight" data-wow-delay="2" data-wow-duration="2s">DESTINATIONS</h2>  
             
             <div class="container">
                 <div class="row">
                     <div class="destintions-holder">
 
-                        <figure class="item css-animate fadeInLeft effect-line gray-image" data-wow-delay="0.3s">
+                        <figure class="item css-animate fadeInLeft  gray-image" data-wow-delay="0.3s">
+                            <a href="" class="image-gradient"></a>
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/d1.jpg" alt="">
                             <figcaption >
@@ -571,7 +589,8 @@
                             </figcaption>
                         </figure>
 
-                        <figure class="item css-animate fadeInUp effect-line gray-image" data-wow-delay="0.3s">
+                        <figure class="item css-animate fadeInUp  gray-image" data-wow-delay="0.3s">
+                            <a href="" class="image-gradient"></a>
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/d2.jpg" alt="">
                             <figcaption >
@@ -583,7 +602,8 @@
                             </figcaption>
                         </figure>
 
-                        <figure class="item css-animate fadeInDown effect-line gray-image" data-wow-delay="0.3s">
+                        <figure class="item css-animate fadeInDown gray-image" data-wow-delay="0.3s">
+                            <a href="" class="image-gradient"></a>
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/d3.jpg" alt="">
                             <figcaption >
@@ -594,7 +614,8 @@
                             </figcaption>
                         </figure>
 
-                        <figure class="item css-animate fadeInRight effect-line gray-image" data-wow-delay="0.3s">
+                        <figure class="item css-animate fadeInRight gray-image" data-wow-delay="0.3s">
+                            <a href="" class="image-gradient"></a>
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/d4.jpg" alt="">
                             <figcaption>
@@ -605,7 +626,8 @@
                             </figcaption>
                         </figure>     
 
-                        <figure class="item css-animate fadeInLeft effect-line gray-image" data-wow-delay="0.3s">
+                        <figure class="item css-animate fadeInLeft  gray-image" data-wow-delay="0.3s">
+                            <a href="" class="image-gradient"></a>
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/d5.jpg" alt="">
                             <figcaption >
@@ -616,7 +638,8 @@
                             </figcaption>
                         </figure>
 
-                        <figure class="item css-animate fadeInUp effect-line gray-image" data-wow-delay="0.3s">
+                        <figure class="item css-animate fadeInUp gray-image" data-wow-delay="0.3s">
+                            <a href="" class="image-gradient"></a>
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/d6.jpg" alt="">
                             <figcaption >
@@ -627,7 +650,8 @@
                             </figcaption>
                         </figure>  
 
-                        <figure class="item css-animate fadeInDown effect-line gray-image" data-wow-delay="0.3s">
+                        <figure class="item css-animate fadeInDown  gray-image" data-wow-delay="0.3s">
+                            <a href="" class="image-gradient"></a>
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/d7.jpg" alt="">
                             <figcaption >
@@ -638,7 +662,8 @@
                             </figcaption>
                         </figure>  
 
-                        <figure class="item css-animate fadeInRight effect-line gray-image" data-wow-delay="0.3s">
+                        <figure class="item css-animate fadeInRight gray-image" data-wow-delay="0.3s">
+                            <a href="" class="image-gradient"></a>
                             <a href="" class="click-link"></a>
                             <img class="image-overlaid" src="files/images/d8.jpg" alt="">
                             <figcaption >
@@ -659,50 +684,63 @@
         <div class="clearfix"></div>
 
         <div class="hotel-offers full-width padding20 text-center">
-            <a class="title"><img src="files/images/title.png" alt=""></a>
-            <h2 class="h2toh1 ">Hotel Offers</h2>           
+            <a class="title css-animate fadeInLeft" data-wow-delay="1" data-wow-duration="2s"><img src="files/images/title.png" alt=""></a>
+            <h2 class="h2toh1 css-animate fadeInRight" data-wow-delay="2" data-wow-duration="2s">Hotel Offers</h2>           
           
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="hotel-offers-holder">
-                            <div class="item css-animate fadeInLeft" data-wow-delay="0.1s" >
-                                <a href="" class="click-link"></a>
-                                <img class="image-overlaid" src="files/images/offer1.jpg" alt="">
-                                <div class="item-content-overlay">
-                                   <h3 class="item-title"><a href="">Wine & <br>Gourmet</a></h3> 
-                                </div>   
-                                <div class="offer-price css-animate fadeInDown" data-wow-delay=".5s" >
-                                    <p>from</p>
-                                    <span class="price"> &euro; 99</span>
-                                </div>                         
+
+                            <nav class="nav-fillpath">
+                                <a class="prev" href="#">
+                                    <span class="icon-wrap"></span>
+                                    <h3>Prev</h3>
+                                </a>
+                                <a class="next" href="#">
+                                    <span class="icon-wrap"></span>
+                                    <h3>Next</h3>
+                                </a>
+                            </nav>
+
+                            <div class="hotel-offer-carousel">                            
+                                <div class="item css-animate fadeInLeft" data-wow-delay="0.1s" >
+                                    <a href="" class="click-link"></a>
+                                    <img class="image-overlaid" src="files/images/offer1.jpg" alt="">
+                                    <div class="item-content-overlay">
+                                       <h3><a href="">Wine & Gourmet</a></h3> 
+                                    </div>   
+                                    <div class="offer-price css-animate fadeInDown" data-wow-delay=".5s" >
+                                        <p>from</p>
+                                        <span class="price"> &euro; 99</span>
+                                    </div>                         
+                                </div>
+
+                                <div class="item css-animate fadeInLeft" data-wow-delay="0.2s">
+                                    <a href="" class="click-link"></a>
+                                    <img class="image-overlaid" src="files/images/offer2.jpg" alt="">
+                                    <div class="item-content-overlay">
+                                       <h3><a href="">Spa & Wellness</a></h3> 
+                                    </div>  
+
+                                    <div class="offer-price css-animate fadeInDown" data-wow-delay=".6s">
+                                        <p>from</p>
+                                        <span class="price"> &euro; 99</span>
+                                    </div>     
+                                </div>
+                                <div class="item css-animate fadeInLeft" data-wow-delay="0.3s"  >
+                                    <a href="" class="click-link"></a>
+                                    <img class="image-overlaid" src="files/images/offer3.jpg" alt="">
+                                    <div class="item-content-overlay">
+                                       <h3><a href="">ROMANTIC & ESCAPES</a></h3> 
+                                    </div> 
+
+                                    <div class="offer-price css-animate fadeInDown" data-wow-delay=".7s">
+                                        <p>from</p>
+                                        <span class="price"> &euro; 120</span>
+                                    </div>                                                                
+                                </div>
                             </div>
-
-                            <div class="item css-animate fadeInLeft" data-wow-delay="0.2s">
-                                <a href="" class="click-link"></a>
-                                <img class="image-overlaid" src="files/images/offer2.jpg" alt="">
-                                <div class="item-content-overlay">
-                                   <h3 class="item-title"><a href="">SPA & <br>Wellness</a></h3> 
-                                </div>  
-
-                                <div class="offer-price css-animate fadeInDown" data-wow-delay=".6s">
-                                    <p>from</p>
-                                    <span class="price"> &euro; 99</span>
-                                </div>     
-                            </div>
-                            <div class="item css-animate fadeInLeft" data-wow-delay="0.3s"  >
-                                <a href="" class="click-link"></a>
-                                <img class="image-overlaid" src="files/images/offer3.jpg" alt="">
-                                <div class="item-content-overlay">
-                                   <h3 class="item-title"><a href="">ROMANTIC & <br>ESCAPES</a></h3> 
-                                </div> 
-
-                                <div class="offer-price css-animate fadeInDown" data-wow-delay=".7s">
-                                    <p>from</p>
-                                    <span class="price"> &euro; 120</span>
-                                </div>                                                                
-                            </div>
-
                         </div>
                     </div>
 
@@ -713,35 +751,35 @@
 
         <div class="clearfix"></div>
         
-        <div class="our-members gray text-center full-width padding40 css-animate fadeInUp" data-wow-delay=".5" >
-            <a class="title "><img src="files/images/title.png" alt=""></a>
-            <h2 class="h2toh1 ">Our Members</h2>
+        <div class="our-members gray text-center full-width padding40" >
+            <a class="title css-animate fadeInLeft" data-wow-delay="1" data-wow-duration="2s"><img src="files/images/title.png" alt=""></a>
+            <h2 class="h2toh1 css-animate fadeInLeft" data-wow-delay="2" data-wow-duration="2s" >Our Members</h2>
             <div class="container">
                 <div class="row">
                     <div class="our-menmbers-holder">
 
-                        <div class="item">
+                        <div class="item css-animate expandUp" data-wow-delay="1">
                             <a href=""><img src="files/images/logo-ch.png" alt=""></a>
                         </div>
-                        <div class="item">
+                        <div class="item css-animate expandUp" data-wow-delay="1.2">
                             <a href=""><img src="files/images/logo-dh.png" alt=""></a>
                         </div>     
-                        <div class="item">
+                        <div class="item css-animate expandUp" data-wow-delay="1.4">
                             <a href=""><img src="files/images/logo-hc.png" alt=""></a>
                         </div>
-                        <div class="item">
+                        <div class="item css-animate expandUp" data-wow-delay="1.6">
                             <a href=""><img src="files/images/logo-sf.png" alt=""></a>
                         </div>                                                   
-                        <div class="item">
+                        <div class="item css-animate expandUp" data-wow-delay="1.8">
                             <a href=""><img src="files/images/logo-ibb.png" alt=""></a>
                         </div>
-                        <div class="item">
+                        <div class="item css-animate expandUp" data-wow-delay="2">
                             <a href=""><img src="files/images/logo-hhp.png" alt=""></a>
                         </div>   
-                        <div class="item">
+                        <div class="item css-animate expandUp" data-wow-delay="2.2">
                             <a href=""><img src="files/images/logo-cs.png" alt=""></a>
                         </div>
-                        <div class="item">
+                        <div class="item css-animate expandUp" data-wow-delay="2.4">
                             <a href=""><img src="files/images/logo-hl.png" alt=""></a>
                         </div>                                                 
                     </div>                    
@@ -752,7 +790,7 @@
 
         <div class="clearfix"></div>
 
-        <div class="bottom-site-holder css-animate fadeInUp" data-wow-delay=".7">
+        <div class="bottom-site-holder">
             
 
             <div class="country-and-flag full-width dark">
@@ -763,8 +801,8 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">                                        
 
-                                <h4 class="col-sm-6 col-md-6 text-left"> <i class="c-icon-mark"></i> 500 Selected Historic Hotels in 20 European Countries</h4> 
-                                <div class="col-sm-6 social-icons col-md-6 text-right"> 
+                                <h4 class="col-sm-6 col-md-6 text-left css-animate fadeInLeft" data-wow-delay="1"> <i class="c-icon-mark"></i> 500 Selected Historic Hotels in 20 European Countries</h4> 
+                                <div class="col-sm-6 social-icons col-md-6 text-right css-animate fadeInRight" data-wow-delay="1.5"> 
 
                                     <ul>
                                         <li>
@@ -816,7 +854,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <p>follow:</p>                                  
+                                    <!-- <p>follow:</p>   -->                                
                                 </div> 
 
                             </div>
@@ -1001,8 +1039,8 @@
             <section class="newsletter-signup--footer full-width darker padding20" >
                 <div class="container">                                    
                     <div class="row">                        
-                        <h2 class="col-sm-2 col-md-2 text-right"><i class="fa fa-envelope"></i></h2>
-                        <div class="col-sm-8 col-md-8  text-left">
+                        <h2 class="col-sm-2 col-md-2 text-right"><i class="fa fa-envelope css-animate fadeInleft" data-wow-dalay="0.5" data-wow-duration="1"></i></h2>
+                        <div class="col-sm-8 col-md-8  text-left css-animate fadeInRight" data-wow-dalay="1" data-wow-duration="1" >
                             <div class="form-builder-wrapper">
                                 <noscript>
                                 <p class="frm-bldr-error">JavaScript must be enabled for this form to work.</p>
@@ -1047,7 +1085,7 @@
 
                         <div class="col-md-10 col-md-offset-1 pos-r">
 
-                            <nav class="footer-links">
+                            <nav class="footer-links  css-animate fadeInLeft" data-wow-dalay="1" data-wow-duration="1" >
                                 <ul>
                                     <li class="first"> <a href="">Travel News</a> </li>
                                     <li> <a href="">HHE Awards</a> </li>
@@ -1058,12 +1096,11 @@
                                     <li class="last"> <a href="">Sitemap</a> </li>
                                 </ul> 
                             </nav>
-                            <address>&#169; <span id="year"></span> Historic Hotels of Europe, All Rights Reserved. </address>
-                            <a href="" class="c-icon-NA"></a>
+                            <address >&#169; <span id="year"></span> Historic Hotels of Europe, All Rights Reserved. </address>
+                            <a href="" class="c-icon-NA  css-animate fadeInRight" data-wow-dalay="1.5" data-wow-duration="2" ></a>
                             
                         </div>
-                        
-                        
+                                   
                     </div>
                 </div>
             </footer>

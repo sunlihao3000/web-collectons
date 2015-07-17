@@ -18,7 +18,7 @@
 
     <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon"   />  
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|PT+Sans:400,700' rel='stylesheet' type='text/css'>    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|PT+Sans:400,700|Open+Sans:400,600|Tinos:400,400italic' rel='stylesheet' type='text/css'>    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
@@ -32,14 +32,14 @@
 
     <script type="text/javascript" src="files/js/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>  
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>    
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 </head>
 
-<body id="inner" class="inner hotel-details"  >
+<body id="inner" class="inner"  >
  
     <noscript>Enable JavaScript in your browser</noscript>
-
+    
     <div class="preloader" >
 
       <div class="status">
@@ -49,13 +49,13 @@
    
     <div class="site-holder">
 
-        <header class="full-width">
+        <header class="full-width top">
         
             <nav class="pnav full-width ">          
                 <div class="container pos-r">                        
                     <div class="row">
 
-                        <a href="" class="logo col-md-2 pos-a">
+                        <a href="/" class="logo col-md-2 pos-a hidden-xs hidden-sm">
                             <img src="files/images/logo.png" alt="">
                         </a>                         
                         <div class="hidden-sm hidden-xs col-md-10 col-md-offset-2">                                            
@@ -84,7 +84,6 @@
 
                                 var padout = function(number) {
                                   var number = String(number);
-
                                   return (number.length < 2) ? '0' + number : number;
                                 }
                                 jQuery(document).ready(function(){
@@ -116,23 +115,23 @@
                                     </div>
 
                                     <div class="field-wrapper cl-holder">
-                                        <label for="loc_id">Select Your Location</label>
+                                        <label for="loc_id">Location</label>
                                         <select id="loc_id" class="bke_drop" name="loc_id">
-                                            <option value="" class="searchbox-col-none">Choose your city</option>
+                                            <option value="" class="searchbox-col-none">Select Location</option>
                                             <option value="antrim-belfast" class="searchbox-col-location">Antrim - Belfast</option>
                                             <option value="clare-ennistymon" class="searchbox-col-location">Clare - Ennistymon</option>
                                         </select>
                                     </div>
 
                                     <div class="field-wrapper">
-                                        <div class="label">Check in date:</div>
+                                        <div class="label">Check in date</div>
                                         <input type="text" id="arrival-date" class="">
                                         <input type="hidden" name="bke_arrival_day" value="06" id="bke_arrival_day">
                                         <input type="hidden" name="bke_arrival_month" value="07" id="bke_arrival_month">
                                         <input type="hidden" name="bke_arrival_year" value="2015" id="bke_arrival_year">                                
                                     </div>
                                     <div class="field-wrapper">
-                                        <div class="label">Nights:</div>
+                                        <div class="label">Nights</div>
                                         <select name="bke_nights" class="bke_dropdown">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -183,18 +182,29 @@
              
             </div>
 
-            <div class="menu-button-holder hidden-md hidden-lg mobile-layout text-shd">
-                <i class="fa fa-bars "></i>
-                <span>Menu</span>
-                <i class="c-icon-cal-text"></i>      
+            <div class="mobile-top hidden-md hidden-lg mobile-layout">
+
+                <div class="menu-button">
+                    <i class="c-icon-menu"></i>
+                    <span class="hidden-xs">Menu</span>                        
+                </div> 
+
+                <a href="/" class="logo-170"> <img src="files/images/logo-170.png" alt=""></a>
+
+                <div class="cal-button">
+                    <i class="c-icon-cal-text hidden-sm"></i> 
+                    <a class="btn-group hidden-xs"> Book Now</a>
+                </div>
+                
             </div>
+
 
             <div class="full-screen-pop-up main-nav-overlay">     
                 <a class="full-screen-pop-up__close main-nav-overlay "><i class="c-icon-close"></i></a>  
                 <div id="pop-up-navs">   
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
+                            <nav class="col-md-8 col-md-offset-2">
                                 <ul>
                                     <li class="first"><a href="">Home</a></li>
                                     <li><a href="">Destinations</a></li>
@@ -204,7 +214,7 @@
                                     <li><a href="">About Us</a></li>
                                     <li class="last"><a href="">Gift  Vouchers</a></li>
                                 </ul>                    
-                            </div>  
+                            </nav>  
                         </div>                        
                     </div> 
                 </div>
@@ -214,7 +224,10 @@
             <div class="search-box-pop-up">                
                 <div class="search-box-pop-up-holder">
                         <a class="search-box-pop-up__close"><i class="c-icon-close"></i></a>  
-                            <div class="search-box-nights-long pop-up">  
+                            <div class="search-box-nights-long pop-up text-center">  
+                            
+                            <a class="logo-small" href="/"><img src="files/images/logo-small.png" alt=""></a>
+
                             <script type="text/javascript">
 
                                 var padout = function(number) {
@@ -251,9 +264,9 @@
                                     </div>
 
                                     <div class="field-wrapper cl-holder">
-                                        <label for="loc_id">Select Your Location</label>
+                                        <label for="loc_id">Location</label>
                                         <select id="loc_id" class="bke_drop" name="loc_id">
-                                            <option value="" class="searchbox-col-none">Choose your city</option>
+                                            <option value="" class="searchbox-col-none">Select Location</option>
                                             <option value="antrim-belfast" class="searchbox-col-location">Antrim - Belfast</option>
                                             <option value="clare-ennistymon" class="searchbox-col-location">Clare - Ennistymon</option>
                                         </select>
@@ -313,15 +326,19 @@
                    
                             </div>           
                 </div>
-            </div>        
+            </div>
+          
+
         </header>
+
+
         <div class="clearfix"></div>
-        <div class="hotel-details full-width padding20">
+        <div class="hotel-details full-width padding40">
             <div class="container">
                 <div class="row">
-                    <h1> Hôtel Le Bellechasse Saint - Germain <span class="icon-flag-de"></span></h1>
+                    <div class="col-md-12"><h1> Hôtel Le Bellechasse Saint - Germain <span class="icon-flag-de"></span></h1></div>
                     <div class="col-md-9">
-
+                        
                         <div class="hotel-gallery">
                             <ul id="lightSlider" >
                                 <li data-thumb="files/images/hd1-small.png">
@@ -336,12 +353,80 @@
                                 <li data-thumb="files/images/hd1-small.png">
                                     <img src="files/images/hd1.png" />
                                 </li>
+
+                                <li data-thumb="files/images/hd2-small.png">
+                                    <img src="files/images/hd2.png" />
+                                </li>
+                                <li data-thumb="files/images/hd3-small.png">
+                                    <img src="files/images/hd3.png" />
+                                </li>
+                                <li data-thumb="files/images/hd1-small.png">
+                                    <img src="files/images/hd1.png" />
+                                </li>                                
                             </ul>                                                   
                         </div>
                     </div>
-                    <aside class="col-md-3">
-                        <div class="trust-you-holder">
-                            <iframe id="trust-you-iframe" allowtransparency="true" src="http://api.trustyou.com/hotels/0cf49fc7-5956-4565-9e87-69093ed2655a/seal.html?lang=en&amp;size=big" frameborder="0" scrolling="no" height="144" width="170"></iframe>
+                    <aside class="col-md-3 side-bar__right">
+
+                        <div class="top full-width">                        
+                            <div class="trust-you-holder text-center">
+                                <iframe id="trust-you-iframe" allowtransparency="true" src="http://api.trustyou.com/hotels/0cf49fc7-5956-4565-9e87-69093ed2655a/seal.html?lang=en&amp;size=big" frameborder="0" scrolling="no" height="144" width="170"></iframe>
+                            </div>
+
+                            <div class="hotel-details-address full-width">
+                                <i class="fa fa-location-arrow"></i> 
+                                <p>
+                                     8 rue de Bellechasse, <br>75007 Paris, <br>France
+                                </p>
+                            </div>
+
+                            <div class="hotel-details-tel full-width">
+                                <i class="fa fa-phone"></i>
+                                <a tel="">+33 1 45 50 22 31</a>
+                            </div>
+
+                            <ul class="hotel-facility-icons full-width">
+                                <li>
+                                    <a>
+                                        <i class="c-icon-hairdresser"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="c-icon-hot"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="c-icon-shower"></i>
+                                    </a>
+                                </li>
+                               <li>
+                                    <a>
+                                        <i class="c-icon-telephone"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="c-icon-wifi"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="c-icon-wiping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="c-icon-rooms"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="bottom full-width">
+                            
                         </div>
                         
 
@@ -350,12 +435,14 @@
 
             </div>        
         </div>
+    
 
         <div class="clearfix"></div>
 
-        <div class="bottom-site-holder css-animate fadeInUp" data-wow-delay=".7">
+        <div class="bottom-site-holder">
             
-            <section class="country-and-flag full-width dark">
+
+            <div class="country-and-flag full-width dark">
                 <div class="container">
                     
                 
@@ -363,8 +450,8 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">                                        
 
-                                <h4 class="col-sm-6 col-md-6 text-left"> <i class="c-icon-mark"></i> 500 Selected Historic Hotels in 20 European Countries</h4> 
-                                <div class="col-sm-6 social-icons col-md-6 text-right"> 
+                                <h4 class="col-sm-6 col-md-6 text-left css-animate fadeInLeft" data-wow-delay="1"> <i class="c-icon-mark"></i> 500 Selected Historic Hotels in 20 European Countries</h4> 
+                                <div class="col-sm-6 social-icons col-md-6 text-right css-animate fadeInRight" data-wow-delay="1.5"> 
 
                                     <ul>
                                         <li>
@@ -416,7 +503,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <p>follow:</p>                                  
+                                    <!-- <p>follow:</p>   -->                                
                                 </div> 
 
                             </div>
@@ -601,8 +688,8 @@
             <section class="newsletter-signup--footer full-width darker padding20" >
                 <div class="container">                                    
                     <div class="row">                        
-                        <h2 class="col-sm-2 col-md-2 text-right"><i class="fa fa-envelope"></i></h2>
-                        <div class="col-sm-8 col-md-8  text-left">
+                        <h2 class="col-sm-2 col-md-2 text-right"><i class="fa fa-envelope css-animate fadeInleft" data-wow-dalay="0.5" data-wow-duration="1"></i></h2>
+                        <div class="col-sm-8 col-md-8  text-left css-animate fadeInRight" data-wow-dalay="1" data-wow-duration="1" >
                             <div class="form-builder-wrapper">
                                 <noscript>
                                 <p class="frm-bldr-error">JavaScript must be enabled for this form to work.</p>
@@ -647,7 +734,7 @@
 
                         <div class="col-md-10 col-md-offset-1 pos-r">
 
-                            <nav class="footer-links">
+                            <nav class="footer-links  css-animate fadeInLeft" data-wow-dalay="1" data-wow-duration="1" >
                                 <ul>
                                     <li class="first"> <a href="">Travel News</a> </li>
                                     <li> <a href="">HHE Awards</a> </li>
@@ -658,12 +745,11 @@
                                     <li class="last"> <a href="">Sitemap</a> </li>
                                 </ul> 
                             </nav>
-                            <address>&#169; <span id="year"></span> Historic Hotels of Europe, All Rights Reserved. </address>
-                            <a href="" class="c-icon-NA"></a>
+                            <address >&#169; <span id="year"></span> Historic Hotels of Europe, All Rights Reserved. </address>
+                            <a href="" class="c-icon-NA  css-animate fadeInRight" data-wow-dalay="1.5" data-wow-duration="2" ></a>
                             
                         </div>
-                        
-                        
+                                   
                     </div>
                 </div>
             </footer>
