@@ -92,6 +92,16 @@
             });            
         };
 
+        // our member
+        var our_member_int = $('.members-group-list li').size();
+        if (our_member_int > 0) {
+              var wall = $('.members-group-list').GITheWall({
+                  nextButtonClass: 'fa fa-arrow-right',
+                  prevButtonClass: 'fa fa-arrow-left',
+                  closeButtonClass: 'fa fa-times'
+              });
+            
+        };
 
 
 	}); // end document load 
