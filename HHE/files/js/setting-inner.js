@@ -54,6 +54,43 @@
         });
 
 
+        // hotel detail offers 
+        var hotel_details_offer_int = $('.hotel-special-offers__carousel .item').size();
+        var hotel_details_offer_holder = $('.hotel-special-offers__carousel');
+        if (hotel_details_offer_int > 3 ) {
+             hotel_details_offer_holder.owlCarousel({
+                loop:true,            
+                autoplay: false,                            
+                mouseDrag:true,
+                center:false,
+                navText: [
+                    '<i class="fa fa-angle-left"></i>',
+                    '<i class="fa fa-angle-right"></i>'
+                ], 
+                responsive:{
+                    0:{
+                        items:1,
+                        dots:true
+                    },
+                    480:{
+                        items:2,
+                        dots:true,
+                        margin:10
+                    },
+                    1024:{
+                        items:3,
+                        dots:true,
+                        margin:0
+                    },
+                    1200:{
+                        items:4,
+                        dots:false,
+                        nav:true,
+                        margin:20
+                    }                
+                }
+            });            
+        };
 
 
 

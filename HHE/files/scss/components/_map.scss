@@ -8,7 +8,6 @@
     top: 0;
     left: 0;
     float: left;
-    z-index: -1;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
@@ -25,66 +24,49 @@
 
 #map_directions_controls {
 
-    position: fixed;
-    bottom: 56px;
+    position: absolute;
+    bottom: 0;
     left: 50%;
-    margin-left: -246px;
+    margin-left: -350px;
     padding: 10px;
-    background-color: #000;
+    background-color: rgba(0,85,165,0.9);
     font-size: 12px; 
-    max-width: 492px;
+    max-width:700px;
     width: 100%;
 
-    .map_directions_position {
-
-        position: relative;
-        right: 0;
-        overflow: hidden;
-        
-
-        .map_directions_inner {
-            
-            width: 100%;
-            max-width: 535px;
-            float: right;
-            text-align: center;
-
-            label {
-                color: #fff;
-                text-transform: uppercase;
-                padding: 0 5px;
-            }
-            input {
-                width: 140px;
-                color: #333;
-                text-transform: uppercase;
-            }
-            .submit-button {
-                
-                color: #fff;
-            }
-
-            .fa {
-                position: absolute;
-                left: -1px;
-                top: -3px;
-                z-index: 2;
-                display: none;
-                cursor: pointer;
-            }
-            
-        }  
-        .hidden_button_to_open {
-            position: absolute;
-            width: 154px;
-            height: 35px;
-            right: 0;
-            top: 0;
-            z-index: 2;
-        }      
+    label {
+        color: #fff;
+        font-size: 14px;
+        font-family: $base-font-family;
+        font-weight: lighter;
+        margin: 0 10px;
+        display: inline-block;
     }
 
+    #fromAddress {
+        width: 190px;
+        display: inline-block;
+        padding: 5px;
+    }
+    #toAddress {
+        span {
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
 
+}
+
+.map_marker {
+    width: 286px;
+    color: #0055a5;
+    text-align: left;
+    padding: 10px 0;
+
+    h4 {
+        color: #0055a5;
+        font-size: 16px;
+    }
 }
 
 #fromAddress {

@@ -168,6 +168,13 @@ ul.not-list-style li {
     width: 100%;
     float: left;
 }
+.half {
+    width: 50%;
+    float: left;
+}
+.col-no-padding {
+    padding: 0;
+}
 
 .for-old-browser {
     display: none;

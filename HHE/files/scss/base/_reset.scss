@@ -70,14 +70,24 @@ label {
     border-radius: 0;
     color: #fff;
     font-size: 15px;
-    padding: 5px 15px;
+    padding: 7px 15px 5px;
     text-transform: uppercase;
     height: 36px;
     @include anim(.2s,linear); 
     text-align: center;
 }
 
+.btn-group.blue,
+.submit-button.blue {
+    background-color: $primary-color; 
+}
 
+.btn-group.white {
+    background-color: #fff; 
+    color: #333;
+    border:1px solid #e5e5e5;
+
+}
 
 .btn-group:hover,
 .btn-group:focus,

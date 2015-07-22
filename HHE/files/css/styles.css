@@ -3794,7 +3794,7 @@ label {
   border-radius: 0;
   color: #fff;
   font-size: 15px;
-  padding: 5px 15px;
+  padding: 7px 15px 5px;
   text-transform: uppercase;
   height: 36px;
   -webkit-transition: all 0.2s linear;
@@ -3805,7 +3805,20 @@ label {
   text-align: center;
 }
 
-/* line 84, ../scss/base/_reset.scss */
+/* line 81, ../scss/base/_reset.scss */
+.btn-group.blue,
+.submit-button.blue {
+  background-color: #1c4377;
+}
+
+/* line 85, ../scss/base/_reset.scss */
+.btn-group.white {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #e5e5e5;
+}
+
+/* line 94, ../scss/base/_reset.scss */
 .btn-group:hover,
 .btn-group:focus,
 .submit-button:hover {
@@ -3813,12 +3826,12 @@ label {
   font-size: 17px;
 }
 
-/* line 89, ../scss/base/_reset.scss */
+/* line 99, ../scss/base/_reset.scss */
 .submit-button:hover {
   background-color: #1c4377;
 }
 
-/* line 94, ../scss/base/_reset.scss */
+/* line 104, ../scss/base/_reset.scss */
 .btn-default {
   border: medium none;
   border-radius: 0;
@@ -3835,7 +3848,7 @@ label {
   font-family: FontAwesome, "Open Sans";
 }
 
-/* line 112, ../scss/base/_reset.scss */
+/* line 122, ../scss/base/_reset.scss */
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
@@ -3843,96 +3856,96 @@ label {
   color: #fff;
 }
 
-/* line 117, ../scss/base/_reset.scss */
+/* line 127, ../scss/base/_reset.scss */
 button, html input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: none;
   cursor: pointer;
 }
 
 @media (max-width: 480px) {
-  /* line 125, ../scss/base/_reset.scss */
+  /* line 135, ../scss/base/_reset.scss */
   .text-left,
   .text-right {
     text-align: center;
   }
 }
 /* mobile nav-bar */
-/* line 134, ../scss/base/_reset.scss */
+/* line 144, ../scss/base/_reset.scss */
 .navbar-toggle {
   border: medium none;
   border-radius: 0;
   margin: 5px 0 0;
 }
 
-/* line 140, ../scss/base/_reset.scss */
+/* line 150, ../scss/base/_reset.scss */
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #636161;
 }
 
-/* line 144, ../scss/base/_reset.scss */
+/* line 154, ../scss/base/_reset.scss */
 .navbar-toggle .icon-bar {
   height: 4px;
 }
 
-/* line 148, ../scss/base/_reset.scss */
+/* line 158, ../scss/base/_reset.scss */
 .navbar-inverse .navbar-toggle {
   border-color: #8e1738;
 }
 
-/* line 153, ../scss/base/_reset.scss */
+/* line 163, ../scss/base/_reset.scss */
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
   background-color: #8E1738;
 }
 
-/* line 157, ../scss/base/_reset.scss */
+/* line 167, ../scss/base/_reset.scss */
 .navbar-inverse .navbar-toggle:hover .icon-bar,
 .navbar-inverse .navbar-toggle:focus .icon-bar {
   background-color: #fff;
 }
 
 /* owl style resettings*/
-/* line 164, ../scss/base/_reset.scss */
+/* line 174, ../scss/base/_reset.scss */
 .owl-theme .owl-controls {
   margin: 0;
 }
 
-/* line 167, ../scss/base/_reset.scss */
+/* line 177, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-page span {
   background: none repeat scroll 0 0 #8e1738;
 }
 
-/* line 170, ../scss/base/_reset.scss */
+/* line 180, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-buttons div {
   background: none repeat scroll 0 0 #8e1738;
   border-radius: 0;
   padding: 10px;
 }
 
-/* line 176, ../scss/base/_reset.scss */
+/* line 186, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-buttons div {
   position: absolute;
   top: 35%;
 }
 
-/* line 181, ../scss/base/_reset.scss */
+/* line 191, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-buttons .owl-next {
   right: 0;
 }
 
-/* line 185, ../scss/base/_reset.scss */
+/* line 195, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-buttons .owl-prev {
   left: 0;
 }
 
-/* line 189, ../scss/base/_reset.scss */
+/* line 199, ../scss/base/_reset.scss */
 .owl-carousel .owl-item {
   display: inline-block;
   text-align: center;
   overflow: hidden;
 }
 
-/* line 199, ../scss/base/_reset.scss */
+/* line 209, ../scss/base/_reset.scss */
 .owlcarousel-holder .owl-controls {
   position: absolute;
   right: 0;
@@ -3941,24 +3954,24 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   width: 100%;
 }
 
-/* line 210, ../scss/base/_reset.scss */
+/* line 220, ../scss/base/_reset.scss */
 .owlcarousel-holder .owl-dots {
   float: right;
   width: auto;
   margin: 0 50px;
 }
 
-/* line 216, ../scss/base/_reset.scss */
+/* line 226, ../scss/base/_reset.scss */
 .owlcarousel-holder .owl-dot {
   float: left;
 }
 
-/* line 220, ../scss/base/_reset.scss */
+/* line 230, ../scss/base/_reset.scss */
 .owl-theme .owl-dots .owl-dot span {
   margin: 7px;
 }
 
-/* line 224, ../scss/base/_reset.scss */
+/* line 234, ../scss/base/_reset.scss */
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: none repeat scroll 0 0 #1c4377;
@@ -3968,7 +3981,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   padding: 0;
 }
 
-/* line 233, ../scss/base/_reset.scss */
+/* line 243, ../scss/base/_reset.scss */
 .owl-carousel.owl-theme .owl-controls .owl-nav [class*="owl-"] {
   position: absolute;
   cursor: pointer;
@@ -3983,23 +3996,23 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   font-size: 30px;
 }
 
-/* line 251, ../scss/base/_reset.scss */
+/* line 261, ../scss/base/_reset.scss */
 .owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev {
   left: -10px;
 }
 
-/* line 256, ../scss/base/_reset.scss */
+/* line 266, ../scss/base/_reset.scss */
 .owl-carousel.owl-theme .owl-controls .owl-nav .owl-next {
   right: -10px;
 }
 
 /* video carousel */
-/* line 263, ../scss/base/_reset.scss */
+/* line 273, ../scss/base/_reset.scss */
 .owl-carousel .item-video {
   height: 380px;
 }
 
-/* line 267, ../scss/base/_reset.scss */
+/* line 277, ../scss/base/_reset.scss */
 .owl-carousel .owl-video-play-icon {
   height: 146px;
   width: 146px;
@@ -4012,14 +4025,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 /*- jquery UI resetting 
  ------------------------------------------- */
-/* line 280, ../scss/base/_reset.scss */
+/* line 290, ../scss/base/_reset.scss */
 .hasDatepicker {
   background: url("../images/cal.png") no-repeat scroll 98.5% 1px white !important;
   cursor: pointer;
 }
 
 /***jquery UI CALENDAR ***/
-/* line 287, ../scss/base/_reset.scss */
+/* line 297, ../scss/base/_reset.scss */
 .ui-datepicker {
   background: none repeat scroll 0 0 transparent;
   border: 8px solid rgba(0, 0, 0, 0.26);
@@ -4030,25 +4043,25 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   z-index: 30!important;
 }
 
-/* line 297, ../scss/base/_reset.scss */
+/* line 307, ../scss/base/_reset.scss */
 .ui-widget-header .ui-icon {
   background: none;
 }
 
-/* line 301, ../scss/base/_reset.scss */
+/* line 311, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-header {
   padding: 0.79em 0;
   position: relative;
 }
 
-/* line 306, ../scss/base/_reset.scss */
+/* line 316, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-header {
   background: none repeat scroll 0 0 #f7f7f7;
   border: 0px solid #e6e6e6;
   border-radius: 0;
 }
 
-/* line 312, ../scss/base/_reset.scss */
+/* line 322, ../scss/base/_reset.scss */
 .ui-datepicker table {
   background: none repeat scroll 0 0 #fff;
   border-color: white;
@@ -4059,7 +4072,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   width: 300px;
 }
 
-/* line 322, ../scss/base/_reset.scss */
+/* line 332, ../scss/base/_reset.scss */
 .ui-datepicker table {
   border-collapse: collapse;
   font-size: 0.8em;
@@ -4067,12 +4080,12 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   width: 100%;
 }
 
-/* line 329, ../scss/base/_reset.scss */
+/* line 339, ../scss/base/_reset.scss */
 .ui-datepicker td, .ui-datepicker th {
   min-width: 0.8em;
 }
 
-/* line 333, ../scss/base/_reset.scss */
+/* line 343, ../scss/base/_reset.scss */
 .ui-datepicker th {
   color: #999;
   font-family: "Open Sans",sans-serif;
@@ -4082,7 +4095,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   text-transform: uppercase;
 }
 
-/* line 342, ../scss/base/_reset.scss */
+/* line 352, ../scss/base/_reset.scss */
 .ui-datepicker th {
   border: 0 none;
   font-weight: bold;
@@ -4090,25 +4103,25 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   text-align: center;
 }
 
-/* line 349, ../scss/base/_reset.scss */
+/* line 359, ../scss/base/_reset.scss */
 .ui-datepicker th span {
   border-bottom: 1px solid #e6e6e6;
   display: block;
   padding: 0.3em 0 1em;
 }
 
-/* line 355, ../scss/base/_reset.scss */
+/* line 365, ../scss/base/_reset.scss */
 .ui-datepicker td {
   padding: 1px;
   border: 0 none;
 }
 
-/* line 360, ../scss/base/_reset.scss */
+/* line 370, ../scss/base/_reset.scss */
 .ui-state-disabled {
   cursor: default !important;
 }
 
-/* line 364, ../scss/base/_reset.scss */
+/* line 374, ../scss/base/_reset.scss */
 .ui-datepicker-calendar .ui-state-highlight, .ui-state-active {
   background: #95813E;
   border: 1px solid #95813E;
@@ -4116,7 +4129,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   outline: medium none;
 }
 
-/* line 371, ../scss/base/_reset.scss */
+/* line 381, ../scss/base/_reset.scss */
 .ui-datepicker-calendar .ui-state-default {
   border: 1px solid #fff;
   border-radius: 0;
@@ -4125,7 +4138,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   background: none repeat scroll 0 0 #fff;
 }
 
-/* line 379, ../scss/base/_reset.scss */
+/* line 389, ../scss/base/_reset.scss */
 .ui-datepicker td span, .ui-datepicker td a {
   display: block;
   padding: 0.2em;
@@ -4133,14 +4146,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   text-decoration: none;
 }
 
-/* line 386, ../scss/base/_reset.scss */
+/* line 396, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-title {
   line-height: 1.8em;
   margin: 0 2.3em;
   text-align: center;
 }
 
-/* line 392, ../scss/base/_reset.scss */
+/* line 402, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-title {
   color: #fff;
   font-size: 1.1em;
@@ -4148,28 +4161,28 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   text-transform: uppercase;
 }
 
-/* line 399, ../scss/base/_reset.scss */
+/* line 409, ../scss/base/_reset.scss */
 .ui-datepicker-close, .ui-datepicker-current {
   display: none;
 }
 
-/* line 403, ../scss/base/_reset.scss */
+/* line 413, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-header {
   background: none repeat scroll 0 0 #1c4377;
 }
 
-/* line 407, ../scss/base/_reset.scss */
+/* line 417, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-buttonpane {
   margin: 0;
   padding: 0;
 }
 
-/* line 411, ../scss/base/_reset.scss */
+/* line 421, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-next {
   right: 18px;
 }
 
-/* line 414, ../scss/base/_reset.scss */
+/* line 424, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
   height: 2.8em;
   position: absolute;
@@ -4178,7 +4191,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border-radius: 0;
 }
 
-/* line 427, ../scss/base/_reset.scss */
+/* line 437, ../scss/base/_reset.scss */
 .ui-state-hover,
 .ui-widget-content .ui-state-hover,
 .ui-widget-header .ui-state-hover,
@@ -4191,13 +4204,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border-image-width: none;
 }
 
-/* line 434, ../scss/base/_reset.scss */
+/* line 444, ../scss/base/_reset.scss */
 .ui-widget {
   font-family: "Open Sans",sans-serif;
   font-size: 1.1em;
 }
 
-/* line 440, ../scss/base/_reset.scss */
+/* line 450, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev-hover,
 .ui-datepicker .ui-datepicker-next-hover {
   top: 0;
@@ -4206,14 +4219,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   font-weight: bold;
 }
 
-/* line 447, ../scss/base/_reset.scss */
+/* line 457, ../scss/base/_reset.scss */
 .fancybox-nav {
   width: 10%;
   border: none;
   outline: none;
 }
 
-/* line 453, ../scss/base/_reset.scss */
+/* line 463, ../scss/base/_reset.scss */
 #ui-datepicker-div .ui-icon {
   text-indent: 0;
   height: 35px;
@@ -4224,13 +4237,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   cursor: pointer;
 }
 
-/* line 462, ../scss/base/_reset.scss */
+/* line 472, ../scss/base/_reset.scss */
 #ui-datepicker-div .ui-state-hover .ui-icon {
   background-color: #1c4377;
   background-color: rgba(28, 67, 119, 0.6);
 }
 
-/* line 468, ../scss/base/_reset.scss */
+/* line 478, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev span:before, .ui-datepicker .ui-datepicker-next span:before {
   color: #fff;
   display: block;
@@ -4239,27 +4252,27 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   padding: 3px 13px;
 }
 
-/* line 475, ../scss/base/_reset.scss */
+/* line 485, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-next span:before {
   content: "\f105 ";
 }
 
-/* line 479, ../scss/base/_reset.scss */
+/* line 489, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev {
   left: 1px;
 }
 
-/* line 482, ../scss/base/_reset.scss */
+/* line 492, ../scss/base/_reset.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: 1px solid #efefef;
 }
 
-/* line 485, ../scss/base/_reset.scss */
+/* line 495, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev span:before {
   content: "\f104 ";
 }
 
-/* line 488, ../scss/base/_reset.scss */
+/* line 498, ../scss/base/_reset.scss */
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
   border: 1px solid #1c4377;
   background: #1c4377;
@@ -4269,7 +4282,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 @media (max-width: 480px) {
-  /* line 499, ../scss/base/_reset.scss */
+  /* line 509, ../scss/base/_reset.scss */
   .text-left,
   .text-right {
     text-align: center;
@@ -4481,42 +4494,53 @@ ul.not-list-style li {
   float: left;
 }
 
-/* line 172, ../scss/base/_base.scss */
+/* line 171, ../scss/base/_base.scss */
+.half {
+  width: 50%;
+  float: left;
+}
+
+/* line 175, ../scss/base/_base.scss */
+.col-no-padding {
+  padding: 0;
+}
+
+/* line 179, ../scss/base/_base.scss */
 .for-old-browser {
   display: none;
 }
 
-/* line 176, ../scss/base/_base.scss */
+/* line 183, ../scss/base/_base.scss */
 .no-cssanimations .for-old-browser {
   display: block;
 }
 
-/* line 180, ../scss/base/_base.scss */
+/* line 187, ../scss/base/_base.scss */
 .gray {
   background-color: #eeedee;
 }
 
-/* line 184, ../scss/base/_base.scss */
+/* line 191, ../scss/base/_base.scss */
 .dark {
   background-color: #14191d;
 }
 
-/* line 187, ../scss/base/_base.scss */
+/* line 194, ../scss/base/_base.scss */
 .darker {
   background-color: #0f1316;
 }
 
-/* line 190, ../scss/base/_base.scss */
+/* line 197, ../scss/base/_base.scss */
 .black {
   background-color: #090b0d;
 }
 
-/* line 194, ../scss/base/_base.scss */
+/* line 201, ../scss/base/_base.scss */
 .light {
   background-color: #fff;
 }
 
-/* line 198, ../scss/base/_base.scss */
+/* line 205, ../scss/base/_base.scss */
 .click-link {
   position: absolute;
   top: 0;
@@ -4527,7 +4551,7 @@ ul.not-list-style li {
   float: left;
 }
 
-/* line 208, ../scss/base/_base.scss */
+/* line 215, ../scss/base/_base.scss */
 .item-content-overlay {
   position: absolute;
   top: 35%;
@@ -4536,7 +4560,7 @@ ul.not-list-style li {
   z-index: 5;
 }
 
-/* line 216, ../scss/base/_base.scss */
+/* line 223, ../scss/base/_base.scss */
 .box-shd {
   -webkit-box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2);
@@ -4565,30 +4589,30 @@ ul.not-list-style li {
 }
 
 @media (max-width: 768px) {
-  /* line 244, ../scss/base/_base.scss */
+  /* line 251, ../scss/base/_base.scss */
   body .md-text-center,
   body .sm-text-right {
     text-align: center;
   }
 }
 /* svg  */
-/* line 250, ../scss/base/_base.scss */
+/* line 257, ../scss/base/_base.scss */
 .not-svg {
   display: block;
 }
 
-/* line 254, ../scss/base/_base.scss */
+/* line 261, ../scss/base/_base.scss */
 .svg .not-svg {
   display: none;
 }
 
 /* over hide */
-/* line 259, ../scss/base/_base.scss */
+/* line 266, ../scss/base/_base.scss */
 .over-h {
   overflow: hidden;
 }
 
-/* line 264, ../scss/base/_base.scss */
+/* line 271, ../scss/base/_base.scss */
 .circle {
   width: 70px;
   height: 70px;
@@ -10068,6 +10092,75 @@ ul#thumb-list li:hover {
   transform: translateY(-50%) translateX(0);
 }
 
+/*
+ * social-icons 
+ */
+/* line 1050, ../scss/components/_components.scss */
+.social-icons > ul {
+  float: left;
+  margin-top: -5px;
+  padding: 0;
+  color: #b9babc;
+  list-style: none;
+}
+/* line 1058, ../scss/components/_components.scss */
+.social-icons > ul li {
+  list-style: none;
+  float: left;
+}
+/* line 1062, ../scss/components/_components.scss */
+.social-icons > ul li a .fa-stack-2x {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #888;
+}
+/* line 1072, ../scss/components/_components.scss */
+.social-icons > ul li a:hover .fa-stack-2x {
+  color: #333;
+}
+
+/*
+ * title with line crass
+ */
+/* line 1088, ../scss/components/_components.scss */
+.heading-line {
+  text-align: center;
+  width: 60%;
+  display: inline-block;
+  margin: 10px auto;
+  height: 1px;
+  background: #bababa;
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13) 1%, #bababb 8%, #bababb 50%, #bababb 61%, #bababb 91%, #c2c2c3 92%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.13)), color-stop(8%, #bababb), color-stop(50%, #bababb), color-stop(61%, #bababb), color-stop(91%, #bababb), color-stop(92%, #c2c2c3), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13) 1%, #bababb 8%, #bababb 50%, #bababb 61%, #bababb 91%, #c2c2c3 92%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13) 1%, #bababb 8%, #bababb 50%, #bababb 61%, #bababb 91%, #c2c2c3 92%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13) 1%, #bababb 8%, #bababb 50%, #bababb 61%, #bababb 91%, #c2c2c3 92%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13) 1%, #bababb 8%, #bababb 50%, #bababb 61%, #bababb 91%, #c2c2c3 92%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+}
+/* line 1107, ../scss/components/_components.scss */
+.heading-line h2,
+.heading-line h1 {
+  background: none repeat scroll 0 0 #FFF;
+  display: inline-block;
+  padding: 0 25px;
+  position: relative;
+  top: -30px;
+}
+
+/* line 1117, ../scss/components/_components.scss */
+.heading-line.long {
+  width: 80%;
+}
+
 /* header searchbox  */
 /* line 3, ../scss/components/_forms.scss */
 .bookings-popup-holder {
@@ -10750,92 +10843,77 @@ article .form-builder-wrapper form li.btn-submit:hover input {
   top: 0;
   left: 0;
   float: left;
-  z-index: -1;
   transition: all .2s linear;
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -o-transition: all .2s linear;
 }
 
-/* line 20, ../scss/components/_map.scss */
+/* line 19, ../scss/components/_map.scss */
 #map_directions {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 26, ../scss/components/_map.scss */
+/* line 25, ../scss/components/_map.scss */
 #map_directions_controls {
-  position: fixed;
-  bottom: 56px;
+  position: absolute;
+  bottom: 0;
   left: 50%;
-  margin-left: -246px;
+  margin-left: -350px;
   padding: 10px;
-  background-color: #000;
+  background-color: rgba(0, 85, 165, 0.9);
   font-size: 12px;
-  max-width: 492px;
+  max-width: 700px;
   width: 100%;
 }
-/* line 38, ../scss/components/_map.scss */
-#map_directions_controls .map_directions_position {
-  position: relative;
-  right: 0;
-  overflow: hidden;
+/* line 37, ../scss/components/_map.scss */
+#map_directions_controls label {
+  color: #fff;
+  font-size: 14px;
+  font-family: "lato", sans-serif;
+  font-weight: lighter;
+  margin: 0 10px;
+  display: inline-block;
 }
-/* line 45, ../scss/components/_map.scss */
-#map_directions_controls .map_directions_position .map_directions_inner {
-  width: 100%;
-  max-width: 535px;
-  float: right;
-  text-align: center;
+/* line 46, ../scss/components/_map.scss */
+#map_directions_controls #fromAddress {
+  width: 190px;
+  display: inline-block;
+  padding: 5px;
 }
 /* line 52, ../scss/components/_map.scss */
-#map_directions_controls .map_directions_position .map_directions_inner label {
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0 5px;
-}
-/* line 57, ../scss/components/_map.scss */
-#map_directions_controls .map_directions_position .map_directions_inner input {
-  width: 140px;
-  color: #333;
-  text-transform: uppercase;
-}
-/* line 62, ../scss/components/_map.scss */
-#map_directions_controls .map_directions_position .map_directions_inner .submit-button {
-  color: #fff;
-}
-/* line 67, ../scss/components/_map.scss */
-#map_directions_controls .map_directions_position .map_directions_inner .fa {
-  position: absolute;
-  left: -1px;
-  top: -3px;
-  z-index: 2;
-  display: none;
-  cursor: pointer;
-}
-/* line 77, ../scss/components/_map.scss */
-#map_directions_controls .map_directions_position .hidden_button_to_open {
-  position: absolute;
-  width: 154px;
-  height: 35px;
-  right: 0;
-  top: 0;
-  z-index: 2;
+#map_directions_controls #toAddress span {
+  display: inline-block;
+  margin: 0 5px;
 }
 
-/* line 90, ../scss/components/_map.scss */
+/* line 60, ../scss/components/_map.scss */
+.map_marker {
+  width: 286px;
+  color: #0055a5;
+  text-align: left;
+  padding: 10px 0;
+}
+/* line 66, ../scss/components/_map.scss */
+.map_marker h4 {
+  color: #0055a5;
+  font-size: 16px;
+}
+
+/* line 72, ../scss/components/_map.scss */
 #fromAddress {
   color: #000;
 }
 
-/* line 94, ../scss/components/_map.scss */
+/* line 76, ../scss/components/_map.scss */
 .adp, .adp table {
   width: 100%;
 }
 
 @media (max-width: 768px) {
-  /* line 99, ../scss/components/_map.scss */
+  /* line 81, ../scss/components/_map.scss */
   #map_directions_controls {
     position: relative;
     bottom: auto;
@@ -10844,14 +10922,14 @@ article .form-builder-wrapper form li.btn-submit:hover input {
   }
 }
 @media (max-width: 480px) {
-  /* line 110, ../scss/components/_map.scss */
+  /* line 92, ../scss/components/_map.scss */
   #map_directions_controls {
     width: 100%;
     left: 0;
     margin: 0;
   }
 
-  /* line 116, ../scss/components/_map.scss */
+  /* line 98, ../scss/components/_map.scss */
   .adp-step, .adp-substep {
     font-size: 12px;
   }
@@ -11386,7 +11464,7 @@ h1, h2.h2toh1 {
   font-size: 25px;
 }
 
-/* line 31, ../scss/theme/_typography.scss */
+/* line 30, ../scss/theme/_typography.scss */
 article a {
   color: #B1B22C;
 }
@@ -11945,30 +12023,8 @@ article a {
 /* line 516, ../scss/theme/_main.scss */
 .site-holder .country-and-flag .social-icons > ul {
   float: right;
-  margin-top: -5px;
-  padding: 0;
-  color: #b9babc;
-  list-style: none;
 }
-/* line 524, ../scss/theme/_main.scss */
-.site-holder .country-and-flag .social-icons > ul li {
-  list-style: none;
-  float: left;
-}
-/* line 528, ../scss/theme/_main.scss */
-.site-holder .country-and-flag .social-icons > ul li a .fa-stack-2x {
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  color: #888;
-}
-/* line 538, ../scss/theme/_main.scss */
-.site-holder .country-and-flag .social-icons > ul li a:hover .fa-stack-2x {
-  color: #333;
-}
-/* line 550, ../scss/theme/_main.scss */
+/* line 523, ../scss/theme/_main.scss */
 .site-holder .country-and-flag .flags-holder {
   -ms-box-orient: horizontal;
   display: -webkit-box;
@@ -11980,82 +12036,82 @@ article a {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 563, ../scss/theme/_main.scss */
+/* line 536, ../scss/theme/_main.scss */
 .site-holder .country-and-flag .flags-holder .flags {
   float: left;
   padding: 0;
   width: 109px;
 }
-/* line 568, ../scss/theme/_main.scss */
+/* line 541, ../scss/theme/_main.scss */
 .site-holder .country-and-flag .flags-holder .flags .item {
   text-align: left;
   margin-bottom: 10px;
   float: left;
   clear: both;
 }
-/* line 575, ../scss/theme/_main.scss */
+/* line 548, ../scss/theme/_main.scss */
 .site-holder .country-and-flag .flags-holder .flags .item a > span {
   color: #b9babc;
   float: left;
 }
-/* line 583, ../scss/theme/_main.scss */
+/* line 556, ../scss/theme/_main.scss */
 .site-holder .country-and-flag .flags-holder .flags .item a .country {
   font-size: 12px;
   margin-left: 11px;
   margin-top: -3px;
   text-align: left;
 }
-/* line 591, ../scss/theme/_main.scss */
+/* line 564, ../scss/theme/_main.scss */
 .site-holder .country-and-flag .flags-holder .flags .item a:hover span {
   color: #fff;
 }
 @media (max-width: 480px) {
-  /* line 603, ../scss/theme/_main.scss */
+  /* line 576, ../scss/theme/_main.scss */
   .site-holder .country-and-flag .social-icons > p {
     display: none;
   }
-  /* line 606, ../scss/theme/_main.scss */
+  /* line 579, ../scss/theme/_main.scss */
   .site-holder .country-and-flag .social-icons > ul {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
   }
-  /* line 612, ../scss/theme/_main.scss */
+  /* line 585, ../scss/theme/_main.scss */
   .site-holder .country-and-flag .social-icons > ul li {
     display: inline-block;
     float: none;
   }
-  /* line 618, ../scss/theme/_main.scss */
+  /* line 591, ../scss/theme/_main.scss */
   .site-holder .country-and-flag .flags-holder .flags {
     width: auto;
   }
-  /* line 620, ../scss/theme/_main.scss */
+  /* line 593, ../scss/theme/_main.scss */
   .site-holder .country-and-flag .flags-holder .flags .country {
     display: none;
   }
 }
-/* line 630, ../scss/theme/_main.scss */
+/* line 603, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row > h2 {
   padding: 0;
   margin: 14px 0;
   font-size: 22px;
   color: #9a9c9d;
 }
-/* line 637, ../scss/theme/_main.scss */
+/* line 610, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li {
   float: left;
   clear: none;
 }
-/* line 642, ../scss/theme/_main.scss */
+/* line 615, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li .label-wrapper {
   display: none;
 }
-/* line 646, ../scss/theme/_main.scss */
+/* line 619, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li .field-wrapper {
   width: 272px;
   padding-right: 5px;
 }
-/* line 650, ../scss/theme/_main.scss */
+/* line 623, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li .field-wrapper input {
   background-color: #4b4e50;
   border: none;
@@ -12063,20 +12119,20 @@ article a {
   color: #ccc;
   font-style: italic;
 }
-/* line 657, ../scss/theme/_main.scss */
+/* line 630, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li .field-wrapper input:focus {
   color: #fff;
 }
-/* line 669, ../scss/theme/_main.scss */
+/* line 642, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row .btn-submit {
   position: relative;
 }
-/* line 672, ../scss/theme/_main.scss */
+/* line 645, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row .btn-submit .btn-default {
   padding-left: 45px;
   padding-right: 33px;
 }
-/* line 678, ../scss/theme/_main.scss */
+/* line 651, ../scss/theme/_main.scss */
 .site-holder .newsletter-signup--footer .row .btn-submit:before {
   font-family: FontAwesome;
   content: "\f1d8 ";
@@ -12089,53 +12145,63 @@ article a {
   float: left;
 }
 
-/* line 694, ../scss/theme/_main.scss */
+/* line 667, ../scss/theme/_main.scss */
 .loaded .logo {
   left: 0;
   opacity: 1;
 }
 
-/* line 701, ../scss/theme/_main.scss */
+/* line 674, ../scss/theme/_main.scss */
 .inner.loaded .logo {
   left: -45px;
 }
 
+/* line 679, ../scss/theme/_main.scss */
+.buttons-holder .btn-group {
+  margin-top: 10px;
+}
+/* line 682, ../scss/theme/_main.scss */
+.buttons-holder .btn-group i {
+  margin-right: 5px;
+  display: inline-block;
+}
+
 @media (max-width: 1199px) {
-  /* line 708, ../scss/theme/_main.scss */
+  /* line 691, ../scss/theme/_main.scss */
   .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li .field-wrapper {
     width: 211px;
   }
 
-  /* line 712, ../scss/theme/_main.scss */
+  /* line 695, ../scss/theme/_main.scss */
   .site-holder .newsletter-signup--footer .row .btn-submit .btn-default {
     padding-right: 25px;
   }
 }
 @media (max-width: 768px) {
-  /* line 720, ../scss/theme/_main.scss */
+  /* line 703, ../scss/theme/_main.scss */
   .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li .field-wrapper {
     width: 137px;
   }
 }
 @media (max-width: 480px) {
-  /* line 728, ../scss/theme/_main.scss */
+  /* line 711, ../scss/theme/_main.scss */
   a.title {
     display: none;
   }
 
-  /* line 732, ../scss/theme/_main.scss */
+  /* line 715, ../scss/theme/_main.scss */
   .site-holder .newsletter-signup--footer .row > h2 {
     display: none;
   }
 
-  /* line 735, ../scss/theme/_main.scss */
+  /* line 718, ../scss/theme/_main.scss */
   .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li {
     clear: both;
     width: 100%;
     float: none;
     display: inline-block;
   }
-  /* line 741, ../scss/theme/_main.scss */
+  /* line 724, ../scss/theme/_main.scss */
   .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li .field-wrapper {
     width: 200px;
     float: none;
@@ -12143,59 +12209,65 @@ article a {
     padding: 0;
   }
 
-  /* line 749, ../scss/theme/_main.scss */
+  /* line 732, ../scss/theme/_main.scss */
   .site-holder .newsletter-signup--footer .row .form-builder-wrapper ul li.btn-submit {
     width: 200px;
   }
 }
 @media (max-width: 1300px) {
-  /* line 759, ../scss/theme/_main.scss */
+  /* line 742, ../scss/theme/_main.scss */
   .site-holder .cultural-routes .cultrual-routes-holder .cultrual-routes-carousel {
     width: 100%;
   }
-  /* line 762, ../scss/theme/_main.scss */
+  /* line 745, ../scss/theme/_main.scss */
   .site-holder .cultural-routes .cultrual-routes-holder .cultrual-routes-carousel .item {
     width: 100%;
     margin: 12px;
   }
 }
 @media (max-width: 767px) {
-  /* line 772, ../scss/theme/_main.scss */
+  /* line 755, ../scss/theme/_main.scss */
   .site-holder .hotels .hotels-holder {
     padding: 0 15px;
     width: 100%;
   }
-  /* line 776, ../scss/theme/_main.scss */
+  /* line 759, ../scss/theme/_main.scss */
   .site-holder .hotels .hotels-holder .item {
     margin: 0;
   }
 
-  /* line 781, ../scss/theme/_main.scss */
+  /* line 764, ../scss/theme/_main.scss */
   .site-holder .cultural-routes .cultrual-routes-holder .cultrual-routes-carousel {
     width: 100%;
   }
-  /* line 784, ../scss/theme/_main.scss */
+  /* line 767, ../scss/theme/_main.scss */
   .site-holder .cultural-routes .cultrual-routes-holder .cultrual-routes-carousel .item {
     margin: 0;
   }
 
-  /* line 789, ../scss/theme/_main.scss */
+  /* line 772, ../scss/theme/_main.scss */
   .site-holder .hotels .hotels-holder .item.small {
     width: 376px;
   }
 
-  /* line 793, ../scss/theme/_main.scss */
+  /* line 776, ../scss/theme/_main.scss */
   .nav-fillpath {
     display: none;
   }
 }
 @media (max-width: 410px) {
-  /* line 801, ../scss/theme/_main.scss */
+  /* line 784, ../scss/theme/_main.scss */
   .site-holder .hotels .hotels-holder .item,
   .site-holder .hotels .hotels-holder .item.small {
     width: 100%;
   }
 }
+/* line 790, ../scss/theme/_main.scss */
+.hotel-map {
+  height: 410px;
+  position: relative;
+}
+
 /* line 3, ../scss/theme/_footer.scss */
 footer .row {
   position: relative;
@@ -12252,6 +12324,24 @@ footer .c-icon-NA {
     display: none;
   }
 }
+/* line 6, ../scss/theme/_collection.scss */
+.not-banner {
+  margin-top: 180px;
+}
+
+/* line 10, ../scss/theme/_collection.scss */
+.map-hotels-list {
+  margin-top: 50px;
+  width: 100%;
+  height: 560px;
+  float: left;
+}
+/* line 16, ../scss/theme/_collection.scss */
+.map-hotels-list #map-hotels {
+  width: 100%;
+  height: 100%;
+}
+
 /* line 1, ../scss/theme/_hotel-details.scss */
 .hotel-details {
   margin-top: 160px;
@@ -12316,4 +12406,111 @@ footer .c-icon-NA {
 /* line 55, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div.bottom {
   margin-top: 20px;
+}
+
+/* line 59, ../scss/theme/_hotel-details.scss */
+.hotel-social-media {
+  display: inline-block;
+  margin-top: 10px;
+  border-top: 1px solid #e6e6e6;
+  padding: 20px 0;
+}
+/* line 65, ../scss/theme/_hotel-details.scss */
+.hotel-social-media p {
+  float: left;
+  margin-right: 0 10px;
+}
+/* line 72, ../scss/theme/_hotel-details.scss */
+.hotel-social-media ul li {
+  padding: 0 3px;
+}
+/* line 77, ../scss/theme/_hotel-details.scss */
+.hotel-social-media .half {
+  width: 48%;
+  margin-left: 2%;
+}
+
+/* line 83, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers {
+  position: relative;
+}
+/* line 87, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .heading-line h2 {
+  background-color: #eeedee;
+  text-transform: uppercase;
+}
+/* line 94, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel {
+  padding: 0 20px;
+}
+/* line 97, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 103, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .shd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #123a60;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 2;
+}
+/* line 118, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item h3 {
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+/* line 124, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item h3 a {
+  color: #fff;
+}
+/* line 129, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay {
+  color: #fff;
+  top: 30px;
+  text-align: center;
+}
+/* line 134, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay p {
+  padding: 0;
+  margin: 0;
+}
+/* line 138, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay img {
+  width: auto;
+  display: inline-block;
+}
+/* line 144, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item:hover .shd {
+  opacity: 0.2;
+}
+/* line 153, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev,
+.hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-next {
+  top: 35%;
+  color: #bbb;
+}
+/* line 158, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev {
+  left: -21px;
+}
+/* line 162, ../scss/theme/_hotel-details.scss */
+.hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-next {
+  right: -21px;
 }
