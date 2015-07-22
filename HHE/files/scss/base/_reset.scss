@@ -117,6 +117,22 @@ label {
     font-family: FontAwesome, "Open Sans";
 }
 
+.btn-default.dark {
+    background-color: #5e5e5e;
+    color: #fff;
+}
+
+.btn-default.gray {
+    background: #888;
+    color: #fff;
+}
+.btn-default.dark:hover {
+    background-color: $primary-color; 
+}
+.btn-default.gray:hover {
+    background-color: $secondary-color;
+}
+
 .btn-default:hover, 
 .btn-default:focus, 
 .btn-default:active {
@@ -129,6 +145,21 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     cursor: pointer;
 }
 
+.two-buttons {
+    .btn {
+        width: 48%;   
+        margin: 1%;   
+        float: left; 
+    }
+    .btn:nth-child(odd) {
+        margin-left: 0;
+        margin-right: 2%;
+    }
+    .btn:nth-child(even) {
+        margin-left: 2;
+    }
+
+}
 @media (max-width:480px) { 
 
     .text-left,

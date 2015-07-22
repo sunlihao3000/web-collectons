@@ -73,6 +73,10 @@ a:focus {
     @include padding(20px);
 }
 
+.padding10 {
+    @include padding(10px);
+}
+
 
 article, 
 article p {

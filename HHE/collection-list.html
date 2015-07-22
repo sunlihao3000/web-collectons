@@ -343,7 +343,8 @@
                 // //code.jquery.com/jquery-1.11.0.min.js
 
                 var map;
-
+                var bounds = new google.maps.LatLngBounds();
+                var image = 'files/images/mapIcons/HotelIcon.png';
                 // The JSON data
                 var json = [{"id":48,"title":"Helgelandskysten","longitude":"12.63376","latitude":"66.02219"},{"id":46,"title":"Tysfjord","longitude":"16.50279","latitude":"68.03515"},{"id":44,"title":"Sledehunds-ekspedisjon","longitude":"7.53744","latitude":"60.08929"},{"id":43,"title":"Amundsens sydpolferd","longitude":"11.38411","latitude":"62.57481"},{"id":39,"title":"Vikingtokt","longitude":"6.96781","latitude":"60.96335"},{"id":6,"title":"Tungtvann- sabotasjen","longitude":"8.49139","latitude":"59.87111"}];
 
@@ -352,13 +353,15 @@
                   
                   // Giving the map som options
                   var mapOptions = {
-                    zoom: 4,
-                    center: new google.maps.LatLng(66.02219,12.63376)
+                    draggable:true,
+                    animation: google.maps.Animation.DROP,
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP                    
                 };
                   
                   // Creating the map
                 map = new google.maps.Map(document.getElementById('map-hotels'), mapOptions);
-                  
+
                   
                 // Looping through all the entries from the JSON data
                 for(var i = 0; i < json.length; i++) {
@@ -369,6 +372,7 @@
                 // Adding a new marker for the object
                 var marker = new google.maps.Marker({
                   position: new google.maps.LatLng(obj.latitude,obj.longitude),
+                  icon: image,
                   map: map,
                   title: obj.title // this works, giving the marker a title with the correct title
                 });
@@ -376,7 +380,8 @@
                 // Adding a new info window for the object
                 var clicker = addClicker(marker, obj.title);
                 
-    
+                bounds.extend(marker.position);
+                map.fitBounds(bounds);  
 
                 } // end loop
                   
@@ -406,7 +411,9 @@
                          <h1>COLLECTION - BOUTIQUE HOTELs</h1>    
                     </div>   
                     <div class="col-md-12">
-                        <div class="map-filters full-width">
+
+
+                        <div class="map-filters padding20 full-width">
 
                             <div class="label">Filter by</div>
                             <select name="" class="" id="filter_order">
@@ -427,29 +434,277 @@
                             <button class="btn-group">Search</button>
 
                         </div>
-                        <div class="hotels-list__hotels full-width">
 
-                            <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
-                                <a href="" class="click-link"></a>
-                                <img class="image-overlaid" src="files/images/hotel1.png" alt="">
-                                
-                                <figcaption class="item-content">
-                                    <h3 class="item-title"><a href="">Abbaye de Maizieres </a></h3> 
-                                    <h4> beaune,france</h4>
-                                    <img src="files/images/go1.png" alt="" class="group_of">
-                                    <ul class="hotel-type-link">
-                                        <li>
-                                            <a href="/">BOUTIQUE HOTELs</a>
-                                        </li>
-                                    </ul>
-                                    <div class="hotel-item-buttons">
-                                        <a href="">Enquiry</a>
-                                        <a href="">View More</a>
-                                    </div>
-                                </figcaption> 
-                                                     
-                            </figure>
-    
+                        <div class="hotels-list__hotels full-width padding20">
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel1.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Abbaye de Maizieres </a></h3> 
+                                            <h4> beaune,france</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Monastery</a>
+                                            </li>
+                                        </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel2.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Ancien Presbytere la Rucheliere </a></h3> 
+                                            <h4> Contine Near Angers, France</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Country house</a>
+                                            </li>
+                                            <li>
+                                                <a class="Monastery" href="/">Castle</a>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel3.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Auberge Saint Pierre</a></h3> 
+                                            <h4> Mont Saint Michel, France</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Inn</a>
+                                            </li>
+
+                                            <li>
+                                                <a class="Monastery" href="/">Boutique Hotel</a>
+                                            </li>
+                                         </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>                            
+
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel3.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Auberge Saint Pierre</a></h3> 
+                                            <h4> Mont Saint Michel, France</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Inn</a>
+                                            </li>
+
+                                            <li>
+                                                <a class="Monastery" href="/">Boutique Hotel</a>
+                                            </li>
+                                         </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>  
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel1.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Abbaye de Maizieres </a></h3> 
+                                            <h4> beaune,france</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Monastery</a>
+                                            </li>
+                                        </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel2.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Ancien Presbytere la Rucheliere </a></h3> 
+                                            <h4> Contine Near Angers, France</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Country house</a>
+                                            </li>
+                                            <li>
+                                                <a class="Monastery" href="/">Castle</a>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel1.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Abbaye de Maizieres </a></h3> 
+                                            <h4> beaune,france</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Monastery</a>
+                                            </li>
+                                        </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel2.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Ancien Presbytere la Rucheliere </a></h3> 
+                                            <h4> Contine Near Angers, France</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Country house</a>
+                                            </li>
+                                            <li>
+                                                <a class="Monastery" href="/">Castle</a>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
+                                    <img class="image-overlaid" src="files/images/hotel3.png" alt="">
+                                    
+                                    <figcaption class="item-content text-left row">
+                                        <div class="col-md-8">
+                                            <h3 class="item-title"><a href="">Auberge Saint Pierre</a></h3> 
+                                            <h4> Mont Saint Michel, France</h4>                                        
+                                        </div>
+                                        <div class="col-md-4 padding20">
+                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                        </div>
+                                        
+                                        <ul class="hotel-type-link col-md-12 padding10">
+                                            <li>
+                                                <a class="Monastery" href="/">Inn</a>
+                                            </li>
+
+                                            <li>
+                                                <a class="Monastery" href="/">Boutique Hotel</a>
+                                            </li>
+                                         </ul>
+                                        <div class="hotel-item-buttons two-buttons col-md-12 padding10">
+                                            <a class="btn btn-default dark" href="">Enquiry</a>
+                                            <a class="btn btn-default gray" href="">View More</a>
+                                        </div>
+                                    </figcaption> 
+                                                         
+                                </figure>
+                            </div>  
+
+
+
                         </div>
                     </div>              
                 </div>
