@@ -79,8 +79,9 @@
                     },
                     1024:{
                         items:3,
-                        dots:true,
-                        margin:0
+                        dots:false,
+                        nav:true,
+                        margin:20
                     },
                     1200:{
                         items:4,
