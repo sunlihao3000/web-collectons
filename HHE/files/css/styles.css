@@ -10201,7 +10201,7 @@ ul#thumb-list li:hover {
   text-align: center;
   width: 60%;
   display: inline-block;
-  margin: 10px auto;
+  margin: 36px auto;
   height: 1px;
   background: #bababa;
   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13) 1%, #bababb 8%, #bababb 50%, #bababb 61%, #bababb 91%, #c2c2c3 92%, rgba(255, 255, 255, 0) 100%);
