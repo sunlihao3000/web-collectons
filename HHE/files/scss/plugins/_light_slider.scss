@@ -127,11 +127,22 @@
 }
 .lSSlideOuter .lSPager.lSGallery li {
     overflow: hidden;
+<<<<<<< HEAD
     -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
     transition: border-radius 0.12s linear 0s 0.35s linear 0s;
 }
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
     border-radius: 5px;
+=======
+    opacity: 0.8;
+    -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+    transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+}
+.lSSlideOuter .lSPager.lSGallery li.active, 
+.lSSlideOuter .lSPager.lSGallery li:hover {
+    border-radius: 2px;
+    opacity: 1;
+>>>>>>> 2520f96421e46bda37c232d477526935567712cb
 }
 .lSSlideOuter .lSPager.lSGallery img {
     display: block;
