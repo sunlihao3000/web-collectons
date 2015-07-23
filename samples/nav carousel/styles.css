@@ -1,0 +1,43 @@
+
+.carousel-holder {  
+    float:left; /* important for inline positioning */  
+    width:100%; /* important (this width = width of list item(including margin) * items shown */  
+    overflow: hidden;  /* important (hide the items outside the div) */  
+    background: #F0F0F0;  
+}  
+  
+#carousel-ul {  
+    position:relative;  
+    list-style-type: none; /* removing the default styling for unordered list items */  
+    margin: 0px;  
+    padding: 0px;  
+    width:9999px; /* important */  
+    /* non-important styling bellow */  
+    padding-bottom:10px;  
+}  
+  
+#carousel-ul li{  
+    float: left; /* important for inline positioning of the list items */  
+    /* just styling bellow*/  
+    padding:0px;   
+    background: #000000;  
+}  
+  
+#carousel-ul li i {  
+    cursor:pointer;  
+    cursor: hand;  
+    border:0px;  
+}  
+
+#left_scroll,
+#right_scroll{  
+    float:left;  
+    width:15px;  
+    background: #C0C0C0;  
+    font-size: 20px;
+}  
+#left_scroll i,
+#right_scroll i{  
+    cursor: pointer;  
+    cursor: hand;  
+}  
