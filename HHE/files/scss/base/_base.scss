@@ -66,8 +66,12 @@ a:focus {
 .margin40 {
     @include margin(40px);
 }
+
 .padding40 {
     @include padding(40px);
+}
+.padding30 {
+    @include padding(30px);
 }
 .padding20 {
     @include padding(20px);

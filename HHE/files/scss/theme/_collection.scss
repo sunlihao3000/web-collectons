@@ -32,18 +32,32 @@
         width: 167px;
         font-size: 16px;
         padding: 5px 15px;
+        
+        &.filter {
+            margin-right: 20px;
+        }
     }
     select,
     input {
         width: 124px;
         border: 1px solid #DAD7D7;
         border-radius: 5px;
-        font-size: 13px;
+        font-size: 12px;
         padding: 6px 3px 6px 5px;
-        color: #999;
+        color: #000;
         font-family: 'Open Sans', sans-serif;
         height: 33px;
+        margin-right: 10px;
     }
+
+    input.keywords {
+        padding-right: 20px;
+        background: url(../../files/images/search-icon.png) right center no-repeat;
+    }
+    #filter_country {
+        text-transform: uppercase;
+    }
+
 }
 
 .hotels-list__hotels {
@@ -69,6 +83,8 @@
                 font-size: 20px;
                 font-weight: bold;
                 margin-bottom: 0;
+                margin-top: 20px;
+
             }
             h4 {
                 font-size: 14px;
@@ -104,6 +120,76 @@
 
 
     }
+
+}
+
+
+
+@media (max-width:1200px) {
+
+    .hotel-details {
+        margin-top: 70px;
+    }
+    .map-filters .btn-group.filter {
+        margin-right: 0;
+    }
+    .map-filters .btn-group {
+        width: 110px;
+    }
+
+    .hotels-list__hotels .item {
+        width: 100%;
+    }
+    .group_of {
+        width: 100%;
+    }
+    .hotels-list__hotels .item .item-content h3 {
+        font-size: 14px;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    .hotels-list__hotels .item .item-content h4 {
+        font-size: 12px;
+        height: 30px;
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width:1000px) { 
+
+    .map-filters select, 
+    .map-filters input{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .map-hotels-list {
+        height: 350px;
+    }
+    .group_of {
+        width:auto;
+    }
+
+}
+
+@media (max-width:352px) { 
+
+    .map-filters select, 
+    .map-filters input {
+        width: 95px;
+    }
+    .map-hotels-list {
+        height: 300px;
+    }
+
+    .map-filters .btn-group {
+        width: 80px;
+        font-size: 12px;
+    }    
 
 }
 

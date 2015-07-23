@@ -4332,6 +4332,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     margin: 1%;
     float: left;
   }
+  /* line 553, ../scss/base/_reset.scss */
+  .two-buttons .btn:nth-child(odd) {
+    margin: 1%;
+  }
+  /* line 557, ../scss/base/_reset.scss */
+  .two-buttons .btn:nth-child(even) {
+    margin: 1%;
+  }
 }
 /* line 2, ../scss/base/_base.scss */
 body {
@@ -4411,25 +4419,31 @@ a:focus {
   margin-bottom: 40px;
 }
 
-/* line 69, ../scss/base/_base.scss */
+/* line 70, ../scss/base/_base.scss */
 .padding40 {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* line 72, ../scss/base/_base.scss */
+/* line 73, ../scss/base/_base.scss */
+.padding30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 76, ../scss/base/_base.scss */
 .padding20 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 75, ../scss/base/_base.scss */
+/* line 79, ../scss/base/_base.scss */
 .padding10 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 81, ../scss/base/_base.scss */
+/* line 85, ../scss/base/_base.scss */
 article,
 article p {
   color: #000;
@@ -4437,161 +4451,161 @@ article p {
   line-height: 24px;
 }
 
-/* line 87, ../scss/base/_base.scss */
+/* line 91, ../scss/base/_base.scss */
 article p {
   padding-bottom: 16px;
 }
 
-/* line 91, ../scss/base/_base.scss */
+/* line 95, ../scss/base/_base.scss */
 article a {
   color: #1c4377;
 }
 
-/* line 95, ../scss/base/_base.scss */
+/* line 99, ../scss/base/_base.scss */
 article ul {
   list-style: none;
 }
 
-/* line 99, ../scss/base/_base.scss */
+/* line 103, ../scss/base/_base.scss */
 article ul li {
   padding: 6px 0;
 }
 
-/* line 103, ../scss/base/_base.scss */
+/* line 107, ../scss/base/_base.scss */
 article ul li:before {
   font-family: FontAwesome;
   content: "\f105";
   padding-right: 10px;
 }
 
-/* line 109, ../scss/base/_base.scss */
+/* line 113, ../scss/base/_base.scss */
 article form ul li:before {
   content: '';
 }
 
-/* line 113, ../scss/base/_base.scss */
+/* line 117, ../scss/base/_base.scss */
 article h3 {
   font-size: 30px;
 }
 
 /* ul center */
-/* line 117, ../scss/base/_base.scss */
+/* line 121, ../scss/base/_base.scss */
 ul.ul-center {
   display: inline-block;
   text-align: center;
   width: 100%;
 }
 
-/* line 123, ../scss/base/_base.scss */
+/* line 127, ../scss/base/_base.scss */
 ul.ul-center li {
   display: inline-block;
   text-align: center;
 }
 
-/* line 128, ../scss/base/_base.scss */
+/* line 132, ../scss/base/_base.scss */
 ul.ul-center li a {
   float: left;
 }
 
 /* ul inline */
-/* line 133, ../scss/base/_base.scss */
+/* line 137, ../scss/base/_base.scss */
 ul.ul-inline {
   display: inline-block;
 }
 
-/* line 137, ../scss/base/_base.scss */
+/* line 141, ../scss/base/_base.scss */
 ul.ul-inline li {
   display: inline-block;
   float: left;
 }
 
-/* line 141, ../scss/base/_base.scss */
+/* line 145, ../scss/base/_base.scss */
 ul.ul-inline li a {
   float: left;
 }
 
 /* ul not list-style */
-/* line 147, ../scss/base/_base.scss */
+/* line 151, ../scss/base/_base.scss */
 ul.not-list-style,
 ul.not-list-style li {
   list-style: none;
 }
 
 /* text-shadow */
-/* line 152, ../scss/base/_base.scss */
+/* line 156, ../scss/base/_base.scss */
 .text-shd {
   text-shadow: 1px 1px 1px black;
 }
 
-/* line 156, ../scss/base/_base.scss */
+/* line 160, ../scss/base/_base.scss */
 .pos-r {
   position: relative;
 }
 
-/* line 160, ../scss/base/_base.scss */
+/* line 164, ../scss/base/_base.scss */
 .pos-a {
   position: absolute;
 }
 
-/* line 166, ../scss/base/_base.scss */
+/* line 170, ../scss/base/_base.scss */
 .row.no-padding > [class^="col-"],
 .row.no-padding > [class*=" col-"] {
   padding: 0;
 }
 
-/* line 170, ../scss/base/_base.scss */
+/* line 174, ../scss/base/_base.scss */
 .full-width {
   width: 100%;
   float: left;
 }
 
-/* line 174, ../scss/base/_base.scss */
+/* line 178, ../scss/base/_base.scss */
 .half {
   width: 50%;
   float: left;
 }
 
-/* line 178, ../scss/base/_base.scss */
+/* line 182, ../scss/base/_base.scss */
 .col-no-padding {
   padding: 0;
 }
 
-/* line 182, ../scss/base/_base.scss */
+/* line 186, ../scss/base/_base.scss */
 .for-old-browser {
   display: none;
 }
 
-/* line 186, ../scss/base/_base.scss */
+/* line 190, ../scss/base/_base.scss */
 .no-cssanimations .for-old-browser {
   display: block;
 }
 
-/* line 190, ../scss/base/_base.scss */
+/* line 194, ../scss/base/_base.scss */
 .gray {
   background-color: #eeedee;
 }
 
-/* line 194, ../scss/base/_base.scss */
+/* line 198, ../scss/base/_base.scss */
 .dark {
   background-color: #14191d;
 }
 
-/* line 197, ../scss/base/_base.scss */
+/* line 201, ../scss/base/_base.scss */
 .darker {
   background-color: #0f1316;
 }
 
-/* line 200, ../scss/base/_base.scss */
+/* line 204, ../scss/base/_base.scss */
 .black {
   background-color: #090b0d;
 }
 
-/* line 204, ../scss/base/_base.scss */
+/* line 208, ../scss/base/_base.scss */
 .light {
   background-color: #fff;
 }
 
-/* line 208, ../scss/base/_base.scss */
+/* line 212, ../scss/base/_base.scss */
 .click-link {
   position: absolute;
   top: 0;
@@ -4602,7 +4616,7 @@ ul.not-list-style li {
   float: left;
 }
 
-/* line 218, ../scss/base/_base.scss */
+/* line 222, ../scss/base/_base.scss */
 .item-content-overlay {
   position: absolute;
   top: 35%;
@@ -4611,7 +4625,7 @@ ul.not-list-style li {
   z-index: 5;
 }
 
-/* line 226, ../scss/base/_base.scss */
+/* line 230, ../scss/base/_base.scss */
 .box-shd {
   -webkit-box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2);
@@ -4640,30 +4654,30 @@ ul.not-list-style li {
 }
 
 @media (max-width: 768px) {
-  /* line 255, ../scss/base/_base.scss */
+  /* line 259, ../scss/base/_base.scss */
   body .md-text-center,
   body .sm-text-right {
     text-align: center;
   }
 }
 /* svg  */
-/* line 261, ../scss/base/_base.scss */
+/* line 265, ../scss/base/_base.scss */
 .not-svg {
   display: block;
 }
 
-/* line 265, ../scss/base/_base.scss */
+/* line 269, ../scss/base/_base.scss */
 .svg .not-svg {
   display: none;
 }
 
 /* over hide */
-/* line 270, ../scss/base/_base.scss */
+/* line 274, ../scss/base/_base.scss */
 .over-h {
   overflow: hidden;
 }
 
-/* line 275, ../scss/base/_base.scss */
+/* line 279, ../scss/base/_base.scss */
 .circle {
   width: 70px;
   height: 70px;
@@ -7853,7 +7867,7 @@ html[xmlns] .slides {
 
 /* End of pager */
 /** Gallery */
-/* line 109, ../scss/plugins/_light_slider.scss */
+/* line 110, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .lSPager.lSGallery {
   list-style: none outside none;
   padding-left: 0;
@@ -7874,49 +7888,45 @@ html[xmlns] .slides {
   user-select: none;
 }
 
-/* line 128, ../scss/plugins/_light_slider.scss */
+/* line 129, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .lSPager.lSGallery li {
+  opacity: 0.7;
   overflow: hidden;
-  -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
-  transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
-/* line 133, ../scss/plugins/_light_slider.scss */
-.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
-  border-radius: 5px;
-  opacity: 0.8;
-  -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
-  transition: border-radius 0.12s linear 0s 0.35s linear 0s;
-}
-
-/* line 140, ../scss/plugins/_light_slider.scss */
+/* line 136, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .lSPager.lSGallery li.active,
 .lSSlideOuter .lSPager.lSGallery li:hover {
-  border-radius: 2px;
+  border-radius: 5px;
   opacity: 1;
 }
 
-/* line 144, ../scss/plugins/_light_slider.scss */
+/* line 140, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .lSPager.lSGallery img {
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-/* line 149, ../scss/plugins/_light_slider.scss */
+/* line 145, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {
   content: " ";
   display: table;
 }
 
-/* line 153, ../scss/plugins/_light_slider.scss */
+/* line 149, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .lSPager.lSGallery:after {
   clear: both;
 }
 
 /* End of Gallery*/
 /* slider actions */
-/* line 159, ../scss/plugins/_light_slider.scss */
+/* line 155, ../scss/plugins/_light_slider.scss */
 .lSAction > a {
   width: 32px;
   display: block;
@@ -7932,29 +7942,29 @@ html[xmlns] .slides {
   transition: opacity 0.35s linear 0s;
 }
 
-/* line 173, ../scss/plugins/_light_slider.scss */
+/* line 169, ../scss/plugins/_light_slider.scss */
 .lSAction > a:hover {
   opacity: 1;
 }
 
-/* line 176, ../scss/plugins/_light_slider.scss */
+/* line 172, ../scss/plugins/_light_slider.scss */
 .lSAction > .lSPrev {
   background-position: 0 0;
   left: 10px;
 }
 
-/* line 180, ../scss/plugins/_light_slider.scss */
+/* line 176, ../scss/plugins/_light_slider.scss */
 .lSAction > .lSNext {
   background-position: -32px 0;
   right: 10px;
 }
 
-/* line 184, ../scss/plugins/_light_slider.scss */
+/* line 180, ../scss/plugins/_light_slider.scss */
 .lSAction > a.disabled {
   pointer-events: none;
 }
 
-/* line 187, ../scss/plugins/_light_slider.scss */
+/* line 183, ../scss/plugins/_light_slider.scss */
 .cS-hidden {
   height: 1px;
   opacity: 0;
@@ -7963,45 +7973,45 @@ html[xmlns] .slides {
 }
 
 /* vertical */
-/* line 196, ../scss/plugins/_light_slider.scss */
+/* line 192, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical {
   position: relative;
 }
 
-/* line 199, ../scss/plugins/_light_slider.scss */
+/* line 195, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical.noPager {
   padding-right: 0px !important;
 }
 
-/* line 202, ../scss/plugins/_light_slider.scss */
+/* line 198, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical .lSGallery {
   position: absolute !important;
   right: 0;
   top: 0;
 }
 
-/* line 207, ../scss/plugins/_light_slider.scss */
+/* line 203, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical .lightSlider > * {
   width: 100% !important;
   max-width: none !important;
 }
 
 /* vertical controlls */
-/* line 213, ../scss/plugins/_light_slider.scss */
+/* line 209, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical .lSAction > a {
   left: 50%;
   margin-left: -14px;
   margin-top: 0;
 }
 
-/* line 218, ../scss/plugins/_light_slider.scss */
+/* line 214, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical .lSAction > .lSNext {
   background-position: 31px -31px;
   bottom: 10px;
   top: auto;
 }
 
-/* line 223, ../scss/plugins/_light_slider.scss */
+/* line 219, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical .lSAction > .lSPrev {
   background-position: 0 -31px;
   bottom: auto;
@@ -8010,205 +8020,205 @@ html[xmlns] .slides {
 
 /* vertical */
 /* Rtl */
-/* line 232, ../scss/plugins/_light_slider.scss */
+/* line 228, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.lSrtl {
   direction: rtl;
 }
 
-/* line 235, ../scss/plugins/_light_slider.scss */
+/* line 231, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {
   padding-left: 0;
   list-style: none outside none;
 }
 
-/* line 239, ../scss/plugins/_light_slider.scss */
+/* line 235, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {
   padding-right: 0;
 }
 
-/* line 242, ../scss/plugins/_light_slider.scss */
+/* line 238, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .lightSlider > *, .lSSlideOuter .lSGallery li {
   float: left;
 }
 
-/* line 245, ../scss/plugins/_light_slider.scss */
+/* line 241, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.lSrtl .lightSlider > *, .lSSlideOuter.lSrtl .lSGallery li {
   float: right !important;
 }
 
 /* Rtl */
 @-webkit-keyframes rightEnd {
-  /* line 251, ../scss/plugins/_light_slider.scss */
+  /* line 247, ../scss/plugins/_light_slider.scss */
   0% {
     left: 0;
   }
 
-  /* line 255, ../scss/plugins/_light_slider.scss */
+  /* line 251, ../scss/plugins/_light_slider.scss */
   50% {
     left: -15px;
   }
 
-  /* line 259, ../scss/plugins/_light_slider.scss */
+  /* line 255, ../scss/plugins/_light_slider.scss */
   100% {
     left: 0;
   }
 }
 
 @keyframes rightEnd {
-  /* line 264, ../scss/plugins/_light_slider.scss */
+  /* line 260, ../scss/plugins/_light_slider.scss */
   0% {
     left: 0;
   }
 
-  /* line 268, ../scss/plugins/_light_slider.scss */
+  /* line 264, ../scss/plugins/_light_slider.scss */
   50% {
     left: -15px;
   }
 
-  /* line 272, ../scss/plugins/_light_slider.scss */
+  /* line 268, ../scss/plugins/_light_slider.scss */
   100% {
     left: 0;
   }
 }
 
 @-webkit-keyframes topEnd {
-  /* line 277, ../scss/plugins/_light_slider.scss */
+  /* line 273, ../scss/plugins/_light_slider.scss */
   0% {
     top: 0;
   }
 
-  /* line 281, ../scss/plugins/_light_slider.scss */
+  /* line 277, ../scss/plugins/_light_slider.scss */
   50% {
     top: -15px;
   }
 
-  /* line 285, ../scss/plugins/_light_slider.scss */
+  /* line 281, ../scss/plugins/_light_slider.scss */
   100% {
     top: 0;
   }
 }
 
 @keyframes topEnd {
-  /* line 290, ../scss/plugins/_light_slider.scss */
+  /* line 286, ../scss/plugins/_light_slider.scss */
   0% {
     top: 0;
   }
 
-  /* line 294, ../scss/plugins/_light_slider.scss */
+  /* line 290, ../scss/plugins/_light_slider.scss */
   50% {
     top: -15px;
   }
 
-  /* line 298, ../scss/plugins/_light_slider.scss */
+  /* line 294, ../scss/plugins/_light_slider.scss */
   100% {
     top: 0;
   }
 }
 
 @-webkit-keyframes leftEnd {
-  /* line 303, ../scss/plugins/_light_slider.scss */
+  /* line 299, ../scss/plugins/_light_slider.scss */
   0% {
     left: 0;
   }
 
-  /* line 307, ../scss/plugins/_light_slider.scss */
+  /* line 303, ../scss/plugins/_light_slider.scss */
   50% {
     left: 15px;
   }
 
-  /* line 311, ../scss/plugins/_light_slider.scss */
+  /* line 307, ../scss/plugins/_light_slider.scss */
   100% {
     left: 0;
   }
 }
 
 @keyframes leftEnd {
-  /* line 316, ../scss/plugins/_light_slider.scss */
+  /* line 312, ../scss/plugins/_light_slider.scss */
   0% {
     left: 0;
   }
 
-  /* line 320, ../scss/plugins/_light_slider.scss */
+  /* line 316, ../scss/plugins/_light_slider.scss */
   50% {
     left: 15px;
   }
 
-  /* line 324, ../scss/plugins/_light_slider.scss */
+  /* line 320, ../scss/plugins/_light_slider.scss */
   100% {
     left: 0;
   }
 }
 
 @-webkit-keyframes bottomEnd {
-  /* line 329, ../scss/plugins/_light_slider.scss */
+  /* line 325, ../scss/plugins/_light_slider.scss */
   0% {
     bottom: 0;
   }
 
-  /* line 333, ../scss/plugins/_light_slider.scss */
+  /* line 329, ../scss/plugins/_light_slider.scss */
   50% {
     bottom: -15px;
   }
 
-  /* line 337, ../scss/plugins/_light_slider.scss */
+  /* line 333, ../scss/plugins/_light_slider.scss */
   100% {
     bottom: 0;
   }
 }
 
 @keyframes bottomEnd {
-  /* line 342, ../scss/plugins/_light_slider.scss */
+  /* line 338, ../scss/plugins/_light_slider.scss */
   0% {
     bottom: 0;
   }
 
-  /* line 346, ../scss/plugins/_light_slider.scss */
+  /* line 342, ../scss/plugins/_light_slider.scss */
   50% {
     bottom: -15px;
   }
 
-  /* line 350, ../scss/plugins/_light_slider.scss */
+  /* line 346, ../scss/plugins/_light_slider.scss */
   100% {
     bottom: 0;
   }
 }
 
-/* line 354, ../scss/plugins/_light_slider.scss */
+/* line 350, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .rightEnd {
   -webkit-animation: rightEnd 0.3s;
   animation: rightEnd 0.3s;
   position: relative;
 }
 
-/* line 359, ../scss/plugins/_light_slider.scss */
+/* line 355, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter .leftEnd {
   -webkit-animation: leftEnd 0.3s;
   animation: leftEnd 0.3s;
   position: relative;
 }
 
-/* line 364, ../scss/plugins/_light_slider.scss */
+/* line 360, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical .rightEnd {
   -webkit-animation: topEnd 0.3s;
   animation: topEnd 0.3s;
   position: relative;
 }
 
-/* line 369, ../scss/plugins/_light_slider.scss */
+/* line 365, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.vertical .leftEnd {
   -webkit-animation: bottomEnd 0.3s;
   animation: bottomEnd 0.3s;
   position: relative;
 }
 
-/* line 374, ../scss/plugins/_light_slider.scss */
+/* line 370, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.lSrtl .rightEnd {
   -webkit-animation: leftEnd 0.3s;
   animation: leftEnd 0.3s;
   position: relative;
 }
 
-/* line 379, ../scss/plugins/_light_slider.scss */
+/* line 375, ../scss/plugins/_light_slider.scss */
 .lSSlideOuter.lSrtl .leftEnd {
   -webkit-animation: rightEnd 0.3s;
   animation: rightEnd 0.3s;
@@ -8216,7 +8226,7 @@ html[xmlns] .slides {
 }
 
 /*/  GRab cursor */
-/* line 385, ../scss/plugins/_light_slider.scss */
+/* line 381, ../scss/plugins/_light_slider.scss */
 .lightSlider.lsGrab > * {
   cursor: -webkit-grab;
   cursor: -moz-grab;
@@ -8225,7 +8235,7 @@ html[xmlns] .slides {
   cursor: grab;
 }
 
-/* line 392, ../scss/plugins/_light_slider.scss */
+/* line 388, ../scss/plugins/_light_slider.scss */
 .lightSlider.lsGrabbing > * {
   cursor: move;
   cursor: -webkit-grabbing;
@@ -12422,77 +12432,168 @@ footer .c-icon-NA {
   font-size: 16px;
   padding: 5px 15px;
 }
-/* line 37, ../scss/theme/_collection.scss */
+/* line 36, ../scss/theme/_collection.scss */
+.map-filters .btn-group.filter {
+  margin-right: 20px;
+}
+/* line 41, ../scss/theme/_collection.scss */
 .map-filters select,
 .map-filters input {
   width: 124px;
   border: 1px solid #DAD7D7;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 12px;
   padding: 6px 3px 6px 5px;
-  color: #999;
+  color: #000;
   font-family: 'Open Sans', sans-serif;
   height: 33px;
+  margin-right: 10px;
+}
+/* line 53, ../scss/theme/_collection.scss */
+.map-filters input.keywords {
+  padding-right: 20px;
+  background: url(../../files/images/search-icon.png) right center no-repeat;
+}
+/* line 57, ../scss/theme/_collection.scss */
+.map-filters #filter_country {
+  text-transform: uppercase;
 }
 
-/* line 49, ../scss/theme/_collection.scss */
+/* line 63, ../scss/theme/_collection.scss */
 .hotels-list__hotels {
   position: relative;
   border: 1px solid #e5e5e5;
 }
-/* line 53, ../scss/theme/_collection.scss */
+/* line 67, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item {
   display: inline-block;
   width: 349px;
   overflow: hidden;
   margin-top: 20px;
 }
-/* line 60, ../scss/theme/_collection.scss */
+/* line 74, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item > img {
   width: 100%;
 }
-/* line 64, ../scss/theme/_collection.scss */
+/* line 78, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content {
   margin: 0;
   background-color: #f0f2f4;
 }
-/* line 68, ../scss/theme/_collection.scss */
+/* line 82, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
+  margin-top: 20px;
 }
-/* line 73, ../scss/theme/_collection.scss */
+/* line 89, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content h4 {
   font-size: 14px;
   margin: 0;
 }
-/* line 78, ../scss/theme/_collection.scss */
+/* line 94, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link {
   list-style: none;
   margin: 0;
   display: inline-block;
 }
-/* line 83, ../scss/theme/_collection.scss */
+/* line 99, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li {
   display: inline-block;
 }
-/* line 85, ../scss/theme/_collection.scss */
+/* line 101, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li a {
   font-size: 11px;
   background-color: #dbdbdb;
   padding: 3px 5px;
 }
-/* line 89, ../scss/theme/_collection.scss */
+/* line 105, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li a:hover {
   background-color: #1c4377;
   color: #fff;
 }
-/* line 98, ../scss/theme/_collection.scss */
+/* line 114, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-item-buttons {
   border-top: 1px solid #d8d9db;
 }
 
+@media (max-width: 1200px) {
+  /* line 130, ../scss/theme/_collection.scss */
+  .hotel-details {
+    margin-top: 70px;
+  }
+
+  /* line 133, ../scss/theme/_collection.scss */
+  .map-filters .btn-group.filter {
+    margin-right: 0;
+  }
+
+  /* line 136, ../scss/theme/_collection.scss */
+  .map-filters .btn-group {
+    width: 110px;
+  }
+
+  /* line 140, ../scss/theme/_collection.scss */
+  .hotels-list__hotels .item {
+    width: 100%;
+  }
+
+  /* line 143, ../scss/theme/_collection.scss */
+  .group_of {
+    width: 100%;
+  }
+
+  /* line 146, ../scss/theme/_collection.scss */
+  .hotels-list__hotels .item .item-content h3 {
+    font-size: 14px;
+    height: 40px;
+    overflow: hidden;
+  }
+
+  /* line 152, ../scss/theme/_collection.scss */
+  .hotels-list__hotels .item .item-content h4 {
+    font-size: 12px;
+    height: 30px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 163, ../scss/theme/_collection.scss */
+  .map-filters select,
+  .map-filters input {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 170, ../scss/theme/_collection.scss */
+  .map-hotels-list {
+    height: 350px;
+  }
+
+  /* line 173, ../scss/theme/_collection.scss */
+  .group_of {
+    width: auto;
+  }
+}
+@media (max-width: 352px) {
+  /* line 182, ../scss/theme/_collection.scss */
+  .map-filters select,
+  .map-filters input {
+    width: 95px;
+  }
+
+  /* line 185, ../scss/theme/_collection.scss */
+  .map-hotels-list {
+    height: 300px;
+  }
+
+  /* line 189, ../scss/theme/_collection.scss */
+  .map-filters .btn-group {
+    width: 80px;
+    font-size: 12px;
+  }
+}
 /* line 1, ../scss/theme/_hotel-details.scss */
 .hotel-details {
   margin-top: 160px;
@@ -12543,37 +12644,38 @@ footer .c-icon-NA {
     text-align: center;
     display: inline-block;
     margin-bottom: 20px;
+    width: 100%;
   }
-  /* line 57, ../scss/theme/_hotel-details.scss */
+  /* line 58, ../scss/theme/_hotel-details.scss */
   .social-icons > ul li {
     float: none;
     display: inline-block;
   }
 
-  /* line 63, ../scss/theme/_hotel-details.scss */
+  /* line 64, ../scss/theme/_hotel-details.scss */
   .lSSlideOuter .lSPager.lSGallery {
     opacity: 0;
     visibility: hidden;
   }
 }
-/* line 73, ../scss/theme/_hotel-details.scss */
+/* line 74, ../scss/theme/_hotel-details.scss */
 .inner header.top {
   border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
 
-/* line 78, ../scss/theme/_hotel-details.scss */
+/* line 79, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div {
   border: 1px solid #e5e5e5;
   padding: 30px 20px;
 }
-/* line 83, ../scss/theme/_hotel-details.scss */
+/* line 84, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div .hotel-details-address,
 .side-bar__right > div .hotel-details-tel {
   border: 1px solid #e5e5e5;
   margin-top: 10px;
   padding: 10px;
 }
-/* line 89, ../scss/theme/_hotel-details.scss */
+/* line 90, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div .hotel-details-address i,
 .side-bar__right > div .hotel-details-address p,
 .side-bar__right > div .hotel-details-tel i,
@@ -12581,29 +12683,29 @@ footer .c-icon-NA {
   float: left;
   margin: 0;
 }
-/* line 94, ../scss/theme/_hotel-details.scss */
+/* line 95, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div .hotel-details-address i,
 .side-bar__right > div .hotel-details-tel i {
   padding: 3px 10px;
 }
-/* line 97, ../scss/theme/_hotel-details.scss */
+/* line 98, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div .hotel-details-address p, .side-bar__right > div .hotel-details-address a,
 .side-bar__right > div .hotel-details-tel p,
 .side-bar__right > div .hotel-details-tel a {
   line-height: 17px;
 }
 
-/* line 104, ../scss/theme/_hotel-details.scss */
+/* line 105, ../scss/theme/_hotel-details.scss */
 .hotel-gallery {
   margin-bottom: 20px;
 }
 
-/* line 109, ../scss/theme/_hotel-details.scss */
+/* line 110, ../scss/theme/_hotel-details.scss */
 .hotel-description {
   display: inline-block;
 }
 
-/* line 113, ../scss/theme/_hotel-details.scss */
+/* line 114, ../scss/theme/_hotel-details.scss */
 .hotel-facility-icons {
   list-style: none;
   border-top: 1px solid #e5e5e5;
@@ -12611,66 +12713,66 @@ footer .c-icon-NA {
   margin-top: 10px;
   padding: 10px;
 }
-/* line 120, ../scss/theme/_hotel-details.scss */
+/* line 121, ../scss/theme/_hotel-details.scss */
 .hotel-facility-icons li {
   float: left;
 }
-/* line 123, ../scss/theme/_hotel-details.scss */
+/* line 124, ../scss/theme/_hotel-details.scss */
 .hotel-facility-icons li a {
   font-size: 26px;
   padding: 10px;
   color: #3f3f3f;
 }
 
-/* line 132, ../scss/theme/_hotel-details.scss */
+/* line 133, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div.bottom {
   margin-top: 20px;
 }
-/* line 135, ../scss/theme/_hotel-details.scss */
+/* line 136, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div.bottom h4 {
   margin: 10px 0 0;
 }
 
-/* line 141, ../scss/theme/_hotel-details.scss */
+/* line 142, ../scss/theme/_hotel-details.scss */
 .hotel-social-media {
   display: inline-block;
   margin-top: 10px;
   border-top: 1px solid #e6e6e6;
   padding: 20px 0;
 }
-/* line 147, ../scss/theme/_hotel-details.scss */
+/* line 148, ../scss/theme/_hotel-details.scss */
 .hotel-social-media p {
   float: left;
   margin-right: 10px;
 }
-/* line 154, ../scss/theme/_hotel-details.scss */
+/* line 155, ../scss/theme/_hotel-details.scss */
 .hotel-social-media ul li {
   padding: 0 3px;
 }
-/* line 159, ../scss/theme/_hotel-details.scss */
+/* line 160, ../scss/theme/_hotel-details.scss */
 .hotel-social-media .half {
   width: 48%;
   margin-left: 2%;
 }
-/* line 164, ../scss/theme/_hotel-details.scss */
+/* line 165, ../scss/theme/_hotel-details.scss */
 .hotel-social-media .btn-group {
   margin-top: -5px;
 }
 
-/* line 171, ../scss/theme/_hotel-details.scss */
+/* line 172, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers {
   position: relative;
 }
-/* line 175, ../scss/theme/_hotel-details.scss */
+/* line 176, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .heading-line h2 {
   background-color: #eeedee;
   text-transform: uppercase;
 }
-/* line 182, ../scss/theme/_hotel-details.scss */
+/* line 183, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel {
   padding: 0 20px;
 }
-/* line 185, ../scss/theme/_hotel-details.scss */
+/* line 186, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item {
   position: relative;
   display: inline-block;
@@ -12681,7 +12783,7 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 191, ../scss/theme/_hotel-details.scss */
+/* line 192, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .shd {
   position: absolute;
   top: 0;
@@ -12697,53 +12799,53 @@ footer .c-icon-NA {
   transition: all 0.2s linear;
   z-index: 2;
 }
-/* line 206, ../scss/theme/_hotel-details.scss */
+/* line 207, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item h3 {
   font-size: 18px;
   font-weight: lighter;
   text-transform: uppercase;
 }
-/* line 212, ../scss/theme/_hotel-details.scss */
+/* line 213, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item h3 a {
   color: #fff;
 }
-/* line 217, ../scss/theme/_hotel-details.scss */
+/* line 218, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay {
   color: #fff;
   top: 30px;
   text-align: center;
 }
-/* line 222, ../scss/theme/_hotel-details.scss */
+/* line 223, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay p {
   padding: 0;
   margin: 0;
 }
-/* line 226, ../scss/theme/_hotel-details.scss */
+/* line 227, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay img {
   width: auto;
   display: inline-block;
 }
-/* line 232, ../scss/theme/_hotel-details.scss */
+/* line 233, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item:hover .shd {
   opacity: 0.2;
 }
-/* line 241, ../scss/theme/_hotel-details.scss */
+/* line 242, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev,
 .hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-next {
   top: 35%;
   color: #bbb;
 }
-/* line 246, ../scss/theme/_hotel-details.scss */
+/* line 247, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev {
   left: -21px;
 }
-/* line 250, ../scss/theme/_hotel-details.scss */
+/* line 251, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-next {
   right: -21px;
 }
 
 @media (max-width: 768px) {
-  /* line 261, ../scss/theme/_hotel-details.scss */
+  /* line 262, ../scss/theme/_hotel-details.scss */
   .side-bar__right > div .hotel-details-address i,
   .side-bar__right > div .hotel-details-address p,
   .side-bar__right > div .hotel-details-tel i,
@@ -12753,12 +12855,12 @@ footer .c-icon-NA {
   }
 }
 @media (max-width: 480px) {
-  /* line 271, ../scss/theme/_hotel-details.scss */
+  /* line 272, ../scss/theme/_hotel-details.scss */
   .hotel-social-media .half {
     width: 98%;
   }
 
-  /* line 275, ../scss/theme/_hotel-details.scss */
+  /* line 276, ../scss/theme/_hotel-details.scss */
   .buttons-holder .btn-group {
     margin-top: 10px;
   }

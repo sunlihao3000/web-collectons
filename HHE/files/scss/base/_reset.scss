@@ -550,6 +550,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
             margin: 1%;   
             float: left; 
         }
+        .btn:nth-child(odd) {
+            margin: 1%;  
+        }
+
+        .btn:nth-child(even) {
+            margin: 1%;  
+        }
 
 
     }
