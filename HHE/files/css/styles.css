@@ -12397,46 +12397,51 @@ footer .c-icon-NA {
     display: none;
   }
 }
-/* line 6, ../scss/theme/_collection.scss */
+/* line 3, ../scss/theme/_collection.scss */
+.destination-landing .site-holder .destintions .destintions-holder .item {
+  margin: 7px;
+}
+
+/* line 13, ../scss/theme/_collection.scss */
 .not-banner {
   margin-top: 180px;
 }
 
-/* line 10, ../scss/theme/_collection.scss */
+/* line 17, ../scss/theme/_collection.scss */
 .map-hotels-list {
   margin-top: 50px;
   width: 100%;
   height: 560px;
   float: left;
 }
-/* line 16, ../scss/theme/_collection.scss */
+/* line 23, ../scss/theme/_collection.scss */
 .map-hotels-list #map-hotels {
   width: 100%;
   height: 100%;
 }
 
-/* line 22, ../scss/theme/_collection.scss */
+/* line 29, ../scss/theme/_collection.scss */
 .map-filters {
   border-top: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
 }
-/* line 27, ../scss/theme/_collection.scss */
+/* line 34, ../scss/theme/_collection.scss */
 .map-filters .label {
   color: #333;
   font-size: 14px;
 }
-/* line 31, ../scss/theme/_collection.scss */
+/* line 38, ../scss/theme/_collection.scss */
 .map-filters .btn-group {
   width: 167px;
   font-size: 16px;
   padding: 5px 15px;
 }
-/* line 36, ../scss/theme/_collection.scss */
+/* line 43, ../scss/theme/_collection.scss */
 .map-filters .btn-group.filter {
   margin-right: 20px;
 }
-/* line 41, ../scss/theme/_collection.scss */
+/* line 48, ../scss/theme/_collection.scss */
 .map-filters select,
 .map-filters input {
   width: 124px;
@@ -12449,109 +12454,109 @@ footer .c-icon-NA {
   height: 33px;
   margin-right: 10px;
 }
-/* line 53, ../scss/theme/_collection.scss */
+/* line 60, ../scss/theme/_collection.scss */
 .map-filters input.keywords {
   padding-right: 20px;
   background: url(../../files/images/search-icon.png) right center no-repeat;
 }
-/* line 57, ../scss/theme/_collection.scss */
+/* line 64, ../scss/theme/_collection.scss */
 .map-filters #filter_country {
   text-transform: uppercase;
 }
 
-/* line 63, ../scss/theme/_collection.scss */
+/* line 70, ../scss/theme/_collection.scss */
 .hotels-list__hotels {
   position: relative;
   border: 1px solid #e5e5e5;
 }
-/* line 67, ../scss/theme/_collection.scss */
+/* line 74, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item {
   display: inline-block;
   width: 349px;
   overflow: hidden;
   margin-top: 20px;
 }
-/* line 74, ../scss/theme/_collection.scss */
+/* line 81, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item > img {
   width: 100%;
 }
-/* line 78, ../scss/theme/_collection.scss */
+/* line 85, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content {
   margin: 0;
   background-color: #f0f2f4;
 }
-/* line 82, ../scss/theme/_collection.scss */
+/* line 89, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 20px;
 }
-/* line 89, ../scss/theme/_collection.scss */
+/* line 96, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content h4 {
   font-size: 14px;
   margin: 0;
 }
-/* line 94, ../scss/theme/_collection.scss */
+/* line 101, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link {
   list-style: none;
   margin: 0;
   display: inline-block;
 }
-/* line 99, ../scss/theme/_collection.scss */
+/* line 106, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li {
   display: inline-block;
 }
-/* line 101, ../scss/theme/_collection.scss */
+/* line 108, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li a {
   font-size: 11px;
   background-color: #dbdbdb;
   padding: 3px 5px;
 }
-/* line 105, ../scss/theme/_collection.scss */
+/* line 112, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li a:hover {
   background-color: #1c4377;
   color: #fff;
 }
-/* line 114, ../scss/theme/_collection.scss */
+/* line 121, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-item-buttons {
   border-top: 1px solid #d8d9db;
 }
 
 @media (max-width: 1200px) {
-  /* line 130, ../scss/theme/_collection.scss */
+  /* line 137, ../scss/theme/_collection.scss */
   .hotel-details {
     margin-top: 70px;
   }
 
-  /* line 133, ../scss/theme/_collection.scss */
+  /* line 140, ../scss/theme/_collection.scss */
   .map-filters .btn-group.filter {
     margin-right: 0;
   }
 
-  /* line 136, ../scss/theme/_collection.scss */
+  /* line 143, ../scss/theme/_collection.scss */
   .map-filters .btn-group {
     width: 110px;
   }
 
-  /* line 140, ../scss/theme/_collection.scss */
+  /* line 147, ../scss/theme/_collection.scss */
   .hotels-list__hotels .item {
     width: 100%;
   }
 
-  /* line 143, ../scss/theme/_collection.scss */
+  /* line 150, ../scss/theme/_collection.scss */
   .group_of {
     width: 100%;
   }
 
-  /* line 146, ../scss/theme/_collection.scss */
+  /* line 153, ../scss/theme/_collection.scss */
   .hotels-list__hotels .item .item-content h3 {
     font-size: 14px;
     height: 40px;
     overflow: hidden;
   }
 
-  /* line 152, ../scss/theme/_collection.scss */
+  /* line 159, ../scss/theme/_collection.scss */
   .hotels-list__hotels .item .item-content h4 {
     font-size: 12px;
     height: 30px;
@@ -12559,36 +12564,36 @@ footer .c-icon-NA {
   }
 }
 @media (max-width: 1000px) {
-  /* line 163, ../scss/theme/_collection.scss */
+  /* line 170, ../scss/theme/_collection.scss */
   .map-filters select,
   .map-filters input {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 480px) {
-  /* line 170, ../scss/theme/_collection.scss */
+  /* line 177, ../scss/theme/_collection.scss */
   .map-hotels-list {
     height: 350px;
   }
 
-  /* line 173, ../scss/theme/_collection.scss */
+  /* line 180, ../scss/theme/_collection.scss */
   .group_of {
     width: auto;
   }
 }
 @media (max-width: 352px) {
-  /* line 182, ../scss/theme/_collection.scss */
+  /* line 189, ../scss/theme/_collection.scss */
   .map-filters select,
   .map-filters input {
     width: 95px;
   }
 
-  /* line 185, ../scss/theme/_collection.scss */
+  /* line 192, ../scss/theme/_collection.scss */
   .map-hotels-list {
     height: 300px;
   }
 
-  /* line 189, ../scss/theme/_collection.scss */
+  /* line 196, ../scss/theme/_collection.scss */
   .map-filters .btn-group {
     width: 80px;
     font-size: 12px;
