@@ -92,8 +92,7 @@
             });            
         };
 
-<<<<<<< HEAD
-=======
+
         // our member
         var our_member_int = $('.members-group-list li').size();
         if (our_member_int > 0) {
@@ -104,7 +103,7 @@
               });
             
         };
->>>>>>> 2520f96421e46bda37c232d477526935567712cb
+
 
 
 	}); // end document load 
