@@ -4325,6 +4325,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   .text-right {
     text-align: center;
   }
+
+  /* line 548, ../scss/base/_reset.scss */
+  .two-buttons .btn {
+    width: 98%;
+    margin: 1%;
+    float: left;
+  }
 }
 /* line 2, ../scss/base/_base.scss */
 body {
@@ -4633,30 +4640,30 @@ ul.not-list-style li {
 }
 
 @media (max-width: 768px) {
-  /* line 254, ../scss/base/_base.scss */
+  /* line 255, ../scss/base/_base.scss */
   body .md-text-center,
   body .sm-text-right {
     text-align: center;
   }
 }
 /* svg  */
-/* line 260, ../scss/base/_base.scss */
+/* line 261, ../scss/base/_base.scss */
 .not-svg {
   display: block;
 }
 
-/* line 264, ../scss/base/_base.scss */
+/* line 265, ../scss/base/_base.scss */
 .svg .not-svg {
   display: none;
 }
 
 /* over hide */
-/* line 269, ../scss/base/_base.scss */
+/* line 270, ../scss/base/_base.scss */
 .over-h {
   overflow: hidden;
 }
 
-/* line 274, ../scss/base/_base.scss */
+/* line 275, ../scss/base/_base.scss */
 .circle {
   width: 70px;
   height: 70px;
@@ -12371,7 +12378,7 @@ footer .c-icon-NA {
   right: 15px;
   font-size: 30px;
   color: #cfab7a;
-  opacity: 0.6;
+  color: rgba(207, 171, 122, 0.6);
 }
 
 @media (max-width: 480px) {
@@ -12508,41 +12515,65 @@ footer .c-icon-NA {
 .hotel-details h4 {
   font-size: 15px;
 }
-/* line 21, ../scss/theme/_hotel-details.scss */
-.hotel-details .btn-group {
+/* line 23, ../scss/theme/_hotel-details.scss */
+.hotel-details .buttons-holder .btn-group {
   padding-top: 10px;
   padding-bottom: 10px;
   height: auto;
 }
-/* line 26, ../scss/theme/_hotel-details.scss */
-.hotel-details .btn-group:hover {
+/* line 29, ../scss/theme/_hotel-details.scss */
+.hotel-details .buttons-holder .btn-group:hover {
   font-size: 15px;
 }
 
 @media (max-width: 768px) {
-  /* line 35, ../scss/theme/_hotel-details.scss */
+  /* line 40, ../scss/theme/_hotel-details.scss */
   .hotel-details {
     margin-top: 70px;
   }
 }
-/* line 44, ../scss/theme/_hotel-details.scss */
+@media (max-width: 767px) {
+  /* line 48, ../scss/theme/_hotel-details.scss */
+  .hotel-details {
+    margin-top: 80px;
+  }
+
+  /* line 52, ../scss/theme/_hotel-details.scss */
+  .social-icons > ul {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  /* line 57, ../scss/theme/_hotel-details.scss */
+  .social-icons > ul li {
+    float: none;
+    display: inline-block;
+  }
+
+  /* line 63, ../scss/theme/_hotel-details.scss */
+  .lSSlideOuter .lSPager.lSGallery {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* line 73, ../scss/theme/_hotel-details.scss */
 .inner header.top {
   border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
 
-/* line 49, ../scss/theme/_hotel-details.scss */
+/* line 78, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div {
   border: 1px solid #e5e5e5;
   padding: 30px 20px;
 }
-/* line 54, ../scss/theme/_hotel-details.scss */
+/* line 83, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div .hotel-details-address,
 .side-bar__right > div .hotel-details-tel {
   border: 1px solid #e5e5e5;
   margin-top: 10px;
   padding: 10px;
 }
-/* line 60, ../scss/theme/_hotel-details.scss */
+/* line 89, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div .hotel-details-address i,
 .side-bar__right > div .hotel-details-address p,
 .side-bar__right > div .hotel-details-tel i,
@@ -12550,29 +12581,29 @@ footer .c-icon-NA {
   float: left;
   margin: 0;
 }
-/* line 65, ../scss/theme/_hotel-details.scss */
+/* line 94, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div .hotel-details-address i,
 .side-bar__right > div .hotel-details-tel i {
   padding: 3px 10px;
 }
-/* line 68, ../scss/theme/_hotel-details.scss */
+/* line 97, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div .hotel-details-address p, .side-bar__right > div .hotel-details-address a,
 .side-bar__right > div .hotel-details-tel p,
 .side-bar__right > div .hotel-details-tel a {
   line-height: 17px;
 }
 
-/* line 75, ../scss/theme/_hotel-details.scss */
+/* line 104, ../scss/theme/_hotel-details.scss */
 .hotel-gallery {
   margin-bottom: 20px;
 }
 
-/* line 80, ../scss/theme/_hotel-details.scss */
+/* line 109, ../scss/theme/_hotel-details.scss */
 .hotel-description {
   display: inline-block;
 }
 
-/* line 84, ../scss/theme/_hotel-details.scss */
+/* line 113, ../scss/theme/_hotel-details.scss */
 .hotel-facility-icons {
   list-style: none;
   border-top: 1px solid #e5e5e5;
@@ -12580,58 +12611,66 @@ footer .c-icon-NA {
   margin-top: 10px;
   padding: 10px;
 }
-/* line 91, ../scss/theme/_hotel-details.scss */
+/* line 120, ../scss/theme/_hotel-details.scss */
 .hotel-facility-icons li {
   float: left;
 }
-/* line 94, ../scss/theme/_hotel-details.scss */
+/* line 123, ../scss/theme/_hotel-details.scss */
 .hotel-facility-icons li a {
   font-size: 26px;
   padding: 10px;
   color: #3f3f3f;
 }
 
-/* line 103, ../scss/theme/_hotel-details.scss */
+/* line 132, ../scss/theme/_hotel-details.scss */
 .side-bar__right > div.bottom {
   margin-top: 20px;
 }
+/* line 135, ../scss/theme/_hotel-details.scss */
+.side-bar__right > div.bottom h4 {
+  margin: 10px 0 0;
+}
 
-/* line 107, ../scss/theme/_hotel-details.scss */
+/* line 141, ../scss/theme/_hotel-details.scss */
 .hotel-social-media {
   display: inline-block;
   margin-top: 10px;
   border-top: 1px solid #e6e6e6;
   padding: 20px 0;
 }
-/* line 113, ../scss/theme/_hotel-details.scss */
+/* line 147, ../scss/theme/_hotel-details.scss */
 .hotel-social-media p {
   float: left;
   margin-right: 10px;
 }
-/* line 120, ../scss/theme/_hotel-details.scss */
+/* line 154, ../scss/theme/_hotel-details.scss */
 .hotel-social-media ul li {
   padding: 0 3px;
 }
-/* line 125, ../scss/theme/_hotel-details.scss */
+/* line 159, ../scss/theme/_hotel-details.scss */
 .hotel-social-media .half {
   width: 48%;
   margin-left: 2%;
 }
+/* line 164, ../scss/theme/_hotel-details.scss */
+.hotel-social-media .btn-group {
+  margin-top: -5px;
+}
 
-/* line 131, ../scss/theme/_hotel-details.scss */
+/* line 171, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers {
   position: relative;
 }
-/* line 135, ../scss/theme/_hotel-details.scss */
+/* line 175, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .heading-line h2 {
   background-color: #eeedee;
   text-transform: uppercase;
 }
-/* line 142, ../scss/theme/_hotel-details.scss */
+/* line 182, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel {
   padding: 0 20px;
 }
-/* line 145, ../scss/theme/_hotel-details.scss */
+/* line 185, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item {
   position: relative;
   display: inline-block;
@@ -12642,7 +12681,7 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 151, ../scss/theme/_hotel-details.scss */
+/* line 191, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .shd {
   position: absolute;
   top: 0;
@@ -12658,51 +12697,72 @@ footer .c-icon-NA {
   transition: all 0.2s linear;
   z-index: 2;
 }
-/* line 166, ../scss/theme/_hotel-details.scss */
+/* line 206, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item h3 {
   font-size: 18px;
   font-weight: lighter;
   text-transform: uppercase;
 }
-/* line 172, ../scss/theme/_hotel-details.scss */
+/* line 212, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item h3 a {
   color: #fff;
 }
-/* line 177, ../scss/theme/_hotel-details.scss */
+/* line 217, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay {
   color: #fff;
   top: 30px;
   text-align: center;
 }
-/* line 182, ../scss/theme/_hotel-details.scss */
+/* line 222, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay p {
   padding: 0;
   margin: 0;
 }
-/* line 186, ../scss/theme/_hotel-details.scss */
+/* line 226, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item .item-content-overlay img {
   width: auto;
   display: inline-block;
 }
-/* line 192, ../scss/theme/_hotel-details.scss */
+/* line 232, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .hotel-special-offers__carousel .item:hover .shd {
   opacity: 0.2;
 }
-/* line 201, ../scss/theme/_hotel-details.scss */
+/* line 241, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev,
 .hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-next {
   top: 35%;
   color: #bbb;
 }
-/* line 206, ../scss/theme/_hotel-details.scss */
+/* line 246, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev {
   left: -21px;
 }
-/* line 210, ../scss/theme/_hotel-details.scss */
+/* line 250, ../scss/theme/_hotel-details.scss */
 .hotel-special-offers .hotel-special-offers__holder .owl-carousel.owl-theme .owl-controls .owl-nav .owl-next {
   right: -21px;
 }
 
+@media (max-width: 768px) {
+  /* line 261, ../scss/theme/_hotel-details.scss */
+  .side-bar__right > div .hotel-details-address i,
+  .side-bar__right > div .hotel-details-address p,
+  .side-bar__right > div .hotel-details-tel i,
+  .side-bar__right > div .hotel-details-tel p {
+    float: none;
+    display: inline-block;
+  }
+}
+@media (max-width: 480px) {
+  /* line 271, ../scss/theme/_hotel-details.scss */
+  .hotel-social-media .half {
+    width: 98%;
+  }
+
+  /* line 275, ../scss/theme/_hotel-details.scss */
+  .buttons-holder .btn-group {
+    margin-top: 10px;
+  }
+}
 /* line 6, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul {
   list-style: none;

@@ -63,6 +63,7 @@
                 autoplay: false,                            
                 mouseDrag:true,
                 center:false,
+                margin:20,
                 navText: [
                     '<i class="fa fa-angle-left"></i>',
                     '<i class="fa fa-angle-right"></i>'
@@ -74,20 +75,17 @@
                     },
                     480:{
                         items:2,
-                        dots:true,
-                        margin:10
+                        dots:true
                     },
                     1024:{
                         items:3,
                         dots:false,
-                        nav:true,
-                        margin:20
+                        nav:true
                     },
                     1200:{
                         items:4,
                         dots:false,
-                        nav:true,
-                        margin:20
+                        nav:true
                     }                
                 }
             });            
