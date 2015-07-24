@@ -5,7 +5,7 @@
 (function(){
   "use strict";
 
-    $(document).ready(function($){
+    $(document).ready(function($) {
         
         if ( isDesktop ) {
              if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
@@ -240,6 +240,51 @@
         if (tnav_init < 1) {
             $('.tnav-container').hide();
         };
+		
+	
+    // our members
+    
+	   var owl_our_members_inti = $('.our-menmbers-holder .item').size();
+	   var owl_our_members = $('.our-menmbers-holder');
+
+
+		if (owl_our_members_inti > 0) {
+
+			 owl_our_members.owlCarousel({
+				loop:true,
+				margin:10,
+				autoplay: false,
+				dots:false,
+				nav:true,
+				mouseDrag:true,
+				center:false,
+				
+				navText: [
+					'<i class="fa fa-angle-left"></i>',
+					'<i class="fa fa-angle-right"></i>'
+				], 
+				responsive:{
+					0:{
+						items:2
+					},
+					768:{
+						items:5
+					},
+					1024:{
+						items:5,
+						autoWidth:false
+					},
+					1200:{
+						items:7,
+						autoWidth:true
+					}                
+				}
+			});
+					   
+		};
+		//	
+		
+		
 
     });
 
@@ -262,46 +307,6 @@
 
     };
 
-    // our members
-    
-   var owl_our_members_inti = $('.our-menmbers-holder .item').size();
-   var owl_our_members = $('.our-menmbers-holder');
-
-
-    if (owl_our_members_inti > 0) {
-
-         owl_our_members.owlCarousel({
-            loop:true,
-            margin:10,
-            autoplay: false,
-            dots:false,
-            nav:true,
-            mouseDrag:true,
-            center:false,
-            
-            navText: [
-                '<i class="fa fa-angle-left"></i>',
-                '<i class="fa fa-angle-right"></i>'
-            ], 
-            responsive:{
-                0:{
-                    items:2
-                },
-                768:{
-                    items:5
-                },
-                1024:{
-                    items:5,
-                    autoWidth:false
-                },
-                1200:{
-                    items:7,
-                    autoWidth:true
-                }                
-            }
-        });
-                   
-    };
     
 
 

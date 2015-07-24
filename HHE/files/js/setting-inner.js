@@ -17,22 +17,7 @@
         $('article table').addClass('table table-hover full-width ');
         var snav_page_active = $('.snav-container > ul > li.active').size(); 
 
-        // windows height// 
-        
-        function resizeLayout() { 
-            var window_height = $( window ).height();
-            var window_width = $( window ).width();
 
-        }; //end resizelayout
-
-
-        // window resize
-        $(window).resize(function() {
-            resizeLayout();
-        });    
-
-        resizeLayout();
-        
 
         //yourtube video css
         $('iframe[src*="youtube.com"]').each(function() {
