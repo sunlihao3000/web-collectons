@@ -4686,6 +4686,13 @@ ul.not-list-style li {
   background-color: #ccc;
 }
 
+/* line 288, ../scss/base/_base.scss */
+.read-more-line-small {
+  width: 125px;
+  height: 10px;
+  background: url(../../files/images/read-more-line--small.png) center center no-repeat;
+}
+
 /* line 2, ../scss/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -13137,8 +13144,11 @@ footer .c-icon-NA {
 /* line 12, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li {
   display: inline-block;
+  position: relative;
+  text-align: center;
+  max-width: 252px;
 }
-/* line 15, ../scss/theme/_out-members.scss */
+/* line 18, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li img {
   background-color: #fff;
   -webkit-transition: all 0.2s linear;
@@ -13147,12 +13157,80 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 20, ../scss/theme/_out-members.scss */
+/* line 23, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li:hover img {
   background-color: #e2e3e4;
 }
-/* line 28, ../scss/theme/_out-members.scss */
+/* line 27, ../scss/theme/_out-members.scss */
+.our-members-group-list .members-group-list ul li .content-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+/* line 33, ../scss/theme/_out-members.scss */
+.our-members-group-list .members-group-list ul li .content-overlay p {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 44, ../scss/theme/_out-members.scss */
+.our-members-group-list .members-group-list ul li .content-overlay p::before, .our-members-group-list .members-group-list ul li .content-overlay p::after {
+  display: inline-block;
+  content: "-";
+  padding: 0 3px;
+}
+/* line 53, ../scss/theme/_out-members.scss */
+.our-members-group-list .members-group-list ul li .content-overlay .read-more-line-small {
+  float: left;
+  opacity: 0;
+  width: 100%;
+  margin-top: 25px;
+  visibility: hidden;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 62, ../scss/theme/_out-members.scss */
+.our-members-group-list .members-group-list ul li .content-overlay span {
+  width: 100%;
+  float: left;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 9.8px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 76, ../scss/theme/_out-members.scss */
+.our-members-group-list .members-group-list ul li:hover .read-more-line-small {
+  margin-top: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+/* line 81, ../scss/theme/_out-members.scss */
+.our-members-group-list .members-group-list ul li:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 91, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-details {
   opacity: 0;
   visibility: hidden;
+  height: 0;
+  z-index: -2;
+  overflow: hidden;
+  position: absolute;
 }
