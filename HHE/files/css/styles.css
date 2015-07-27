@@ -3836,7 +3836,7 @@ label {
   border: medium none;
   border-radius: 0;
   color: #fff;
-  padding: 7px 25px;
+  padding: 7px 22px;
   text-transform: uppercase;
   text-align: center;
   background-color: #171b1e;
@@ -13155,19 +13155,29 @@ footer .c-icon-NA {
     margin-top: 10px;
   }
 }
-/* line 5, ../scss/theme/_out-members.scss */
+/* line 3, ../scss/theme/_our-members.scss */
+.page-content article p {
+  font-size: 14px;
+  color: #626161;
+}
+
+/* line 10, ../scss/theme/_our-members.scss */
+.our-members-group-list {
+  padding-bottom: 40px;
+}
+/* line 14, ../scss/theme/_our-members.scss */
 .our-members-group-list .member-group-width {
   width: 1400px;
   margin: 0 auto;
 }
-/* line 11, ../scss/theme/_out-members.scss */
+/* line 20, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: inline-block;
 }
-/* line 17, ../scss/theme/_out-members.scss */
+/* line 26, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li {
   display: inline-block;
   position: relative;
@@ -13175,7 +13185,7 @@ footer .c-icon-NA {
   max-width: 252px;
   margin: 16px 5px 0 5px;
 }
-/* line 24, ../scss/theme/_out-members.scss */
+/* line 33, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li img {
   background-color: #fff;
   -webkit-transition: all 0.2s linear;
@@ -13184,18 +13194,18 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 29, ../scss/theme/_out-members.scss */
-.our-members-group-list .members-group-list ul li:hover img {
+/* line 41, ../scss/theme/_our-members.scss */
+.our-members-group-list .members-group-list ul li:hover img, .our-members-group-list .members-group-list ul li.GI_TW_Current img {
   background-color: #e2e3e4;
 }
-/* line 33, ../scss/theme/_out-members.scss */
+/* line 47, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 55px;
 }
-/* line 39, ../scss/theme/_out-members.scss */
+/* line 53, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay p {
   text-align: center;
   font-size: 12px;
@@ -13209,13 +13219,13 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 50, ../scss/theme/_out-members.scss */
+/* line 64, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay p::before, .our-members-group-list .members-group-list ul li .content-overlay p::after {
   display: inline-block;
   content: "-";
   padding: 0 3px;
 }
-/* line 59, ../scss/theme/_out-members.scss */
+/* line 73, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay .read-more-line-small {
   float: left;
   opacity: 0;
@@ -13228,7 +13238,7 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 68, ../scss/theme/_out-members.scss */
+/* line 82, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay span {
   width: 100%;
   float: left;
@@ -13241,22 +13251,22 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 80, ../scss/theme/_out-members.scss */
+/* line 94, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li:hover {
   cursor: pointer;
 }
-/* line 83, ../scss/theme/_out-members.scss */
+/* line 97, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li:hover .read-more-line-small {
   margin-top: 5px;
   opacity: 1;
   visibility: visible;
 }
-/* line 88, ../scss/theme/_out-members.scss */
+/* line 102, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-list ul li:hover span {
   opacity: 1;
   visibility: visible;
 }
-/* line 98, ../scss/theme/_out-members.scss */
+/* line 113, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-details {
   opacity: 0;
   visibility: hidden;
@@ -13265,34 +13275,35 @@ footer .c-icon-NA {
   overflow: hidden;
   position: absolute;
 }
-/* line 108, ../scss/theme/_out-members.scss */
+/* line 123, ../scss/theme/_our-members.scss */
 .our-members-group-list .map-item {
   float: left;
   width: 100%;
   height: 420px;
   margin-top: 17px;
 }
-/* line 118, ../scss/theme/_out-members.scss */
+/* line 133, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content h2 {
   font-size: 21px;
   margin-bottom: 0;
   color: #333;
   text-transform: uppercase;
 }
-/* line 124, ../scss/theme/_out-members.scss */
+/* line 139, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content h5 {
   margin: 5px 0;
   font-size: 11px;
 }
-/* line 128, ../scss/theme/_out-members.scss */
+/* line 143, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content p, .our-members-group-list .group-content a {
   font-size: 14px;
 }
-/* line 132, ../scss/theme/_out-members.scss */
+/* line 147, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content .btn-default {
   font-size: 12px;
+  margin-bottom: 10px;
 }
-/* line 136, ../scss/theme/_out-members.scss */
+/* line 152, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content h3 {
   font-family: Palatino,sans-serif;
   font-style: italic;
@@ -13302,14 +13313,21 @@ footer .c-icon-NA {
   margin-top: 10px;
   display: inline-block;
 }
-/* line 146, ../scss/theme/_out-members.scss */
+/* line 162, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content .group-contact-details address, .our-members-group-list .group-content .group-contact-details a, .our-members-group-list .group-content .group-contact-details p {
   margin: 0;
   color: #6e6e6e;
   font-size: 13px;
   font-style: italic;
 }
-/* line 152, ../scss/theme/_out-members.scss */
+/* line 168, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content .group-contact-details address:hover, .our-members-group-list .group-content .group-contact-details a:hover, .our-members-group-list .group-content .group-contact-details p:hover {
   color: #333333;
+}
+
+@media (max-width: 1399px) {
+  /* line 181, ../scss/theme/_our-members.scss */
+  .our-members-group-list .member-group-width {
+    width: 100%;
+  }
 }

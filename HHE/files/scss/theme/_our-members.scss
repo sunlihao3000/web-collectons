@@ -1,6 +1,15 @@
+.page-content article {
 
+    p {
+        font-size: 14px;
+        color: #626161;
+    }
+
+}
 
 .our-members-group-list {
+
+    padding-bottom: 40px;
 
     .member-group-width {
         width: 1400px;
@@ -26,9 +35,14 @@
                     @include anim(.2s,linear); 
                 }    
 
-                &:hover img {
-                    background-color: #e2e3e4;
-                };  
+                &:hover,
+                &.GI_TW_Current  {
+
+                    img {
+                        background-color: #e2e3e4;
+                    }
+
+                };
 
                 .content-overlay {
                     position: absolute;
@@ -95,6 +109,7 @@
         }    
     }
 
+
     .members-group-details {
         opacity: 0;
         visibility: hidden;
@@ -131,6 +146,7 @@
 
         .btn-default{
             font-size: 12px;
+            margin-bottom: 10px;
         }
 
         h3 {
@@ -158,5 +174,16 @@
     }
 
 }
+
+
+@media (max-width:1399px) {
+
+    .our-members-group-list .member-group-width {
+        width: 100%;
+    }
+
+}
+
+
 
 
