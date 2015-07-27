@@ -127,6 +127,13 @@ label {
     background: #888;
     color: #fff;
 }
+
+.btn-default.yellow {
+  background: $secondary-color;
+  color: #fff;
+}
+
+
 .btn-default.dark:hover {
     background-color: $primary-color; 
 }

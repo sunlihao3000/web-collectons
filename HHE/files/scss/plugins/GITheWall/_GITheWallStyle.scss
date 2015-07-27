@@ -44,10 +44,13 @@
   width: 100%;
   margin-top: 10px;
   height: 0;
+  margin-top: 30px;
   overflow: hidden;
   @include transition(height 0.3s ease-in);
   &.animating {
     overflow: hidden !important;
+    opacity: 0;
+    visibility: hidden;
   }
   &.opened {
     overflow: visible;
@@ -60,10 +63,15 @@
     @include transition(left 0.3s ease-in);
   }
   .GI_TW_expander-inner {
-    width: 80%;
+    
+    width: 90%;
     height: 560px;
     margin: 0 auto;
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    
+    
     .GI_TW_fullimg {
       position: relative;
       width: 100%;
@@ -75,6 +83,12 @@
         position: relative;
       }
     }
+  }
+
+  &.opened .GI_TW_expander-inner {
+    opacity: 1;
+    visibility: visible;
+    @include anim(0.5s,linear);
   }
   .GI_TW_Controls {
     z-index: 1;

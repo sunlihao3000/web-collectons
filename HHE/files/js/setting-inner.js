@@ -79,11 +79,17 @@
 
         // our member
         var our_member_int = $('.members-group-list li').size();
+
         if (our_member_int > 0) {
               var wall = $('.members-group-list').GITheWall({
-                  nextButtonClass: 'fa fa-arrow-right',
-                  prevButtonClass: 'fa fa-arrow-left',
-                  closeButtonClass: 'fa fa-times'
+
+                  onContentLoaded: function () {
+                       $('.GI_TW_expander.opened .map-trigger').trigger('click');
+                      },
+                    autoscroll: false,
+                    nextButtonClass: 'c-icon-arrow-thin-right',
+                    prevButtonClass: 'c-icon-arrow-thin-left',
+                    closeButtonClass: 'c-icon-close'
               });
             
         };

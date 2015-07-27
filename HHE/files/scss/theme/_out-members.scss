@@ -1,8 +1,13 @@
 
 
 .our-members-group-list {
-    
+
+    .member-group-width {
+        width: 1400px;
+        margin: 0 auto;
+    }
     .members-group-list {
+
         ul {
             list-style: none;
             padding: 0;
@@ -14,6 +19,7 @@
                 position: relative;
                 text-align: center;
                 max-width: 252px;
+                margin:16px 5px 0 5px;
 
                 img {
                     background-color: #fff;
@@ -28,7 +34,7 @@
                     position: absolute;
                     bottom: 0;
                     width: 100%;
-                    height: 60px;
+                    height: 55px;
 
                     p {
                         
@@ -73,8 +79,9 @@
 
                 &:hover {
 
+                    cursor: pointer;
                    .read-more-line-small {
-                        margin-top:10px;
+                        margin-top:5px;
                         opacity:1;
                         visibility: visible;                    
                    }
@@ -96,6 +103,60 @@
         overflow: hidden;
         position: absolute;
     }
+
+
+    .map-item {
+        float: left;
+        width: 100%;
+        height: 420px;
+        margin-top: 17px;
+
+    }
+
+    .group-content {
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 0;
+            color: #333;
+            text-transform: uppercase;
+        }
+        h5{
+            margin: 5px 0;
+            font-size: 11px;
+        }
+        p,a {
+            font-size: 14px;
+        }
+
+        .btn-default{
+            font-size: 12px;
+        }
+
+        h3 {
+            font-family:Palatino,sans-serif;
+            font-style: italic;
+            color: #1c3f94;
+            font-size: 15px;
+            letter-spacing: 0px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .group-contact-details {
+            address,a,p {
+                margin: 0;
+                color: #6e6e6e;
+                font-size: 13px;
+                font-style: italic;
+                
+                &:hover {
+                    color: #333333;
+                }
+            }
+        }
+
+    }
+
 }
 
 

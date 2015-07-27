@@ -3860,17 +3860,23 @@ label {
   color: #fff;
 }
 
-/* line 130, ../scss/base/_reset.scss */
+/* line 131, ../scss/base/_reset.scss */
+.btn-default.yellow {
+  background: #c8950b;
+  color: #fff;
+}
+
+/* line 137, ../scss/base/_reset.scss */
 .btn-default.dark:hover {
   background-color: #1c4377;
 }
 
-/* line 133, ../scss/base/_reset.scss */
+/* line 140, ../scss/base/_reset.scss */
 .btn-default.gray:hover {
   background-color: #c8950b;
 }
 
-/* line 139, ../scss/base/_reset.scss */
+/* line 146, ../scss/base/_reset.scss */
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
@@ -3878,112 +3884,112 @@ label {
   color: #fff;
 }
 
-/* line 144, ../scss/base/_reset.scss */
+/* line 151, ../scss/base/_reset.scss */
 button, html input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: none;
   cursor: pointer;
 }
 
-/* line 151, ../scss/base/_reset.scss */
+/* line 158, ../scss/base/_reset.scss */
 .two-buttons .btn {
   width: 48%;
   margin: 1%;
   float: left;
 }
-/* line 156, ../scss/base/_reset.scss */
+/* line 163, ../scss/base/_reset.scss */
 .two-buttons .btn:nth-child(odd) {
   margin-left: 0;
   margin-right: 2%;
 }
-/* line 160, ../scss/base/_reset.scss */
+/* line 167, ../scss/base/_reset.scss */
 .two-buttons .btn:nth-child(even) {
   margin-left: 2;
 }
 
 @media (max-width: 480px) {
-  /* line 169, ../scss/base/_reset.scss */
+  /* line 176, ../scss/base/_reset.scss */
   .text-left,
   .text-right {
     text-align: center;
   }
 }
 /* mobile nav-bar */
-/* line 178, ../scss/base/_reset.scss */
+/* line 185, ../scss/base/_reset.scss */
 .navbar-toggle {
   border: medium none;
   border-radius: 0;
   margin: 5px 0 0;
 }
 
-/* line 184, ../scss/base/_reset.scss */
+/* line 191, ../scss/base/_reset.scss */
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #636161;
 }
 
-/* line 188, ../scss/base/_reset.scss */
+/* line 195, ../scss/base/_reset.scss */
 .navbar-toggle .icon-bar {
   height: 4px;
 }
 
-/* line 192, ../scss/base/_reset.scss */
+/* line 199, ../scss/base/_reset.scss */
 .navbar-inverse .navbar-toggle {
   border-color: #8e1738;
 }
 
-/* line 197, ../scss/base/_reset.scss */
+/* line 204, ../scss/base/_reset.scss */
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
   background-color: #8E1738;
 }
 
-/* line 201, ../scss/base/_reset.scss */
+/* line 208, ../scss/base/_reset.scss */
 .navbar-inverse .navbar-toggle:hover .icon-bar,
 .navbar-inverse .navbar-toggle:focus .icon-bar {
   background-color: #fff;
 }
 
 /* owl style resettings*/
-/* line 208, ../scss/base/_reset.scss */
+/* line 215, ../scss/base/_reset.scss */
 .owl-theme .owl-controls {
   margin: 0;
 }
 
-/* line 211, ../scss/base/_reset.scss */
+/* line 218, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-page span {
   background: none repeat scroll 0 0 #8e1738;
 }
 
-/* line 214, ../scss/base/_reset.scss */
+/* line 221, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-buttons div {
   background: none repeat scroll 0 0 #8e1738;
   border-radius: 0;
   padding: 10px;
 }
 
-/* line 220, ../scss/base/_reset.scss */
+/* line 227, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-buttons div {
   position: absolute;
   top: 35%;
 }
 
-/* line 225, ../scss/base/_reset.scss */
+/* line 232, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-buttons .owl-next {
   right: 0;
 }
 
-/* line 229, ../scss/base/_reset.scss */
+/* line 236, ../scss/base/_reset.scss */
 .owl-theme .owl-controls .owl-buttons .owl-prev {
   left: 0;
 }
 
-/* line 233, ../scss/base/_reset.scss */
+/* line 240, ../scss/base/_reset.scss */
 .owl-carousel .owl-item {
   display: inline-block;
   text-align: center;
   overflow: hidden;
 }
 
-/* line 243, ../scss/base/_reset.scss */
+/* line 250, ../scss/base/_reset.scss */
 .owlcarousel-holder .owl-controls {
   position: absolute;
   right: 0;
@@ -3992,24 +3998,24 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   width: 100%;
 }
 
-/* line 254, ../scss/base/_reset.scss */
+/* line 261, ../scss/base/_reset.scss */
 .owlcarousel-holder .owl-dots {
   float: right;
   width: auto;
   margin: 0 50px;
 }
 
-/* line 260, ../scss/base/_reset.scss */
+/* line 267, ../scss/base/_reset.scss */
 .owlcarousel-holder .owl-dot {
   float: left;
 }
 
-/* line 264, ../scss/base/_reset.scss */
+/* line 271, ../scss/base/_reset.scss */
 .owl-theme .owl-dots .owl-dot span {
   margin: 7px;
 }
 
-/* line 268, ../scss/base/_reset.scss */
+/* line 275, ../scss/base/_reset.scss */
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: none repeat scroll 0 0 #1c4377;
@@ -4019,7 +4025,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   padding: 0;
 }
 
-/* line 277, ../scss/base/_reset.scss */
+/* line 284, ../scss/base/_reset.scss */
 .owl-carousel.owl-theme .owl-controls .owl-nav [class*="owl-"] {
   position: absolute;
   cursor: pointer;
@@ -4034,23 +4040,23 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   font-size: 30px;
 }
 
-/* line 295, ../scss/base/_reset.scss */
+/* line 302, ../scss/base/_reset.scss */
 .owl-carousel.owl-theme .owl-controls .owl-nav .owl-prev {
   left: -10px;
 }
 
-/* line 300, ../scss/base/_reset.scss */
+/* line 307, ../scss/base/_reset.scss */
 .owl-carousel.owl-theme .owl-controls .owl-nav .owl-next {
   right: -10px;
 }
 
 /* video carousel */
-/* line 307, ../scss/base/_reset.scss */
+/* line 314, ../scss/base/_reset.scss */
 .owl-carousel .item-video {
   height: 380px;
 }
 
-/* line 311, ../scss/base/_reset.scss */
+/* line 318, ../scss/base/_reset.scss */
 .owl-carousel .owl-video-play-icon {
   height: 146px;
   width: 146px;
@@ -4063,14 +4069,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 /*- jquery UI resetting 
  ------------------------------------------- */
-/* line 324, ../scss/base/_reset.scss */
+/* line 331, ../scss/base/_reset.scss */
 .hasDatepicker {
   background: url("../images/cal.png") no-repeat scroll 98.5% 1px white !important;
   cursor: pointer;
 }
 
 /***jquery UI CALENDAR ***/
-/* line 331, ../scss/base/_reset.scss */
+/* line 338, ../scss/base/_reset.scss */
 .ui-datepicker {
   background: none repeat scroll 0 0 transparent;
   border: 8px solid rgba(0, 0, 0, 0.26);
@@ -4081,25 +4087,25 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   z-index: 30!important;
 }
 
-/* line 341, ../scss/base/_reset.scss */
+/* line 348, ../scss/base/_reset.scss */
 .ui-widget-header .ui-icon {
   background: none;
 }
 
-/* line 345, ../scss/base/_reset.scss */
+/* line 352, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-header {
   padding: 0.79em 0;
   position: relative;
 }
 
-/* line 350, ../scss/base/_reset.scss */
+/* line 357, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-header {
   background: none repeat scroll 0 0 #f7f7f7;
   border: 0px solid #e6e6e6;
   border-radius: 0;
 }
 
-/* line 356, ../scss/base/_reset.scss */
+/* line 363, ../scss/base/_reset.scss */
 .ui-datepicker table {
   background: none repeat scroll 0 0 #fff;
   border-color: white;
@@ -4110,7 +4116,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   width: 300px;
 }
 
-/* line 366, ../scss/base/_reset.scss */
+/* line 373, ../scss/base/_reset.scss */
 .ui-datepicker table {
   border-collapse: collapse;
   font-size: 0.8em;
@@ -4118,12 +4124,12 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   width: 100%;
 }
 
-/* line 373, ../scss/base/_reset.scss */
+/* line 380, ../scss/base/_reset.scss */
 .ui-datepicker td, .ui-datepicker th {
   min-width: 0.8em;
 }
 
-/* line 377, ../scss/base/_reset.scss */
+/* line 384, ../scss/base/_reset.scss */
 .ui-datepicker th {
   color: #999;
   font-family: "Open Sans",sans-serif;
@@ -4133,7 +4139,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   text-transform: uppercase;
 }
 
-/* line 386, ../scss/base/_reset.scss */
+/* line 393, ../scss/base/_reset.scss */
 .ui-datepicker th {
   border: 0 none;
   font-weight: bold;
@@ -4141,25 +4147,25 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   text-align: center;
 }
 
-/* line 393, ../scss/base/_reset.scss */
+/* line 400, ../scss/base/_reset.scss */
 .ui-datepicker th span {
   border-bottom: 1px solid #e6e6e6;
   display: block;
   padding: 0.3em 0 1em;
 }
 
-/* line 399, ../scss/base/_reset.scss */
+/* line 406, ../scss/base/_reset.scss */
 .ui-datepicker td {
   padding: 1px;
   border: 0 none;
 }
 
-/* line 404, ../scss/base/_reset.scss */
+/* line 411, ../scss/base/_reset.scss */
 .ui-state-disabled {
   cursor: default !important;
 }
 
-/* line 408, ../scss/base/_reset.scss */
+/* line 415, ../scss/base/_reset.scss */
 .ui-datepicker-calendar .ui-state-highlight, .ui-state-active {
   background: #95813E;
   border: 1px solid #95813E;
@@ -4167,7 +4173,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   outline: medium none;
 }
 
-/* line 415, ../scss/base/_reset.scss */
+/* line 422, ../scss/base/_reset.scss */
 .ui-datepicker-calendar .ui-state-default {
   border: 1px solid #fff;
   border-radius: 0;
@@ -4176,7 +4182,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   background: none repeat scroll 0 0 #fff;
 }
 
-/* line 423, ../scss/base/_reset.scss */
+/* line 430, ../scss/base/_reset.scss */
 .ui-datepicker td span, .ui-datepicker td a {
   display: block;
   padding: 0.2em;
@@ -4184,14 +4190,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   text-decoration: none;
 }
 
-/* line 430, ../scss/base/_reset.scss */
+/* line 437, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-title {
   line-height: 1.8em;
   margin: 0 2.3em;
   text-align: center;
 }
 
-/* line 436, ../scss/base/_reset.scss */
+/* line 443, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-title {
   color: #fff;
   font-size: 1.1em;
@@ -4199,28 +4205,28 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   text-transform: uppercase;
 }
 
-/* line 443, ../scss/base/_reset.scss */
+/* line 450, ../scss/base/_reset.scss */
 .ui-datepicker-close, .ui-datepicker-current {
   display: none;
 }
 
-/* line 447, ../scss/base/_reset.scss */
+/* line 454, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-header {
   background: none repeat scroll 0 0 #1c4377;
 }
 
-/* line 451, ../scss/base/_reset.scss */
+/* line 458, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-buttonpane {
   margin: 0;
   padding: 0;
 }
 
-/* line 455, ../scss/base/_reset.scss */
+/* line 462, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-next {
   right: 18px;
 }
 
-/* line 458, ../scss/base/_reset.scss */
+/* line 465, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
   height: 2.8em;
   position: absolute;
@@ -4229,7 +4235,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border-radius: 0;
 }
 
-/* line 471, ../scss/base/_reset.scss */
+/* line 478, ../scss/base/_reset.scss */
 .ui-state-hover,
 .ui-widget-content .ui-state-hover,
 .ui-widget-header .ui-state-hover,
@@ -4242,13 +4248,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border-image-width: none;
 }
 
-/* line 478, ../scss/base/_reset.scss */
+/* line 485, ../scss/base/_reset.scss */
 .ui-widget {
   font-family: "Open Sans",sans-serif;
   font-size: 1.1em;
 }
 
-/* line 484, ../scss/base/_reset.scss */
+/* line 491, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev-hover,
 .ui-datepicker .ui-datepicker-next-hover {
   top: 0;
@@ -4257,14 +4263,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   font-weight: bold;
 }
 
-/* line 491, ../scss/base/_reset.scss */
+/* line 498, ../scss/base/_reset.scss */
 .fancybox-nav {
   width: 10%;
   border: none;
   outline: none;
 }
 
-/* line 497, ../scss/base/_reset.scss */
+/* line 504, ../scss/base/_reset.scss */
 #ui-datepicker-div .ui-icon {
   text-indent: 0;
   height: 35px;
@@ -4275,13 +4281,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   cursor: pointer;
 }
 
-/* line 506, ../scss/base/_reset.scss */
+/* line 513, ../scss/base/_reset.scss */
 #ui-datepicker-div .ui-state-hover .ui-icon {
   background-color: #1c4377;
   background-color: rgba(28, 67, 119, 0.6);
 }
 
-/* line 512, ../scss/base/_reset.scss */
+/* line 519, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev span:before, .ui-datepicker .ui-datepicker-next span:before {
   color: #fff;
   display: block;
@@ -4290,27 +4296,27 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   padding: 3px 13px;
 }
 
-/* line 519, ../scss/base/_reset.scss */
+/* line 526, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-next span:before {
   content: "\f105 ";
 }
 
-/* line 523, ../scss/base/_reset.scss */
+/* line 530, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev {
   left: 1px;
 }
 
-/* line 526, ../scss/base/_reset.scss */
+/* line 533, ../scss/base/_reset.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: 1px solid #efefef;
 }
 
-/* line 529, ../scss/base/_reset.scss */
+/* line 536, ../scss/base/_reset.scss */
 .ui-datepicker .ui-datepicker-prev span:before {
   content: "\f104 ";
 }
 
-/* line 532, ../scss/base/_reset.scss */
+/* line 539, ../scss/base/_reset.scss */
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
   border: 1px solid #1c4377;
   background: #1c4377;
@@ -4320,23 +4326,23 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 @media (max-width: 480px) {
-  /* line 543, ../scss/base/_reset.scss */
+  /* line 550, ../scss/base/_reset.scss */
   .text-left,
   .text-right {
     text-align: center;
   }
 
-  /* line 548, ../scss/base/_reset.scss */
+  /* line 555, ../scss/base/_reset.scss */
   .two-buttons .btn {
     width: 98%;
     margin: 1%;
     float: left;
   }
-  /* line 553, ../scss/base/_reset.scss */
+  /* line 560, ../scss/base/_reset.scss */
   .two-buttons .btn:nth-child(odd) {
     margin: 1%;
   }
-  /* line 557, ../scss/base/_reset.scss */
+  /* line 564, ../scss/base/_reset.scss */
   .two-buttons .btn:nth-child(even) {
     margin: 1%;
   }
@@ -9066,21 +9072,24 @@ html[xmlns] .slides {
   width: 100%;
   margin-top: 10px;
   height: 0;
+  margin-top: 30px;
   overflow: hidden;
   -webkit-transition: height 0.3s ease-in;
   -moz-transition: height 0.3s ease-in;
   -o-transition: height 0.3s ease-in;
   transition: height 0.3s ease-in;
 }
-/* line 49, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 50, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander.animating {
   overflow: hidden !important;
+  opacity: 0;
+  visibility: hidden;
 }
-/* line 52, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 55, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander.opened {
   overflow: visible;
 }
-/* line 55, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 58, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_pointer {
   position: absolute;
   margin-left: -20px;
@@ -9095,14 +9104,16 @@ html[xmlns] .slides {
   -o-transition: left 0.3s ease-in;
   transition: left 0.3s ease-in;
 }
-/* line 62, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 65, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_expander-inner {
-  width: 80%;
+  width: 90%;
   height: 560px;
   margin: 0 auto;
   overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
-/* line 67, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 75, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_expander-inner .GI_TW_fullimg {
   position: relative;
   width: 100%;
@@ -9111,15 +9122,25 @@ html[xmlns] .slides {
   text-align: center;
   overflow: hidden;
 }
-/* line 74, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 82, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_expander-inner .GI_TW_fullimg img {
   position: relative;
 }
-/* line 79, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 88, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+.GI_TW_expander.opened .GI_TW_expander-inner {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+/* line 93, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_Controls {
   z-index: 1;
 }
-/* line 83, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 97, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_close {
   position: absolute;
   width: 40px;
@@ -9128,25 +9149,25 @@ html[xmlns] .slides {
   right: 20px;
   cursor: pointer;
 }
-/* line 91, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 105, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_arrow {
   position: absolute;
   top: 50%;
   cursor: pointer;
 }
-/* line 95, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 109, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_arrow.GI_TW_hidden {
   display: none;
 }
-/* line 98, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 112, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_arrow.GI_TW_next {
   right: 30px;
 }
-/* line 101, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 115, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_arrow.GI_TW_prev {
   left: 30px;
 }
-/* line 105, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+/* line 119, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
 .GI_TW_expander .GI_TW_loading {
   width: 20px;
   height: 20px;
@@ -9165,18 +9186,18 @@ html[xmlns] .slides {
 }
 
 @-moz-keyframes loader {
-  /* line 120, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 134, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 123, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 137, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 127, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 141, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -9184,18 +9205,18 @@ html[xmlns] .slides {
 }
 
 @-webkit-keyframes loader {
-  /* line 120, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 134, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 123, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 137, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 127, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 141, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -9203,18 +9224,18 @@ html[xmlns] .slides {
 }
 
 @-o-keyframes loader {
-  /* line 120, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 134, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 123, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 137, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 127, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 141, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -9222,18 +9243,18 @@ html[xmlns] .slides {
 }
 
 @-ms-keyframes loader {
-  /* line 120, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 134, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 123, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 137, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 127, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 141, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -9241,18 +9262,18 @@ html[xmlns] .slides {
 }
 
 @keyframes loader {
-  /* line 120, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 134, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 123, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 137, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 127, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
+  /* line 141, ../scss/plugins/GITheWall/_GITheWallStyle.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -12673,7 +12694,7 @@ footer .c-icon-NA {
 
 /* line 17, ../scss/theme/_collection.scss */
 .map-hotels-list {
-  margin-top: 50px;
+  margin-top: 160px;
   width: 100%;
   height: 560px;
   float: left;
@@ -13134,21 +13155,27 @@ footer .c-icon-NA {
     margin-top: 10px;
   }
 }
-/* line 6, ../scss/theme/_out-members.scss */
+/* line 5, ../scss/theme/_out-members.scss */
+.our-members-group-list .member-group-width {
+  width: 1400px;
+  margin: 0 auto;
+}
+/* line 11, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: inline-block;
 }
-/* line 12, ../scss/theme/_out-members.scss */
+/* line 17, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li {
   display: inline-block;
   position: relative;
   text-align: center;
   max-width: 252px;
+  margin: 16px 5px 0 5px;
 }
-/* line 18, ../scss/theme/_out-members.scss */
+/* line 24, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li img {
   background-color: #fff;
   -webkit-transition: all 0.2s linear;
@@ -13157,18 +13184,18 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 23, ../scss/theme/_out-members.scss */
+/* line 29, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li:hover img {
   background-color: #e2e3e4;
 }
-/* line 27, ../scss/theme/_out-members.scss */
+/* line 33, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 55px;
 }
-/* line 33, ../scss/theme/_out-members.scss */
+/* line 39, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay p {
   text-align: center;
   font-size: 12px;
@@ -13182,13 +13209,13 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 44, ../scss/theme/_out-members.scss */
+/* line 50, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay p::before, .our-members-group-list .members-group-list ul li .content-overlay p::after {
   display: inline-block;
   content: "-";
   padding: 0 3px;
 }
-/* line 53, ../scss/theme/_out-members.scss */
+/* line 59, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay .read-more-line-small {
   float: left;
   opacity: 0;
@@ -13201,7 +13228,7 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 62, ../scss/theme/_out-members.scss */
+/* line 68, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li .content-overlay span {
   width: 100%;
   float: left;
@@ -13214,18 +13241,22 @@ footer .c-icon-NA {
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 76, ../scss/theme/_out-members.scss */
+/* line 80, ../scss/theme/_out-members.scss */
+.our-members-group-list .members-group-list ul li:hover {
+  cursor: pointer;
+}
+/* line 83, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li:hover .read-more-line-small {
-  margin-top: 10px;
+  margin-top: 5px;
   opacity: 1;
   visibility: visible;
 }
-/* line 81, ../scss/theme/_out-members.scss */
+/* line 88, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-list ul li:hover span {
   opacity: 1;
   visibility: visible;
 }
-/* line 91, ../scss/theme/_out-members.scss */
+/* line 98, ../scss/theme/_out-members.scss */
 .our-members-group-list .members-group-details {
   opacity: 0;
   visibility: hidden;
@@ -13233,4 +13264,52 @@ footer .c-icon-NA {
   z-index: -2;
   overflow: hidden;
   position: absolute;
+}
+/* line 108, ../scss/theme/_out-members.scss */
+.our-members-group-list .map-item {
+  float: left;
+  width: 100%;
+  height: 420px;
+  margin-top: 17px;
+}
+/* line 118, ../scss/theme/_out-members.scss */
+.our-members-group-list .group-content h2 {
+  font-size: 21px;
+  margin-bottom: 0;
+  color: #333;
+  text-transform: uppercase;
+}
+/* line 124, ../scss/theme/_out-members.scss */
+.our-members-group-list .group-content h5 {
+  margin: 5px 0;
+  font-size: 11px;
+}
+/* line 128, ../scss/theme/_out-members.scss */
+.our-members-group-list .group-content p, .our-members-group-list .group-content a {
+  font-size: 14px;
+}
+/* line 132, ../scss/theme/_out-members.scss */
+.our-members-group-list .group-content .btn-default {
+  font-size: 12px;
+}
+/* line 136, ../scss/theme/_out-members.scss */
+.our-members-group-list .group-content h3 {
+  font-family: Palatino,sans-serif;
+  font-style: italic;
+  color: #1c3f94;
+  font-size: 15px;
+  letter-spacing: 0px;
+  margin-top: 10px;
+  display: inline-block;
+}
+/* line 146, ../scss/theme/_out-members.scss */
+.our-members-group-list .group-content .group-contact-details address, .our-members-group-list .group-content .group-contact-details a, .our-members-group-list .group-content .group-contact-details p {
+  margin: 0;
+  color: #6e6e6e;
+  font-size: 13px;
+  font-style: italic;
+}
+/* line 152, ../scss/theme/_out-members.scss */
+.our-members-group-list .group-content .group-contact-details address:hover, .our-members-group-list .group-content .group-contact-details a:hover, .our-members-group-list .group-content .group-contact-details p:hover {
+  color: #333333;
 }

@@ -339,7 +339,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-12"><h1 class="css-animate fadeInLeft md-text-center" data-wow-delay="0.5s" data-wow-duration="1.5s"> Hôtel Le Bellechasse Saint - Germain <span class="icon-flag-de"></span></h1></div>
+                    <div class="col-md-12"><h1 class="css-animate fadeInLeft md-text-center" data-wow-delay="0.5s" data-wow-duration="1.5s"> Hôtel Le Bellechasse Saint - French <span class="icon-flag-fr"></span></h1></div>
                     <div class="col-md-9">
                         
                         <div class="hotel-gallery css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="2s">
@@ -449,7 +449,8 @@
 
                         <div class="top full-width">                        
                             <div class="trust-you-holder text-center">
-                                <iframe id="trust-you-iframe" allowtransparency="true" src="http://api.trustyou.com/hotels/0cf49fc7-5956-4565-9e87-69093ed2655a/seal.html?lang=en&amp;size=big" frameborder="0" scrolling="no" height="144" width="170"></iframe>
+                                <iframe allowtransparency="true" src="http://api.trustyou.com/hotels/15c84609-5dd2-4c37-80eb-0a6440c03ca8/seal.html?lang=en&amp;size=big" frameborder="0" scrolling="no" height="144" width="170"></iframe>
+
                             </div>
 
                             <div class="hotel-details-address full-width md-text-center">
@@ -504,9 +505,9 @@
                             </ul>
 
                             <div class="buttons-holder">
-                                <a href="" class="btn-group full-width">ENQUIREY NOW</a>
-                                <a href="" class="btn-group full-width blue"><i class="fa fa-calendar"></i> BOOK NOW</a>
-                                <a href="" class="btn-group full-width white"><i class="fa fa-check"></i> No booking fees</a>
+                                <a href="" class="btn-group full-width blue">ENQUIREY NOW</a>
+                                <a href="" class="btn-group full-width "><i class="fa fa-calendar"></i> BOOK NOW</a>
+                               <!-- <a href="" class="btn-group full-width white"><i class="fa fa-check"></i> No booking fees</a>-->
                             </div>
                         </div>
 
@@ -615,12 +616,12 @@
             <script type="text/javascript">
             // <![CDATA[
                 var directionDisplay;
-                var In_Lat ="53.801312"; 
-                var In_Lng ="-9.527832";
-                var Int_maptext = '<h4>Hotel Westport</h4>Newport Road, Westport, Co. Mayo, Ireland <br/>Tel: +353 64 6638000'   
+                var In_Lat ="48.859663";
+                var In_Lng ="2.324051";
+                var Int_maptext = '<h4>Hôtel Le Bellechasse Saint</h4> Ile-de-France, Paris <br/>Tel: +33 143 263 110'
                 var Int_fromAddress = '';
                 var Int_Zoom = 13;
-                var Int_toAddress = '53.801312,-9.527832'; 
+                var Int_toAddress = '48.859663,2.324051';
                 var directionDisplay;
                 var directionsService;
           
@@ -663,7 +664,6 @@
                 });
 
 
-
                   var image = 'files/images/mapIcons/HotelIcon.png';
                   var marker = new google.maps.Marker({position: myLatlng, map: map, title: maptextparam,icon: image});     
 
@@ -673,11 +673,9 @@
 
                   //infowindow.open(map,marker);
 
-              } 
-              
+              }
               
             } 
-
 
 
             function calcRoute() {
