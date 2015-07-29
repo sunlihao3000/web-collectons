@@ -11791,6 +11791,67 @@ article .form-builder-wrapper form li.btn-submit:hover input {
     max-height: 375px;
   }
 }
+/* line 1, ../scss/components/_tooltip.scss */
+a.tooltips {
+  position: relative;
+  display: inline;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 7, ../scss/components/_tooltip.scss */
+a.tooltips span {
+  position: absolute;
+  width: 120px;
+  color: #3F3F3F;
+  background: #FFFFFF;
+  border: 1px solid #6D6D6D;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 21, ../scss/components/_tooltip.scss */
+a.tooltips span:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid #6D6D6D;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
+/* line 33, ../scss/components/_tooltip.scss */
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-bottom: 11px solid #FFFFFF;
+  border-right: 11px solid transparent;
+  border-left: 10px solid transparent;
+}
+/* line 47, ../scss/components/_tooltip.scss */
+a.tooltips:hover span {
+  visibility: visible;
+  top: 48px;
+  left: 50%;
+  margin-left: -60px;
+  z-index: 999;
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 5.0 Theme & Layouts
 --------------------------------------------------------------*/
@@ -12761,87 +12822,95 @@ footer .c-icon-NA {
   overflow: hidden;
   margin-top: 20px;
 }
-/* line 81, ../scss/theme/_collection.scss */
+/* line 82, ../scss/theme/_collection.scss */
+.hotels-list__hotels .item > a > img {
+  width: 100%;
+}
+/* line 86, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item > img {
   width: 100%;
 }
-/* line 85, ../scss/theme/_collection.scss */
+/* line 90, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content {
   margin: 0;
   background-color: #f0f2f4;
 }
-/* line 89, ../scss/theme/_collection.scss */
+/* line 94, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 20px;
 }
-/* line 96, ../scss/theme/_collection.scss */
+/* line 102, ../scss/theme/_collection.scss */
+.hotels-list__hotels .item .item-content h3 a:hover {
+  color: #c8950b;
+}
+/* line 108, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content h4 {
   font-size: 14px;
   margin: 0;
 }
-/* line 101, ../scss/theme/_collection.scss */
+/* line 113, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link {
   list-style: none;
   margin: 0;
   display: inline-block;
 }
-/* line 106, ../scss/theme/_collection.scss */
+/* line 118, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li {
   display: inline-block;
 }
-/* line 108, ../scss/theme/_collection.scss */
+/* line 120, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li a {
   font-size: 11px;
   background-color: #dbdbdb;
   padding: 3px 5px;
 }
-/* line 112, ../scss/theme/_collection.scss */
+/* line 124, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-type-link li a:hover {
   background-color: #1c4377;
   color: #fff;
 }
-/* line 121, ../scss/theme/_collection.scss */
+/* line 133, ../scss/theme/_collection.scss */
 .hotels-list__hotels .item .item-content .hotel-item-buttons {
   border-top: 1px solid #d8d9db;
 }
 
 @media (max-width: 1200px) {
-  /* line 137, ../scss/theme/_collection.scss */
+  /* line 149, ../scss/theme/_collection.scss */
   .hotel-details {
     margin-top: 70px;
   }
 
-  /* line 140, ../scss/theme/_collection.scss */
+  /* line 152, ../scss/theme/_collection.scss */
   .map-filters .btn-group.filter {
     margin-right: 0;
   }
 
-  /* line 143, ../scss/theme/_collection.scss */
+  /* line 155, ../scss/theme/_collection.scss */
   .map-filters .btn-group {
     width: 110px;
   }
 
-  /* line 147, ../scss/theme/_collection.scss */
+  /* line 159, ../scss/theme/_collection.scss */
   .hotels-list__hotels .item {
     width: 100%;
   }
 
-  /* line 150, ../scss/theme/_collection.scss */
+  /* line 162, ../scss/theme/_collection.scss */
   .group_of {
     width: 100%;
   }
 
-  /* line 153, ../scss/theme/_collection.scss */
+  /* line 165, ../scss/theme/_collection.scss */
   .hotels-list__hotels .item .item-content h3 {
     font-size: 14px;
     height: 40px;
     overflow: hidden;
   }
 
-  /* line 159, ../scss/theme/_collection.scss */
+  /* line 171, ../scss/theme/_collection.scss */
   .hotels-list__hotels .item .item-content h4 {
     font-size: 12px;
     height: 30px;
@@ -12849,36 +12918,36 @@ footer .c-icon-NA {
   }
 }
 @media (max-width: 1000px) {
-  /* line 170, ../scss/theme/_collection.scss */
+  /* line 182, ../scss/theme/_collection.scss */
   .map-filters select,
   .map-filters input {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 480px) {
-  /* line 177, ../scss/theme/_collection.scss */
+  /* line 189, ../scss/theme/_collection.scss */
   .map-hotels-list {
     height: 350px;
   }
 
-  /* line 180, ../scss/theme/_collection.scss */
+  /* line 192, ../scss/theme/_collection.scss */
   .group_of {
     width: auto;
   }
 }
 @media (max-width: 352px) {
-  /* line 189, ../scss/theme/_collection.scss */
+  /* line 201, ../scss/theme/_collection.scss */
   .map-filters select,
   .map-filters input {
     width: 95px;
   }
 
-  /* line 192, ../scss/theme/_collection.scss */
+  /* line 204, ../scss/theme/_collection.scss */
   .map-hotels-list {
     height: 300px;
   }
 
-  /* line 196, ../scss/theme/_collection.scss */
+  /* line 208, ../scss/theme/_collection.scss */
   .map-filters .btn-group {
     width: 80px;
     font-size: 12px;
@@ -13266,7 +13335,7 @@ footer .c-icon-NA {
   opacity: 1;
   visibility: visible;
 }
-/* line 113, ../scss/theme/_our-members.scss */
+/* line 112, ../scss/theme/_our-members.scss */
 .our-members-group-list .members-group-details {
   opacity: 0;
   visibility: hidden;
@@ -13275,35 +13344,35 @@ footer .c-icon-NA {
   overflow: hidden;
   position: absolute;
 }
-/* line 123, ../scss/theme/_our-members.scss */
+/* line 121, ../scss/theme/_our-members.scss */
 .our-members-group-list .map-item {
   float: left;
   width: 100%;
   height: 420px;
   margin-top: 17px;
 }
-/* line 133, ../scss/theme/_our-members.scss */
+/* line 131, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content h2 {
   font-size: 21px;
   margin-bottom: 0;
   color: #333;
   text-transform: uppercase;
 }
-/* line 139, ../scss/theme/_our-members.scss */
+/* line 137, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content h5 {
   margin: 5px 0;
   font-size: 11px;
 }
-/* line 143, ../scss/theme/_our-members.scss */
+/* line 141, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content p, .our-members-group-list .group-content a {
   font-size: 14px;
 }
-/* line 147, ../scss/theme/_our-members.scss */
+/* line 145, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content .btn-default {
   font-size: 12px;
   margin-bottom: 10px;
 }
-/* line 152, ../scss/theme/_our-members.scss */
+/* line 150, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content h3 {
   font-family: Palatino,sans-serif;
   font-style: italic;
@@ -13313,20 +13382,20 @@ footer .c-icon-NA {
   margin-top: 10px;
   display: inline-block;
 }
-/* line 162, ../scss/theme/_our-members.scss */
+/* line 160, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content .group-contact-details address, .our-members-group-list .group-content .group-contact-details a, .our-members-group-list .group-content .group-contact-details p {
   margin: 0;
   color: #6e6e6e;
   font-size: 13px;
   font-style: italic;
 }
-/* line 168, ../scss/theme/_our-members.scss */
+/* line 166, ../scss/theme/_our-members.scss */
 .our-members-group-list .group-content .group-contact-details address:hover, .our-members-group-list .group-content .group-contact-details a:hover, .our-members-group-list .group-content .group-contact-details p:hover {
   color: #333333;
 }
 
 @media (max-width: 1399px) {
-  /* line 181, ../scss/theme/_our-members.scss */
+  /* line 179, ../scss/theme/_our-members.scss */
   .our-members-group-list .member-group-width {
     width: 100%;
   }

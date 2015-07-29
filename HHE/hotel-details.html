@@ -339,7 +339,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-12"><h1 class="css-animate fadeInLeft md-text-center" data-wow-delay="0.5s" data-wow-duration="1.5s"> Hôtel Le Bellechasse Saint - French <span class="icon-flag-fr"></span></h1></div>
+                    <div class="col-md-12"><h1 class="css-animate fadeInLeft md-text-center" data-wow-delay="0.5s" data-wow-duration="1.5s"> Hôtel Le Bellechasse Saint - Germain <span class="icon-flag-fr"></span></h1></div>
                     <div class="col-md-9">
                         
                         <div class="hotel-gallery css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="2s">
@@ -399,8 +399,6 @@
                                             </a>
                                         </li>
 
-
-
                                         <li class="css-animate fadeInUp" data-wow-delay="1.2s" >
 
                                             <a href="https://twitter.com/">                                
@@ -438,7 +436,7 @@
                                 <div class="col-xs-12 col-sm-6 col-md-6">
                                     <div class="buttons-holder">
 
-                                        <a href="" class="btn-group half blue css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">ENQUIREY NOW</a>
+                                        <a href="" class="btn-group half blue css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">ENQUIRY NOW</a>
                                         <a href="" class="btn-group half css-animate fadeInRight" data-wow-delay="1s" ata-wow-duration="2s"><i class="fa fa-calendar"></i> BOOK NOW</a>
                                     </div>                                    
                                 </div>
@@ -467,8 +465,9 @@
 
                             <ul class="hotel-facility-icons full-width">
                                 <li>
-                                    <a>
+                                    <a class="tooltips" >
                                         <i class="c-icon-hairdresser"></i>
+                                        <span>hair dresser</span>
                                     </a>
                                 </li>
                                 <li>
@@ -487,8 +486,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a>
+                                    <a class="tooltips">
                                         <i class="c-icon-wifi"></i>
+                                        <span>free WIFI</span>
                                     </a>
                                 </li>
                                 <li>
@@ -505,7 +505,7 @@
                             </ul>
 
                             <div class="buttons-holder">
-                                <a href="" class="btn-group full-width blue">ENQUIREY NOW</a>
+                                <a href="" class="btn-group full-width blue">ENQUIRY NOW</a>
                                 <a href="" class="btn-group full-width "><i class="fa fa-calendar"></i> BOOK NOW</a>
                                <!-- <a href="" class="btn-group full-width white"><i class="fa fa-check"></i> No booking fees</a>-->
                             </div>
@@ -516,7 +516,7 @@
                             <h4>Member of</h4>
 
                             <div class="item">
-                                <a href="">
+                                <a href="about-us.html?group=1&page=about">
                                     <img src="files/images/mb01.png" alt="">
                                 </a>  
                             </div>
@@ -632,8 +632,7 @@
                     var myOptions = {
                         zoom: 16,
                         scrollwheel: false,
-                        center: myLatlng,
-                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                        center: myLatlng
               }
                 
               var map = new google.maps.Map(document.getElementById("map"), myOptions);
@@ -665,7 +664,13 @@
 
 
                   var image = 'files/images/mapIcons/HotelIcon.png';
-                  var marker = new google.maps.Marker({position: myLatlng, map: map, title: maptextparam,icon: image});     
+                  var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      animation: google.maps.Animation.DROP,
+                      title: maptextparam,
+                      icon: image
+                  });
 
                   google.maps.event.addListener(marker, 'click', function() {
                   infowindow.open(map,marker);

@@ -78,6 +78,11 @@
         overflow: hidden;
         margin-top: 20px;
 
+        > a {
+            >img {
+                width: 100%;
+            }
+        }
         >img {
             width: 100%;
         }
@@ -91,6 +96,13 @@
                 font-weight: bold;
                 margin-bottom: 0;
                 margin-top: 20px;
+
+                a {
+
+                    &:hover {
+                        color: #c8950b;
+                    }
+                }
 
             }
             h4 {

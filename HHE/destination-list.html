@@ -588,27 +588,39 @@
                   
                 // Looping through all the entries from the JSON data
                 for(var i = 0; i < json.length; i++) {
-                    
-                // Current object
-                var obj = json[i];
 
-                // Adding a new marker for the object
-                var marker = new google.maps.Marker({
-                  position: new google.maps.LatLng(obj.latitude,obj.longitude),
-                  icon: image,
-                  map: map,
-                  title: obj.title // this works, giving the marker a title with the correct title
-                });
-                
-                // Adding a new info window for the object
-                var clicker = addClicker(marker, obj.title);
-                bounds.extend(marker.position);
-                map.fitBounds(bounds);  
+                    // Current object
+                    var obj = json[i];
+                    var position =  new google.maps.LatLng(obj.latitude,obj.longitude);
+                    var time_out = 100 + (i * 25);
+                    // Adding a new marker for the object
+                    create_markers(obj,position,time_out);
 
                 } // end loop
-                  
-                  
-                  // Adding a new click event listener for the object
+
+                function create_markers(obj,position,time){
+
+                    window.setTimeout(function() {
+                        var marker = new google.maps.Marker({
+                            position: position,
+                            icon: image,
+                            map: map,
+                            animation: google.maps.Animation.DROP,
+                            title: obj.title // this works, giving the marker a title with the correct title
+                        });
+
+                        // Adding a new info window for the object
+                        var clicker = addClicker(marker, obj.title);
+                        bounds.extend(marker.position);
+                        map.fitBounds(bounds);
+
+                    }, time);
+                }
+
+
+
+
+                    // Adding a new click event listener for the object
                     function addClicker(marker, content) {
                         var infowindow = new google.maps.InfoWindow({
                             content: content
@@ -668,74 +680,72 @@
 
                             <div class="col-sm-6 col-md-4">
                                 <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
-                                    <img class="image-overlaid" src="files/images/hotel1.png" alt="">
-                                    
+                                    <a href="hotel-details.html"><img class="image-overlaid" src="files/images/hotel1.png" alt=""></a>
+
                                     <figcaption class="item-content text-left row">
                                         <div class="col-sm-8 col-md-8">
-                                            <h3 class="item-title css-animate fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s"><a href="">Abbaye de Maizieres </a></h3> 
-                                            <h4> beaune,france</h4>                                        
+                                            <h3 class="item-title css-animate fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s"><a href="hotel-details.html">Abbaye de Maizieres </a></h3>
+                                            <h4> beaune,france</h4>
                                         </div>
                                         <div class="col-sm-4 col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
-                                        
+
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">
                                             <li>
-                                                <a class="Monastery" href="/">Monastery</a>
+                                                <a  class="Monastery" href="/">Monastery</a>
                                             </li>
                                         </ul>
                                         <div class="hotel-item-buttons two-buttons col-sm-12 col-md-12 padding10">
-                                            <a class="btn btn-default dark css-animate fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" href="">Enquiry</a>
+                                            <a class="btn btn-default dark css-animate fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" href="hotel-details.html">Enquiry</a>
                                             <a class="btn btn-default gray css-animate fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" href="hotel-details.html">View More</a>
                                         </div>
-                                    </figcaption> 
-                                                         
+                                    </figcaption>
+
                                 </figure>
                             </div>
 
                             <div class="col-sm-6 col-md-4">
                                 <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
-                                    <img class="image-overlaid" src="files/images/hotel2.png" alt="">
-                                    
+                                    <a href="hotel-details.html"><img class="image-overlaid" src="files/images/hotel2.png" alt=""></a>
                                     <figcaption class="item-content text-left row">
                                         <div class="col-sm-8 col-md-8">
-                                            <h3 class="item-title css-animate fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s"><a href="">Ancien Presbytere la Rucheliere </a></h3> 
-                                            <h4> Contine Near Angers, France</h4>                                        
+                                            <h3 class="item-title css-animate fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s"><a href="hotel-details.html">Ancien Presbytere la Rucheliere </a></h3>
+                                            <h4> Contine Near Angers, France</h4>
                                         </div>
                                         <div class="col-sm-4 col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
-                                        
+
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">
                                             <li>
                                                 <a class="Monastery" href="/">Country house</a>
                                             </li>
                                             <li>
                                                 <a class="Monastery" href="/">Castle</a>
-                                            </li>                                            
+                                            </li>
                                         </ul>
                                         <div class="hotel-item-buttons two-buttons col-sm-12 col-md-12 padding10">
                                             <a class="btn btn-default dark css-animate fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" href="">Enquiry</a>
                                             <a class="btn btn-default gray css-animate fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" href="hotel-details.html">View More</a>
                                         </div>
-                                    </figcaption> 
-                                                         
+                                    </figcaption>
+
                                 </figure>
                             </div>
 
                             <div class="col-sm-6 col-md-4">
                                 <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
-                                    <img class="image-overlaid" src="files/images/hotel3.png" alt="">
-                                    
+                                    <a href="hotel-details.html"><img class="image-overlaid" src="files/images/hotel3.png" alt=""></a>
                                     <figcaption class="item-content text-left row">
                                         <div class="col-sm-8 col-md-8">
-                                            <h3 class="item-title css-animate fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s"><a href="">Auberge Saint Pierre</a></h3> 
-                                            <h4> Mont Saint Michel, France</h4>                                        
+                                            <h3 class="item-title css-animate fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s"><a href="hotel-details.html">Auberge Saint Pierre</a></h3>
+                                            <h4> Mont Saint Michel, France</h4>
                                         </div>
                                         <div class="col-sm-4  col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
-                                        
+
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">
                                             <li>
                                                 <a class="Monastery" href="/">Inn</a>
@@ -744,16 +754,15 @@
                                             <li>
                                                 <a class="Monastery" href="/">Boutique Hotel</a>
                                             </li>
-                                         </ul>
+                                        </ul>
                                         <div class="hotel-item-buttons two-buttons col-sm-12 col-md-12 padding10">
                                             <a class="btn btn-default dark css-animate fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" href="">Enquiry</a>
                                             <a class="btn btn-default gray css-animate fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s" href="hotel-details.html">View More</a>
                                         </div>
-                                    </figcaption> 
-                                                         
-                                </figure>
-                            </div>                            
+                                    </figcaption>
 
+                                </figure>
+                            </div>
 
                             <div class="col-sm-6  col-md-4">
                                 <figure class="item css-animate fadeInUp"  data-wow-delay="0.2s" >
@@ -765,7 +774,7 @@
                                             <h4> Contine Near Angers, France</h4>                                        
                                         </div>
                                         <div class="col-sm-4 col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
                                         
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">
@@ -795,7 +804,7 @@
                                             <h4> Mont Saint Michel, France</h4>                                        
                                         </div>
                                         <div class="col-sm-4 col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
                                         
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">
@@ -827,7 +836,7 @@
                                             <h4> beaune,france</h4>                                        
                                         </div>
                                         <div class="col-sm-4 col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
                                         
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">
@@ -855,7 +864,7 @@
                                             <h4> Mont Saint Michel, France</h4>                                        
                                         </div>
                                         <div class="col-sm-4 col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
                                         
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">
@@ -887,7 +896,7 @@
                                             <h4> beaune,france</h4>                                        
                                         </div>
                                         <div class="col-sm-4 col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
                                         
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">
@@ -915,7 +924,7 @@
                                             <h4> Contine Near Angers, France</h4>                                        
                                         </div>
                                         <div class="col-sm-4 col-md-4 padding20 css-animate fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s">
-                                            <img src="files/images/go1.png" alt="" class="group_of">
+                                            <a href="about-us.html?group=1&page=about" alt="" class="group_of"><img src="files/images/go1.png" alt="" class="group_of"></a>
                                         </div>
                                         
                                         <ul class="hotel-type-link col-sm-12 col-md-12 padding10">

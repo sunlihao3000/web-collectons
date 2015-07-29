@@ -81,20 +81,18 @@
         var our_member_int = $('.members-group-list li').size();
 
         if (our_member_int > 0) {
-              var wall = $('.members-group-list').GITheWall({
+            var wall = $('.members-group-list').GITheWall({
 
-                  onContentLoaded: function () {
-                       $('.GI_TW_expander.opened .map-trigger').trigger('click');
-                      },
-                    autoscroll: false,
-                    nextButtonClass: 'c-icon-arrow-thin-right',
-                    prevButtonClass: 'c-icon-arrow-thin-left',
-                    closeButtonClass: 'c-icon-close'
-              });
-            
-        };
+                onContentLoaded: function () {
+                    $('.GI_TW_expander.opened .map-trigger').trigger('click');
+                },
+                autoscroll: false,
+                nextButtonClass: 'c-icon-arrow-thin-right',
+                prevButtonClass: 'c-icon-arrow-thin-left',
+                closeButtonClass: 'c-icon-close'
+            });
 
-
+        }
 
 	}); // end document load 
 

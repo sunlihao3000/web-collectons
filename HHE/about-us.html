@@ -395,14 +395,14 @@
                     <h2 class="h2toh1 css-animate fadeInRight" data-wow-daly="1.5s" data-wow-duration="2s">Our Members</h2 >
                 </div>
             </div>
-            <div class="our-members-group-list gray full-width padding20">
+            <div class="our-members-group-list gray full-width padding20" id="group-map">
 
                 <div class="container-fluid ">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="members-group-list member-group-width">
                                 <ul>
-                                    <li class="css-animate fadeInLeft" data-wow-delay="1.2s"  data-contenttype="inline" data-href="#inline-templatel">
+                                    <li id="item-1" class="css-animate fadeInLeft" data-wow-delay="1.2s"  data-contenttype="inline" data-href="#inline-templatel">
                                         <img src="files/images/g1.png" alt="">
                                         <div class="content-overlay">
                                             <p>Austria and former crownlands</p>
@@ -567,9 +567,6 @@
 
                                     </div>
                                     <a  class="map-trigger hidden"></a>
-
-
-
                                 </div>
                                 <div class="col-md-5 group-content text-left">
                                     <h2>Schlosshotels & Herrenhäuser</h2>
@@ -880,7 +877,6 @@
                                             // Giving the map som options
                                             var mapOptions = {
                                                 draggable: true,
-                                                animation: google.maps.Animation.DROP,
                                                 scrollwheel: false,
                                                 mapTypeId: google.maps.MapTypeId.ROADMAP
                                             };
@@ -918,6 +914,7 @@
                                                 var marker = new google.maps.Marker({
                                                     position: new google.maps.LatLng(obj.latitude, obj.longitude),
                                                     icon: mark_icon,
+                                                    //animation: google.maps.Animation.DROP,
                                                     map: map,
                                                     title: obj.title // this works, giving the marker a title with the correct title
                                                 });
@@ -1059,7 +1056,6 @@
                                             // Giving the map som options
                                             var mapOptions = {
                                                 draggable: true,
-                                                animation: google.maps.Animation.DROP,
                                                 scrollwheel: false,
                                                 mapTypeId: google.maps.MapTypeId.ROADMAP
                                             };
@@ -1084,6 +1080,7 @@
                                                     position: new google.maps.LatLng(obj.latitude, obj.longitude),
                                                     icon: mark_icon,
                                                     map: map,
+                                                    //animation: google.maps.Animation.DROP,
                                                     title: obj.title // this works, giving the marker a title with the correct title
                                                 });
 

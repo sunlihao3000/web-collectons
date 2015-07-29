@@ -283,8 +283,39 @@
 					   
 		};
 		//	
-		
-		
+
+
+        //*** 'Search by Map' btu pass var map_int to open map as default ***
+
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            //console.log(vars);
+            for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+        }
+
+        getQueryVariable();
+
+        var get_group_id = getQueryVariable("group");
+
+
+        if(get_group_id) {
+            $('body').scrollTo('#group-map');
+            setTimeout(function (){
+                $('.members-group-list #item-'+get_group_id ).trigger('click');
+
+            },500);
+
+            //$
+        }
+
+        //*** end ***
+
+
 
     });
 
@@ -293,15 +324,15 @@
     });
 
     // for small height laptop
-    function resizeLayout() { 
+    function resizeLayout() {
 
         var window_height = $( window ).height();
         var window_width = $( window ).width();
 
         if ( isDesktop ) {
-            $('body').removeClass('short-height');  
+            $('body').removeClass('short-height');
             if (window_height < 768) {
-               $('body').addClass('short-height');  
+               $('body').addClass('short-height');
             };
         };
 
