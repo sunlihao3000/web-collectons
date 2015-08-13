@@ -13067,9 +13067,9 @@ footer .c-icon-NA {
 /* line 114, ../scss/theme/_hotel-details.scss */
 .hotel-facility-icons {
   list-style: none;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   margin-top: 10px;
+  margin-bottom: 0;
   padding: 10px;
 }
 /* line 121, ../scss/theme/_hotel-details.scss */
@@ -13079,7 +13079,7 @@ footer .c-icon-NA {
 /* line 124, ../scss/theme/_hotel-details.scss */
 .hotel-facility-icons li a {
   font-size: 26px;
-  padding: 10px;
+  padding: 10px 6px;
   color: #3f3f3f;
 }
 

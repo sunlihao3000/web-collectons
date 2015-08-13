@@ -113,9 +113,9 @@
 
 .hotel-facility-icons {
     list-style: none;
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
     margin-top: 10px;
+    margin-bottom: 0;
     padding: 10px;
 
     li {
@@ -123,7 +123,7 @@
 
         a {
             font-size: 26px;
-            padding: 10px;
+            padding: 10px 6px;
             color: #3f3f3f;
         }
     }
