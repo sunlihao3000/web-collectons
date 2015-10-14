@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-hzr1q3');
+    src:url('../fonts/icomoon.eot?#iefix-hzr1q3') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-hzr1q3') format('woff'),
+        url('../fonts/icomoon.ttf?-hzr1q3') format('truetype'),
+        url('../fonts/icomoon.svg?-hzr1q3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="c-icon-"], [class*=" c-icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.c-icon-hairdresser:before {
+    content: "\e60c";
+}
+.c-icon-hot:before {
+    content: "\e60d";
+}
+.c-icon-shower:before {
+    content: "\e60e";
+}
+.c-icon-telephone:before {
+    content: "\e60f";
+}
+.c-icon-wifi:before {
+    content: "\e611";
+}
+.c-icon-wiping:before {
+    content: "\e612";
+}
+.c-icon-rooms:before {
+    content: "\e610";
+}
+.c-icon-close:before {
+    content: "\e60a";
+}
+.c-icon-menu:before {
+    content: "\e60b";
+}
+.c-icon-cal-text:before {
+    content: "\e609";
+}
+.c-icon-arrow-thin-left:before {
+    content: "\e607";
+}
+.c-icon-arrow-thin-right:before {
+    content: "\e608";
+}
+.c-icon-NA:before {
+    content: "\e606";
+}
+.c-icon-mark:before {
+    content: "\e605";
+}
+.c-icon-plus:before {
+    content: "\e600";
+}
+.c-icon-down:before {
+    content: "\e601";
+}
+.c-icon-left:before {
+    content: "\e602";
+}
+.c-icon-minus:before {
+    content: "\e603";
+}
+.c-icon-right:before {
+    content: "\e604";
+}
+

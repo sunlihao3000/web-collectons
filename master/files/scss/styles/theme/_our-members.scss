@@ -1,0 +1,187 @@
+.page-content article {
+
+    p {
+        font-size: 14px;
+        color: #626161;
+    }
+
+}
+
+.our-members-group-list {
+
+    padding-bottom: 40px;
+
+    .member-group-width {
+        width: 1400px;
+        margin: 0 auto;
+    }
+    .members-group-list {
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+
+            li {
+                display: inline-block;
+                position: relative;
+                text-align: center;
+                max-width: 252px;
+                margin:16px 5px 0 5px;
+
+                img {
+                    background-color: #fff;
+                    @include anim(.2s,linear); 
+                }    
+
+                &:hover,
+                &.GI_TW_Current  {
+
+                    img {
+                        background-color: #e2e3e4;
+                    }
+
+                };
+
+                .content-overlay {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 55px;
+
+                    p {
+                        
+                        text-align: center;
+                        font-size: 12px;
+                        font-style: italic;
+                        color: #000;
+                        font-weight: bold;
+                        margin-bottom: 0;
+                        @include anim(.2s,linear); 
+
+                        &::before,
+                        &::after{
+                            display:inline-block;
+                            content: "-";
+                            padding: 0 3px;
+                        };
+
+
+                    }  
+
+                    .read-more-line-small  {
+                        float: left;                     
+                        opacity: 0;
+                        width: 100%;
+                        margin-top: 25px;
+                        visibility: hidden;
+                        @include anim(.2s,linear); 
+
+                    }
+                    span {
+                        width: 100%;
+                        float: left;
+                        opacity: 0;
+                        visibility: hidden;
+                        font-size: 9.8px;
+                        @include anim(.2s,linear); 
+
+                    };
+
+                }
+
+                &:hover {
+
+                    cursor: pointer;
+                   .read-more-line-small {
+                        margin-top:5px;
+                        opacity:1;
+                        visibility: visible;                    
+                   }
+                   span {
+                    opacity: 1;
+                    visibility: visible;
+                   }                      
+                };                             
+            }
+
+        }    
+    }
+
+    .members-group-details {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        z-index: -2;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .map-item {
+        float: left;
+        width: 100%;
+        height: 420px;
+        margin-top: 17px;
+
+    }
+
+    .group-content {
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 0;
+            color: #333;
+            text-transform: uppercase;
+        }
+        h5{
+            margin: 5px 0;
+            font-size: 11px;
+        }
+        p,a {
+            font-size: 14px;
+        }
+
+        .btn-default{
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-family:Palatino,sans-serif;
+            font-style: italic;
+            color: #1c3f94;
+            font-size: 15px;
+            letter-spacing: 0px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .group-contact-details {
+            address,a,p {
+                margin: 0;
+                color: #6e6e6e;
+                font-size: 13px;
+                font-style: italic;
+                
+                &:hover {
+                    color: #333333;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width:1399px) {
+
+    .our-members-group-list .member-group-width {
+        width: 100%;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,47 @@
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  margin: 0.5em 0;
+  font-family:$base-font-family;
+  color: #333;
+}
+
+h1,
+h2.h2toh1{
+  font-size: 55px;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+}
+
+.inner h1 {
+    font-size: 43px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h2.large {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+

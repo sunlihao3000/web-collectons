@@ -1,0 +1,103 @@
+
+/* three boxs styles */
+.threeboxs .item-cover {
+    position: absolute;
+    width: 100%;
+    padding: 10%;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    bottom: 0;
+
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+
+    h2 {
+        color: #fff;
+        font-size: 38px;
+    }
+
+    .separator,
+    h2 {
+        display: inline-block;
+    }
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;     
+
+}
+
+.threeboxs .on .item-cover {
+    padding-bottom: 15%;
+}
+
+.threeboxs .item {
+    margin-top: 10px;
+    width: 31%;
+    margin: 1%;
+    float: left;
+}
+.threeboxs .carousel .item {
+    width: auto;
+    margin: 0;
+}
+.threeboxs .item .full-width {
+    overflow: hidden;
+}
+
+.threeboxs .btn-holder {
+    display: none;
+}
+.threeboxs .btn-holder.on {
+    display: block;
+}
+
+.threeboxs .item.more-item {
+    display: none;
+}
+.inner .threeboxs .item.more-item {
+    display: block;
+}
+
+.threeboxs .item.more-item.on {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .threeboxs .item-cover h2 {
+      font-size: 26px;
+    }
+
+    .threeboxs .item-cover .separator, 
+    .threeboxs .item-cover .separator img {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .threeboxs .item {
+        width: 48%;
+    }
+
+
+}  
+
+
+@media (max-width: 480px) {
+
+    .threeboxs .item {
+        width: 98%;
+    }
+
+    .threeboxs .carousel .item {
+      width: 100%;
+    }
+
+}  

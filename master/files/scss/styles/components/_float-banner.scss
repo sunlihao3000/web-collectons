@@ -1,0 +1,124 @@
+
+/* float banner */
+
+
+#floatBanner,
+.layout-switch.scroll-down #floatBanner  /* for pop up disappear when people scroll it */
+{
+
+    float: left;
+    position: fixed;
+    top: 20%;
+    opacity: 0;
+    left:40%;
+
+    margin-left: -180px;
+
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;    
+
+    transition: all .8s linear;
+    -webkit-transition: all .8s linear;
+    -moz-transition: all .8s linear;
+    -o-transition: all .8s linear; 
+    perspective: 320px;
+    
+    z-index: -1;
+
+}
+
+.lt-ie9 #floatBanner {
+    z-index: 10;
+    margin-left: 0;
+}
+
+.layout-switch #floatBanner {
+    opacity: 1;
+    top: 20%;
+    z-index: 3;
+    left: 50%;
+
+}
+
+.floatBannerHolder,
+.layout-switch.scroll-down .floatBannerHolder /* for pop up disappear when people scroll it */
+{
+
+    position: relative;
+    transform: rotateY(-5deg);  
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    width: 360px;
+
+    transition: all .8s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;     
+}
+
+.lt-ie9 .floatBannerHolder {
+    background-color: #333;
+}
+
+.layout-switch .floatBannerHolder {
+   transform: rotateX(0deg);  
+}
+
+.floatBanner-closer {
+    float: right;
+    margin-top: -18px;
+    margin-right: -14px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.floatBanner-closer:hover {
+    color: $primary-color;
+}
+
+#floatBanner  .item {
+    width: 100%;
+    h3 a,
+    .item-content {
+        color: #fff;
+    }
+
+    .item-content {
+        font-size: 12px;
+        display: inline-block;
+        margin-bottom: 20px; 
+    }
+
+}
+
+.floatBannerTrigger {
+    visibility: hidden;
+}
+
+.open_pop_up,
+.layout-switch.scroll-down .open_pop_up,
+.home-loaded.scroll-down .open_pop_up {
+    visibility: hidden;
+    pointer-events:none;
+    opacity: 0;
+
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;   
+
+}
+
+.popup_show .open_pop_up,
+.home-loaded .open_pop_up,
+.layout-switch .open_pop_up {
+    visibility: visible;
+    pointer-events:auto;
+    opacity: 1;
+}
+
+.lt-ie9 .popup_show .open_pop_up {
+    visibility: hidden;
+    filter: alpha(opacity=0);
+}
+
+

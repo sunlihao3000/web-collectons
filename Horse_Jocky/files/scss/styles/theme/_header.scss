@@ -1,0 +1,93 @@
+.site-holder > header {
+
+    opacity: 0;
+    top: -10px;
+    position: fixed;
+    z-index: 10;
+    background-color:rgba(255,255,255,.9);
+    @include anim(.5s,linear); 
+
+    .pnav {
+        background-color:$primary-color;
+
+         ul.navbar-nav {
+            > li {
+               > a {
+                    color:#fff;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    padding-top: 22px;
+                    padding-bottom: 22px;
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+
+
+}
+.site-holder > header .pnav ul.navbar-nav > li.active > a,
+.site-holder > header .pnav ul.navbar-nav > li > a:hover {
+    background-color: #102848;
+}
+
+.scroll-down .site-holder > header {
+
+    .pnav ul.navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }   
+}
+
+.loaded .site-holder > header {
+    opacity: 1;
+    top:0px;
+}
+
+
+.mobile-top {
+    opacity: 0;
+    top: -10px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 63px;
+    background-color:$primary-color;
+    @include anim(.5s,linear);   
+
+
+}
+.loaded .site-holder .mobile-top  {
+    opacity: 1;
+    top:0px;
+}
+
+.logo-170 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -85px;
+    z-index: 5;
+}
+
+
+@media (max-width:1023px) {
+
+
+
+}
+@media (max-width:480px) {
+
+
+}
+
+@media (max-width:1199px) {
+    .site-holder > header .pnav ul.navbar-nav > li > a {
+        position: relative;
+        display: block;
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+}
+
