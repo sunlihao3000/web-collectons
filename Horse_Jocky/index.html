@@ -18,16 +18,13 @@
 
     <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon"   />  
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|PT+Sans:400,700|Open+Sans:400,600|Tinos:400,400italic' rel='stylesheet' type='text/css'>    
+    <link href='http://fonts.googleapis.com/css?family=Arimo|Fauna+One|Playfair+Display:400,400italic,7000|Roboto:400,400italic' rel='stylesheet' type='text/css'>
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
     
-    <!--[if lt IE 9]>
-      <link href="files/css/plugins/bootstrap.min.css" rel='stylesheet' type='text/css'>   
-      <link href="files/css/plugins/font-awesome.min.css" rel='stylesheet' type='text/css'>           
-    <![endif]-->    
 
     <link rel='stylesheet' type='text/css' href="files/css/plugins.css?v=07/02/15" >
     <link rel='stylesheet' type='text/css' href="files/css/styles.css?v=07/02/15" >
@@ -40,191 +37,71 @@
 
 </head>
 
-<body id="home" class="home"  >
+<body id="home" class="home full-with-layout"  >
  
     <noscript>Enable JavaScript in your browser</noscript>
     
-    <div class="preloader" >
 
-      <div class="status">
-        <img src="files/images/logo-loading.png" alt="">
-      </div>
-    </div>    
-   
-    <div class="site-holder">
-
-        <header class="full-width top">
-        
-            <nav class="pnav full-width ">          
-                <div class="container pos-r">                        
-                    <div class="row">
-                        
-                        <a href="home.html" class="logo col-md-2 pos-a hidden-xs hidden-sm">
+        <header class="header-top">
+            <div class="container-fluid pos-r">
+                <div class="row">
+                        <a class="col-md-2" href="home.html">
                             <img src="files/images/logo.png" alt="">
-                        </a>                         
-                        <div class="hidden-sm hidden-xs col-md-10 col-md-offset-2">                                            
-                            <ul class="nav navbar-nav">
-                                <li class="first"><a href="home.html">Home</a></li>
-                                <li><a href="destination-landing.html">Destinations</a></li>
-                                <li><a >Hotel Offers</a></li>
-                                <li><a >Cultural Routes</a></li>
-                                <li><a href="collection-landing.html">Collections</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li class="last"><a>Gift  Vouchers</a></li>
-                            </ul>
-                        </div>                          
-                    </div>
-                </div>                 
-            </nav>
-            
+                        </a>
+                        <div class="col-md-10">
+                            <nav class="hidden-sm hidden-xs pnav">
+                                <ul class="pnav">
+                                    <li class="first"><a>The Hotel</a></li>
+                                    <li><a href="/" >Rooms </a></li>
+                                    <li><a href="/" >Conference </a></li>
+                                    <li><a href="/" >Dining </a></li>
+                                    <li><a href="/" >Leisure </a></li>
+                                    <li><a href="/" >Leisure </a></li>
+                                    <li><a href="/" >Spa & Salon </a></li>
+                                    <li><a href="/" >Things do Do </a></li>
+                                    <li><a href="/" >Gift Shop  </a></li>
+                                    <li><a href="/" >OFFERS </a></li>
+                                    <li class="last"><a>Groups</a></li>
+                                </ul>
+                            </nav>
 
-            <div class="search-box-holder hidden-sm hidden-xs">   
-                <div class="container">
-                     <div class="row">
-                        <div class="col-md-10 col-md-offset-2">
-                            
-                            <div class="search-box-nights-long full-width">  
-                            <script type="text/javascript">
+                            <div class="cal-button">
+                                <i class="c-icon-cal-text hidden-sm"></i>
+                                <a class="btn-group hidden-xs"> Book Now</a>
+                            </div>
+                        </div>
 
-                                var padout = function(number) {
-                                  var number = String(number);
-                                  return (number.length < 2) ? '0' + number : number;
-                                }
-                                jQuery(document).ready(function(){
-                                jQuery('#arrival-date').val(padout(jQuery('#bke_arrival_day').val())+'/'+padout(jQuery('#bke_arrival_month').val())+'/'+padout(jQuery('#bke_arrival_year').val()));
-                                jQuery('#bke_arrival_day').val(padout(jQuery('#arrival-date').val().split('/')[0]));
-                                jQuery('#bke_arrival_month').val(padout(jQuery('#arrival-date').val().split('/')[1]));
-                                jQuery('#bke_arrival_year').val(padout(jQuery('#arrival-date').val().split('/')[2]));
-                                
-                                $("#arrival-date").datepicker({
-                                    onSelect: function(selectedDate) {
-                                    // custom callback logic here
-                                    //alert(selectedDate);
-                                    }
-                                });
-
-                            });  
-                            </script>
-
-                            <form  name="bke_search" method="post" action="">
-                                <div id="bke_searchbox_wrapper">
-                                    
-                                    <div class="field-wrapper country-holder">
-                                        <label for="bke_id">Where do you want to go?</label>
-                                        <select name="bke_id" class="bke_drop" id="bke_id">
-                                            <option value="">Select Country</option>
-                                            <option>Ireland</option>
-                                            <option>UK</option>     
-                                        </select>
-                                    </div>
-
-                                    <div class="field-wrapper cl-holder">
-                                        <label for="loc_id">Location</label>
-                                        <select id="loc_id" class="bke_drop" name="loc_id">
-                                            <option value="" class="searchbox-col-none">Select Location</option>
-                                            <option value="antrim-belfast" class="searchbox-col-location">Antrim - Belfast</option>
-                                            <option value="clare-ennistymon" class="searchbox-col-location">Clare - Ennistymon</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="field-wrapper">
-                                        <div class="label">Check in date</div>
-                                        <input type="text" id="arrival-date" class="">
-                                        <input type="hidden" name="bke_arrival_day" value="06" id="bke_arrival_day">
-                                        <input type="hidden" name="bke_arrival_month" value="07" id="bke_arrival_month">
-                                        <input type="hidden" name="bke_arrival_year" value="2015" id="bke_arrival_year">                                
-                                    </div>
-                                    <div class="field-wrapper">
-                                        <div class="label">Nights</div>
-                                        <select name="bke_nights" class="bke_dropdown">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="16">16</option>
-                                        <option value="17">17</option>
-                                        <option value="18">18</option>
-                                        <option value="19">19</option>
-                                        <option value="20">20</option>
-                                        <option value="21">21</option>
-                                        <option value="22">22</option>
-                                        <option value="23">23</option>
-                                        <option value="24">24</option>
-                                        <option value="25">25</option>
-                                        <option value="26">26</option>
-                                        <option value="27">27</option>
-                                        <option value="28">28</option>
-                                        <option value="29">29</option>
-                                        <option value="30">30</option>
-                                        <option value="31">31</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="field-wrapper">
-                                        <input type="submit" name="bke_submit" class="submit-button" value="Book Now">
-                                    </div>
-                                        
-                                </div>
-
-                               </form>
-                   
-                            </div>                  
-                        </div>                            
-                     </div>
-                </div>             
-             
-            </div>
-
-            <div class="mobile-top hidden-md hidden-lg mobile-layout">
-
-                <div class="menu-button">
-                    <i class="c-icon-menu"></i>
-                    <span class="hidden-xs">Menu</span>                        
-                </div> 
-
-                <a href="/" class="logo-170"> <img src="files/images/logo-170.png" alt=""></a>
-
-                <div class="cal-button">
-                    <i class="c-icon-cal-text hidden-sm"></i> 
-                    <a class="btn-group hidden-xs"> Book Now</a>
                 </div>
-                
             </div>
 
-
+            <!--mobile nav-->
             <div class="full-screen-pop-up main-nav-overlay">     
                 <a class="full-screen-pop-up__close main-nav-overlay "><i class="c-icon-close"></i></a>  
                 <div id="pop-up-navs">   
                     <div class="container">
                         <div class="row">
-                            <nav class="col-md-8 col-md-offset-2">
-                                <ul>
-                                    <li class="first"><a href="home.html">Home</a></li>
-                                    <li><a href="destination-landing.html">Destinations</a></li>
-                                    <li><a >Hotel Offers</a></li>
-                                    <li><a>Cultural Routes</a></li>
-                                    <li><a href="collection-landing.html">Collections</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li class="last"><a>Gift  Vouchers</a></li>
-                                </ul>                    
-                            </nav>  
+                            <nav class="hidden-sm hidden-xs">
+                                <ul class="pnav">
+                                    <li class="first"><a>The Hotel</a></li>
+                                    <li><a href="/" >Rooms </a></li>
+                                    <li><a href="/" >Conference </a></li>
+                                    <li><a href="/" >Dining </a></li>
+                                    <li><a href="/" >Leisure </a></li>
+                                    <li><a href="/" >Leisure </a></li>
+                                    <li><a href="/" >Spa & Salon </a></li>
+                                    <li><a href="/" >Things do Do </a></li>
+                                    <li><a href="/" >Gift Shop  </a></li>
+                                    <li><a href="/" >OFFERS </a></li>
+                                    <li class="last"><a>Groups</a></li>
+                                </ul>
+                            </nav>
                         </div>                        
                     </div> 
                 </div>
             </div>
+            <!--mobile nav end-->
 
-
+            <!--pop-up searchbox-->
             <div class="search-box-pop-up">                
                 <div class="search-box-pop-up-holder">
                         <a class="search-box-pop-up__close"><i class="c-icon-close"></i></a>  
@@ -331,12 +208,12 @@
                             </div>           
                 </div>
             </div>
-          
-
+            <!--pop-up serachbox end-->
         </header>
-        
+
         <div class="clearfix"></div>
-        <div id="mainslider" >
+
+        <div id="mainslider" class="full-with-banner" >
             <div class="flexslider" >
                 <ul class="slides">
                     <li class="item">
@@ -348,7 +225,7 @@
                         </div> 
                     </li>                
                     <li class="item">
-                        <img src="files/images/2.jpg" title="" alt="" />                        
+                        <img src="files/images/01.jpg" title="" alt="" />
                         <div class="slide_description_wrapper">
                             <div class="slide_description">                                
                                 <h3 data-animation='fadeInLeft'>A Memorable Journey...</h3>     
@@ -356,10 +233,10 @@
                         </div> 
                     </li>                
                     <li class="item">
-                        <img src="files/images/3.jpg" title="" alt="" />                        
+                        <img src="files/images/02.jpg" title="" alt="" />
                     </li>     
                     <li class="item">
-                        <img src="files/images/4.jpg" title="" alt="" />                        
+                        <img src="files/images/03.jpg" title="" alt="" />
                     </li>                                                       
                 </ul>
             </div>
@@ -371,1016 +248,35 @@
             </div>
         </div>
 
-        <div class="page-content full-width padding40 text-center">
+        <div class="one-column-content">
             <div class="container">
                 <div class="row">
                     <div class="heading-line css-animate fadeInUp" data-wow-daly="1.5s" data-wow-duration="2s">
-                         <h1>About us</h1>    
+                         <h1>tristique libero a ante eleifend</h1>
                     </div>       
 
-                    <article class="main col-md-5 col-md-offset-1 text-left css-animate fadeInLeft" data-wow-daly="1.5s" data-wow-duration="2s">
+                    <article class="main text-left css-animate fadeInLeft" data-wow-daly="1.5s" data-wow-duration="2s">
                         <p>Lorem ipsum dolor sit amet, cum ut assum solet, has at persius vituperatoribus. Posidonium incorrupte duo ex, ei sit dictas omittam, no est tota persecuti. Sed quas laudem everti te. Mei no nisl feugiat percipitur, latine splendide tincidunt et vim. Eu vix pertinax accusamus neglegentur, no mea scaevola efficiantur delicatissimi, eu has errem causae reprimique. At vis soleat sapientem constituto, id sit exerci mnesarchum.</p>
                     </article>
 
-                    <article class="main col-md-5 text-left css-animate fadeInRight" data-wow-daly="1.5s" data-wow-duration="2s">
-                        <p>Lorem ipsum dolor sit amet, cum ut assum solet, has at persius vituperatoribus. Posidonium incorrupte duo ex, ei sit dictas omittam, no est tota persecuti. Sed quas laudem everti te. Mei no nisl feugiat percipitur, latine splendide tincidunt et vim. Eu vix pertinax accusamus neglegentur, no mea scaevola efficiantur delicatissimi, eu has errem causae reprimique. At vis soleat sapientem constituto, id sit exerci mnesarchum.</p>
-                    </article>                    
                     
                 </div>
             </div>
         </div>
          
-        <div class="our-members-group full-width text-center">
-            <div class="container">
-                <div class="row">
-                    <a class="title css-animate fadeInLeft" data-wow-delay="1" data-wow-duration="2s"><img src="files/images/title.png" alt=""></a>
-                    <h2 class="h2toh1 css-animate fadeInRight" data-wow-daly="1.5s" data-wow-duration="2s">Our Members</h2 >
-                </div>
-            </div>
-            <div class="our-members-group-list gray full-width padding20" id="group-map">
 
-                <div class="container-fluid ">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="members-group-list member-group-width">
-                                <ul>
-                                    <li id="item-1" class="css-animate fadeInLeft" data-wow-delay="1.2s"  data-contenttype="inline" data-href="#inline-templatel">
-                                        <img src="files/images/g1.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Austria and former crownlands</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-                                    </li>
-                                    <li class="css-animate fadeInRight" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel2">
-                                        <img src="files/images/g2.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Belguim & Netherlands</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInUp" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel2">
-                                        <img src="files/images/g3.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Belguim & Netherlands</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInDown" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel">
-                                        <img src="files/images/g4.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Belguim & Netherlands</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInLeft" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel2">
-                                        <img src="files/images/g5.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>ireland</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-                                    <li class="css-animate fadeInRight" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel">
-                                        <img src="files/images/g6.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Hungary</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-                                    </li>
-                                    <li class="css-animate fadeInUp" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel2">
-                                        <img src="files/images/g65.png" alt="">
-                                        <div class="content-overlay">
-                                            <p> ireland</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInDown" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel">
-                                        <img src="files/images/g7.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Italy</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInLeft" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel2">
-                                        <img src="files/images/g8.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Belguim & Netherlands</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInRight" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel">
-                                        <img src="files/images/g9.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Poland</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInUp" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel2">
-                                        <img src="files/images/g11.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Portugal</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInDown" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel">
-                                        <img src="files/images/g12.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Slovakia</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInLeft" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel2">
-                                        <img src="files/images/g13.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>sweden</p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInRight" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel">
-                                        <img src="files/images/g14.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>Switzerland </p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="css-animate fadeInUp" data-wow-delay="1.2s" data-contenttype="inline" data-href="#inline-templatel2">
-                                        <img src="files/images/g15.png" alt="">
-                                        <div class="content-overlay">
-                                            <p>walse </p>
-                                            <div class="read-more-line-small"></div>
-                                            <span>read more</span>
-                                        </div>
-
-                                    </li>
-
-
-
-                                </ul>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="members-group-details" >
-                    <div id="inline-templatel">
-                        <div class="container-fluid padding40 pos-r">
-                            <div class="row">
-                                <div class="col-md-5 ">
-                                    <div id="map-for-group-1" data-id="1" class="map-item">
-
-                                    </div>
-                                    <a  class="map-trigger hidden"></a>
-                                </div>
-                                <div class="col-md-5 group-content text-left">
-                                    <h2>Schlosshotels & Herrenhäuser</h2>
-                                    <h5 class="country">Austria</h5>
-                                    <article>
-                                        <p>The group of Schlosshotels & Herrenhäuser is a collection of the finest hotel establishments in Austria and its neighbouring countries. Its castles hotels, mansions, palaces, historic hotels and restaurants offer all a warm family welcome with top-level services to the most demanding travellers, each providing an elegant stay in a dream-like setting.</p>
-                                        <p>Schlosshotels & Herrenhäuser offer 80 authentic and traditional establish The group of Schlosshotels & Herrenhäuser is a collection of the finest hotel establishments in Austria and its neighbouring countries. Its castles hotels, mansions, palaces, historic hotels and restaurants offer all a warm family welcome with top-level services to the most demanding travellers, each providing an elegant stay in a dream-like setting.</p>
-
-                                    </article>
-                                    <div class="button-group full-width">
-                                        <a href="" class="btn-default yellow explore-hotels"> explore hotels</a>
-                                        <a href="" class="btn-default yellow view-offers"> view special offers </a>
-                                        <a href="" class="btn-default group-contact-us"> contact us</a>
-                                    </div>
-                                    <div class="group-contact-details">
-
-                                        <h3>Contact info</h3>
-                                        <address> Schlosshotels & Herrenhäuser, Austrasse 7, 5411 Oberalm (Salzburg), Austria</address>
-                                        <a href="">Tel: +43 62 45 90 123 </a> <a href="">Fax: +43 62 45 74 54 45,</a><br>
-                                        <a href="">Email : info@schlosshotels.co.at</a> <br>
-                                        <a href="">Website: http://www.schlosshotels.co.at/</a>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-2">
-                                    <img src="files/images/g1.png" alt="" class="group-logo-right">
-                                </div>
-                                <script type="text/javascript">
-                                    // https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false
-                                    // //code.jquery.com/jquery-1.11.0.min.js
-                                    $(document).ready(function($) {
-                                        var map;
-                                        var bounds = new google.maps.LatLngBounds();
-                                        var image_Default = 'icon-0';
-                                        // The JSON data
-                                        var json = [
-                                            {
-                                                "id": 1,
-                                                "title": "Hôtel de la Motte",
-                                                "latitude": "48.6739848",
-                                                "longitude": "1.7337709",
-                                                "image": "icon-1",
-                                                "url": "collection-list.html"
-                                            }, {
-                                                "id": 2,
-                                                "title": "Hotel Regina",
-                                                "latitude": "47.0566555",
-                                                "longitude": "0.250907",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 3,
-                                                "title": "Disneyland® Hotel",
-                                                "latitude": "48.5879049",
-                                                "longitude": "2.3607144",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 4,
-                                                "title": "Abbaye de Maizieres",
-                                                "latitude": "47.024379",
-                                                "longitude": "4.835668",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 5,
-                                                "title": "Auberge Saint Pierre",
-                                                "latitude": "48.6355677",
-                                                "longitude": "-1.5098483",
-                                                "image": "icon-1"
-
-                                            }, {
-                                                "id": 6,
-                                                "title": "Castel Damandre Hotel",
-                                                "latitude": "46.8760128",
-                                                "longitude": "5.8064442",
-                                                "image": "icon-1"
-
-                                            }, {
-                                                "id": 7,
-                                                "title": "Chateau de Ballue",
-                                                "latitude": "48.443529",
-                                                "longitude": "-1.538697",
-                                                "image": "icon-1"
-
-                                            }, {
-                                                "id": 8,
-                                                "title": "Chateau de Goville",
-                                                "latitude": "49.2495584",
-                                                "longitude": "-0.8464204",
-                                                "image": "icon-1"
-
-                                            }, {
-                                                "id": 9,
-                                                "title": "Chateau de Goville",
-                                                "latitude": "47.4721565",
-                                                "longitude": "5.6350149",
-                                                "image": "icon-1"
-
-
-                                            }, {
-                                                "id": 10,
-                                                "title": "Chateau Bellevue",
-                                                "latitude": "47.153653",
-                                                "longitude": "5.530843",
-                                                "image": "icon-1"
-
-                                            }, {
-                                                "id": 11,
-                                                "title": "Chateau de Busset",
-                                                "latitude": "46.0628616",
-                                                "longitude": "3.5099549",
-                                                "image": "icon-1"
-
-                                            }, {
-                                                "id": 12,
-                                                "title": "Chateau de Chargé",
-                                                "latitude": "46.969635",
-                                                "longitude": "0.398473",
-                                                "image": "icon-1"
-
-                                            }, {
-                                                "id": 13,
-                                                "title": "Chateau de Floure",
-                                                "latitude": "43.223985",
-                                                "longitude": "2.347551",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 14,
-                                                "title": "Chateau de la Barre",
-                                                "latitude": "45.631991",
-                                                "longitude": "5.622022",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 16,
-                                                "title": "Chateau de la Cazine",
-                                                "latitude": "46.240429",
-                                                "longitude": "1.558767",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 17,
-                                                "title": "Chateau de la Rue Chambord",
-                                                "latitude": "47.6597946",
-                                                "longitude": "1.4386672",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 18,
-                                                "title": "Chateau de la Rue",
-                                                "latitude": "47.6571145",
-                                                "longitude": "1.4278066",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 19,
-                                                "title": "Chateau de l'Epinay",
-                                                "latitude": "47.392173",
-                                                "longitude": "-0.794421",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 20,
-                                                "title": "Chateau de l'Epinay",
-                                                "latitude": "45.8155186",
-                                                "longitude": "-0.6591153",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 21,
-                                                "title": "Chateau de Noyelles",
-                                                "latitude": "50.1858745",
-                                                "longitude": "1.7067295",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 22,
-                                                "title": "Chateau de Reignac",
-                                                "latitude": "44.9052727",
-                                                "longitude": "-0.4164867",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 23,
-                                                "title": "Chateau de Reignac",
-                                                "latitude": "44.0258863",
-                                                "longitude": "4.791859",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 24,
-                                                "title": "Chateau des Briottieres",
-                                                "latitude": "47.6857",
-                                                "longitude": "-0.590342",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 25,
-                                                "title": "Chateau des Monthairons",
-                                                "latitude": "49.0610913",
-                                                "longitude": "5.4090921",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 26,
-                                                "title": "Chateau des Monthairons",
-                                                "latitude": "47.442181",
-                                                "longitude": "-2.157477",
-                                                "image": "icon-1"
-                                            }, {
-                                                "id": 27,
-                                                "title": "Chateau d'Urtubie",
-                                                "latitude": "43.3665492",
-                                                "longitude": "-1.6883325",
-                                                "image": "icon-2"
-                                            }, {
-                                                "id": 28,
-                                                "title": "Chateau Hotel du Colombier",
-                                                "latitude": "48.6378469",
-                                                "longitude": "-1.9679528",
-                                                "image": "icon-2"
-                                            }, {
-                                                "id": 29,
-                                                "title": "Chateau Meyre",
-                                                "latitude": "45.030593",
-                                                "longitude": "-0.775107",
-                                                "image": "icon-2"
-                                            }, {
-                                                "id": 30,
-                                                "title": "Clos de la Glycine",
-                                                "latitude": "43.902344",
-                                                "longitude": "5.2938676",
-                                                "image": "icon-2"
-                                            }, {
-                                                "id": 31,
-                                                "title": "Domaine de joinville",
-                                                "latitude": "50.04929",
-                                                "longitude": "1.404487",
-                                                "image": "icon-2"
-                                            }, {
-                                                "id": 32,
-                                                "title": "Domaine de Mombreux",
-                                                "latitude": "50.700214",
-                                                "longitude": "2.0956421",
-                                                "image": "icon-2"
-                                            }, {
-                                                "id": 33,
-                                                "title": "Grand Hotel Continental - Reims",
-                                                "latitude": "49.2570281",
-                                                "longitude": "4.02564",
-                                                "image": "icon-2"
-                                            }, {
-                                                "id": 34,
-                                                "title": "Hostellerie Cheval Noir",
-                                                "latitude": "48.3738974",
-                                                "longitude": "2.8144813",
-                                                "image": "icon-2"
-                                            }, {
-                                                "id": 35,
-                                                "title": "Hostellerie de la Tour d'Auxois",
-                                                "latitude": "47.2799946",
-                                                "longitude": "4.231268",
-                                                "image": "icon-3"
-                                            }, {
-                                                "id": 36,
-                                                "title": "Hostellerie Provencale",
-                                                "latitude": "44.0107405",
-                                                "longitude": "4.4178704",
-                                                "image": "icon-3"
-                                            }, {
-                                                "id": 37,
-                                                "title": "Hotel Belle sur Risle",
-                                                "latitude": "49.3537539",
-                                                "longitude": "0.5394436",
-                                                "image": "icon-3"
-                                            }, {
-                                                "id": 38,
-                                                "title": "Hotel Cuq en Terrasses",
-                                                "latitude": "43.557667",
-                                                "longitude": "1.891805",
-                                                "image": "icon-3"
-                                            }, {
-                                                "id": 39,
-                                                "title": "Hotel des pins",
-                                                "latitude": "43.6756349",
-                                                "longitude": "1.4246938",
-                                                "image": "icon-3"
-                                            }, {
-                                                "id": 40,
-                                                "title": "Hotel du Theatre",
-                                                "latitude": "45.760122",
-                                                "longitude": "4.83199",
-                                                "image": "icon-3"
-                                            }, {
-                                                "id": 41,
-                                                "title": "Hotel Edward Ier",
-                                                "latitude": "44.679288",
-                                                "longitude": "0.893365",
-                                                "image": "icon-3"
-                                            }, {
-                                                "id": 42,
-                                                "title": "Hotel le Bellechasse",
-                                                "latitude": "48.859663",
-                                                "longitude": "2.324051",
-                                                "image": "icon-3"
-                                            }
-
-
-
-
-
-
-                                        ];
-
-
-
-                                        function initialize(this_map) {
-                                            console.log(this_map);
-                                            // Giving the map som options
-                                            var mapOptions = {
-                                                draggable: true,
-                                                scrollwheel: false,
-                                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                                            };
-
-                                            // Creating the map
-                                            map = new google.maps.Map(document.getElementById(this_map), mapOptions);
-
-                                            // Looping through all the entries from the JSON data
-                                            for (var i = 0; i < json.length; i++) {
-
-                                                // Current object
-                                                var obj = json[i];
-                                                var mark_icon;
-
-                                                // get marker icon form json file
-                                                if (obj.image){
-                                                    mark_icon = 'files/images/mapIcons/' + obj.image +'.png' ;
-                                                } else {
-                                                    mark_icon = 'files/images/mapIcons/' + image_Default + '.png' ;
-                                                }
-                                                //
-                                                //get the url of hotel from json files
-                                                var hotel_url;
-                                                var hotel_url_default = "hotel-details.html";
-                                                if(obj.url){
-                                                    hotel_url = obj.url;
-                                                } else {
-                                                    hotel_url = hotel_url_default;
-                                                }
-                                                var marker_content = "<div class='hotel_marker_holder'> <h4><a href='" +hotel_url+"'>"+obj.title+"</a></h4> ";
-
-
-
-                                                // Adding a new marker for the object
-                                                var marker = new google.maps.Marker({
-                                                    position: new google.maps.LatLng(obj.latitude, obj.longitude),
-                                                    icon: mark_icon,
-                                                    //animation: google.maps.Animation.DROP,
-                                                    map: map,
-                                                    title: obj.title // this works, giving the marker a title with the correct title
-                                                });
-
-                                                // Adding a new info window for the object
-                                                var clicker = addClicker(marker, marker_content);
-                                                bounds.extend(marker.position);
-                                                map.fitBounds(bounds);
-
-                                            } // end loop
-
-
-                                            // Adding a new click event listener for the object
-                                            function addClicker(marker, pop_up_content) {
-                                                var infowindow = new google.maps.InfoWindow({
-                                                    content: pop_up_content
-                                                })
-
-                                                google.maps.event.addListener(map, 'click', function() {
-                                                    infowindow.close();
-                                                });
-
-                                                google.maps.event.addListener(marker, 'click', function() {
-                                                    infowindow.open(map,marker);
-                                                });
-
-
-                                            }
-
-                                        }
-
-                                        // Initialize the map
-
-                                        $(".map-trigger").one("click", function () {
-                                            var this_map_id = $(this).parent().children('.map-item').attr('id');
-                                            var this_map_data_id = $(this).parent().children('.map-item').attr('data-id');
-                                            console.log(this_map_data_id);
-                                            setTimeout(function () {
-                                                initialize(this_map_id);
-                                            }, 100);
-                                        });
-
-                                    });
-                                </script>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div id="inline-templatel2">
-                        <div class="container-fluid padding40 pos-r">
-                            <div class="row">
-                                <div class="col-md-5 ">
-                                    <div id="map-for-group-2" data-id="2" class="map-item">
-
-                                    </div>
-                                    <a  class="map-trigger hidden"></a>
-
-
-
-                                </div>
-                                <div class="col-md-5 group-content text-left md-text-center">
-                                    <div class="clearfix"></div>
-                                    <h2>Hampshaire Class</h2>
-                                    <h5 class="country">Belguim & Netherlands</h5>
-                                    <article>
-                                        <p>Lorem ipsum dolor sit amet, ad mea mollis assueverit, mel in latine malorum vocibus, quod fierent cotidieque usu ex. Ipsum vivendo laboramus ad vel, maiorum rationibus eum ei. Tractatos definitiones no sed, in dico delenit interpretaris vix, eirmod repudiandae te pro. Omnes apeirian sed cu, mundi sanctus nominavi vix ex, maiorum posidonium vis at. Eu mel esse primis, duo ex graeco viderer impedit.</p>
-                                        <p>Mea probo pericula at. Ut cum vero luptatum vivendum. Paulo platonem vix ne, nulla definiebas ei sit. Nec hinc solum invidunt no, at iusto equidem senserit qui. Id pri ponderum accusamus, ea sit reque nostrum necessitatibus. Movet dolorum phaedrum pri ad, id ignota everti epicuri duo, ea probo praesent mei.</p>
-                                    </article>
-                                    <div class="button-group full-width">
-                                        <a href="" class="btn-default yellow explore-hotels"> explore hotels</a>
-                                        <a href="" class="btn-default yellow view-offers"> view special offers </a>
-                                        <a href="" class="btn-default group-contact-us"> contact us</a>
-                                    </div>
-                                    <div class="group-contact-details">
-
-                                        <h3>Contact info</h3>
-                                        <address> Schlosshotels & Herrenhäuser, Austrasse 7, 5411 Oberalm (Salzburg), Austria</address>
-                                        <a href="">Tel: +43 62 45 90 123 </a> <a href="">Fax: +43 62 45 74 54 45,</a><br>
-                                        <a href="">Email : info@schlosshotels.co.at</a> <br>
-                                        <a href="">Website: http://www.schlosshotels.co.at/</a>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-2">
-                                    <img src="files/images/g2.png" alt="" class="group-logo-right">
-                                </div>
-                                <script type="text/javascript">
-                                    // https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false
-                                    // //code.jquery.com/jquery-1.11.0.min.js
-                                    $(document).ready(function($) {
-                                        var map;
-                                        var bounds = new google.maps.LatLngBounds();
-                                        var image_Default = 'icon-0';
-                                        // The JSON data
-                                        var json = [{
-                                            "id": 48,
-                                            "title": "Helgelandskysten",
-                                            "longitude": "12.63376",
-                                            "latitude": "66.02219",
-                                            "image": "icon-1"
-                                        }, {
-                                            "id": 46,
-                                            "title": "Tysfjord",
-                                            "longitude": "16.50279",
-                                            "latitude": "68.03515",
-                                            "image": "icon-1"
-
-                                        }, {
-                                            "id": 44,
-                                            "title": "Sledehunds-ekspedisjon",
-                                            "longitude": "7.53744",
-                                            "latitude": "60.08929",
-                                            "image": "icon-2"
-                                        }, {
-                                            "id": 43,
-                                            "title": "Amundsens sydpolferd",
-                                            "longitude": "11.38411",
-                                            "latitude": "62.57481",
-                                            "image": "icon-2"
-                                        }, {
-                                            "id": 39,
-                                            "title": "Vikingtokt",
-                                            "longitude": "6.96781",
-                                            "latitude": "60.96335",
-                                            "image": "icon-3"
-                                        }, {
-                                            "id": 6,
-                                            "title": "Tungtvann- sabotasjen",
-                                            "longitude": "8.49139",
-                                            "latitude": "59.87111",
-                                            "image": "icon-3"
-                                        }];
-
-
-                                        function initialize(this_map) {
-                                            //console.log(this_map);
-                                            // Giving the map som options
-                                            var mapOptions = {
-                                                draggable: true,
-                                                scrollwheel: false,
-                                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                                            };
-
-                                            // Creating the map
-                                            map = new google.maps.Map(document.getElementById(this_map), mapOptions);
-
-                                            // Looping through all the entries from the JSON data
-                                            for (var i = 0; i < json.length; i++) {
-
-                                                // Current object
-                                                var obj = json[i];
-                                                var mark_icon;
-
-                                                if (obj.image){
-                                                    mark_icon = 'files/images/mapIcons/' + obj.image +'.png' ;
-                                                } else {
-                                                    mark_icon = 'files/images/mapIcons/' + image_Default + '.png' ;
-                                                }
-                                                // Adding a new marker for the object
-                                                var marker = new google.maps.Marker({
-                                                    position: new google.maps.LatLng(obj.latitude, obj.longitude),
-                                                    icon: mark_icon,
-                                                    map: map,
-                                                    //animation: google.maps.Animation.DROP,
-                                                    title: obj.title // this works, giving the marker a title with the correct title
-                                                });
-
-                                                // Adding a new info window for the object
-                                                var clicker = addClicker(marker, obj.title);
-                                                bounds.extend(marker.position);
-                                                map.fitBounds(bounds);
-
-                                            } // end loop
-
-
-                                            // Adding a new click event listener for the object
-                                            function addClicker(marker, content) {
-                                                var infowindow = new google.maps.InfoWindow({
-                                                    content: content
-                                                })
-                                                google.maps.event.addListener(map, 'click', function() {
-                                                    infowindow.close();
-                                                });
-
-                                                google.maps.event.addListener(marker, 'click', function() {
-                                                    infowindow.open(map,marker);
-                                                });
-
-
-                                            }
-
-                                        }
-
-                                        // Initialize the map
-
-                                        $(".map-trigger").one("click", function () {
-                                            var this_map_id = $(this).parent().children('.map-item').attr('id');
-                                            var this_map_data_id = $(this).parent().children('.map-item').attr('data-id');
-                                            console.log(this_map_data_id);
-                                            setTimeout(function () {
-                                                initialize(this_map_id);
-                                            }, 100);
-                                        });
-
-                                    });
-                                </script>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-                   
-
-        </div>           
-        
         <div class="clearfix"></div>
 
-        <div class="bottom-site-holder">
-            
-            <div class="country-and-flag full-width dark">
-                <div class="container">
-                                   
-                <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <div class="row">                                        
+        <div class="three-columns-center">
 
-                                <h4 class="col-sm-6 col-md-6 text-left css-animate fadeInLeft" data-wow-delay="1"> <i class="c-icon-mark"></i> 500 Selected Historic Hotels in 20 European Countries</h4> 
-                                <div class="col-sm-6 social-icons col-md-6 text-right css-animate fadeInRight" data-wow-delay="1.5"> 
+        </div>
 
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/">                                
-                                                <span class="fa-stack fa-lg">
-                                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                                </span>                                
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/">                                
-                                                <span class="fa-stack fa-lg">
-                                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                                </span>                                    
-                                            </a>
-                                        </li>
-                                        <li>
-                                             <a href="https://www.youtube.com/">
-                                                <span class="fa-stack fa-lg">
-                                                      <i class="fa fa-circle fa-stack-2x"></i>
-                                                      <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-                                                </span>                                    
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://plus.google.com">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-                                                </span>                                
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.pinterest.com/">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                                    <i class="fa fa-pinterest-p fa-stack-1x fa-inverse"></i>
-                                                </span>                                
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.sharethis.com/">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                                    <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
-                                                </span>                                 
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <!-- <p>follow:</p>   -->                                
-                                </div> 
+        <div class="clearfix"></div>
+            <div class="one-column-content">
 
-                            </div>
-                        </div> 
-                        <div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-1">
-                            <div class="row ">
-                                <div class="flags-holder">
-
-                                <div class="flags">
-                                    <div class="item">
-                                        <a>
-                                            <span class="icon-flag-at"></span>
-                                            <span class="country">Austria</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-be"></span>
-                                            <span class="country">Belgium</span>
-                                        </a>
-                                    </div>
-
-         
-                                     <div class="item">
-                                        <a>
-                                        <span class="icon-flag-hr"></span>
-                                            <span class="country">Croatia</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-cz"></span>
-                                            <span class="country">Czech Republic</span>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="flags">
-                                    <div class="item">
-                                        <a>
-                                            <span class="icon-flag-dk"></span>
-                                            <span class="country">Denmark</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-fr"></span>
-                                            <span class="country">France</span>
-                                        </a>
-                                    </div>
-
-         
-                                     <div class="item">
-                                        <a>
-                                        <span class="icon-flag-de"></span>
-                                            <span class="country">Germany</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-gr"></span>
-                                            <span class="country">Greece</span>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-
-
-                                <div class="flags">
-                                    <div class="item">
-                                        <a>
-                                            <span class="icon-flag-hu"></span>
-                                            <span class="country">Hungary</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-ie"></span>
-                                            <span class="country">Ireland</span>
-                                        </a>
-                                    </div>
-
-         
-                                     <div class="item">
-                                        <a>
-                                        <span class="icon-flag-it"></span>
-                                            <span class="country">Italy</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-nl"></span>
-                                            <span class="country">Netherlands</span>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-
-                              
-                                <div class="flags">
-                                    <div class="item">
-                                        <a>
-                                            <span class="icon-flag-no"></span>
-                                            <span class="country">Norway</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-pl"></span>
-                                            <span class="country">Poland</span>
-                                        </a>
-                                    </div>
-
-         
-                                     <div class="item">
-                                        <a>
-                                        <span class="icon-flag-pt"></span>
-                                            <span class="country">Portugal</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-sk"></span>
-                                            <span class="country">Slovakia</span>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                 <div class="flags">
-                                    <div class="item">
-                                        <a>
-                                            <span class="icon-flag-si"></span>
-                                            <span class="country">Slovenia</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-se"></span>
-                                            <span class="country">Sweden</span>
-                                        </a>
-                                    </div>
-
-         
-                                     <div class="item">
-                                        <a>
-                                        <span class="icon-flag-ch"></span>
-                                            <span class="country">Switzerland</span>
-                                        </a>
-                                    </div>
-
-                                     <div class="item">
-                                        <a>
-                                            <span class="icon-flag-wales"></span>
-                                            <span class="country">Wales</span>
-                                        </a>
-                                    </div>
-
-                                </div>                           
-
-                                </div>
-                            </div>
-
-                        </div>     
-                    </div>
-                </div>
             </div>
+
+        <div class="bottom-site-holder">
 
             <section class="newsletter-signup--footer full-width darker padding20" >
                 <div class="container">                                    
@@ -1451,7 +347,7 @@
                 </div>
             </footer>
         </div>
-    </div>
+
 
 
     <script src="files/js/plugins/plugins.js"></script>        
@@ -1459,7 +355,7 @@
     <script src="files/js/setting-gt-IE8.js"></script> 
     <!--<![endif]-->
     <script src="files/js/setting-shared.js"></script>         
-    <script src="files/js/setting-inner.js?v=12032015"></script>  
+    <script src="files/js/setting-home.js?v=12032015"></script>
         
 
 </body>
