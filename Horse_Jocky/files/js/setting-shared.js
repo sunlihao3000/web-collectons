@@ -2,17 +2,15 @@
 
 
 
-(function(){
-  "use strict";
 
-    $(document).ready(function($) {
+
+jQuery(document).ready(function($) {
         
         if ( isDesktop ) {
              if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
                 $('body').addClass('safari');        
             }           
         };
-
 
 
         // add year in js
@@ -124,7 +122,23 @@
         if (tnav_init < 1) {
             $('.tnav-container').hide();
         };
-		
+
+
+        function resizeLayout() {
+
+            var window_height = $( window ).height();
+            var window_width = $( window ).width();
+
+            if ( isDesktop ) {
+                $('body').removeClass('short-height');
+                if (window_height < 768) {
+                    $('body').addClass('short-height');
+                };
+            };
+
+        };
+        //
+
 
 
     });
@@ -132,23 +146,10 @@
 
 
     // for small height laptop
-    function resizeLayout() {
 
-        var window_height = $( window ).height();
-        var window_width = $( window ).width();
-
-        if ( isDesktop ) {
-            $('body').removeClass('short-height');
-            if (window_height < 768) {
-               $('body').addClass('short-height');
-            };
-        };
-
-    };
-    //
     
 
-}()); 
+
 
 
 // makes sure the wwole site is loaded
