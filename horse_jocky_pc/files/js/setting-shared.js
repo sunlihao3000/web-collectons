@@ -13,6 +13,22 @@ jQuery(document).ready(function($) {
         };
 
 
+        function resizeLayout() {
+
+            var window_height = $( window ).height();
+            var window_width = $( window ).width();
+
+            if ( isDesktop ) {
+                $('body').removeClass('short-height');
+                if (window_height < 768) {
+                    $('body').addClass('short-height');
+                };
+            };
+
+        };
+        //
+        resizeLayout();
+
         // add year in js
         var datejs = new Date();
         var year = datejs.getFullYear(); 
@@ -54,7 +70,47 @@ jQuery(document).ready(function($) {
         });
 
 
-        
+
+        //flexslider
+        if ($().flexslider) {
+            $("#mainslider .flexslider").flexslider({
+                animation: "fade",
+                useCSS: true,
+                controlNav: true,
+                directionNav: true,
+                prevText: '',
+                nextText: '',
+                smoothHeight: false,
+                slideshowSpeed:8000,
+                animationSpeed:1000,
+                start: function( slider ) {
+                    slider.find('.slide_description').children().css({'visibility': 'hidden'});
+                    slider.find('.flex-active-slide .slide_description').children().each(function(index){
+                        var self = $(this);
+                        var animationClass = !self.data('animation') ? 'fadeInRight' : self.data('animation');
+                        setTimeout(function(){
+                            self.addClass("animated "+animationClass);
+                        }, index*200);
+                    });
+                },
+                after :function( slider ){
+                    slider.find('.flex-active-slide .slide_description').children().each(function(index){
+                        var self = $(this);
+                        var animationClass = !self.data('animation') ? 'fadeInRight' : self.data('animation');
+                        setTimeout(function(){
+                            self.addClass("animated "+animationClass);
+                        }, index*200);
+                    });
+                },
+                end :function( slider ){
+                    slider.find('.slide_description').children().each(function() {
+                        $(this).attr('class', '');
+                    });
+                }
+            });
+
+        }
+        //
 
         // drop down menu
         $('ul.navbar-nav > li').each(function() {
@@ -124,20 +180,7 @@ jQuery(document).ready(function($) {
         };
 
 
-        function resizeLayout() {
 
-            var window_height = $( window ).height();
-            var window_width = $( window ).width();
-
-            if ( isDesktop ) {
-                $('body').removeClass('short-height');
-                if (window_height < 768) {
-                    $('body').addClass('short-height');
-                };
-            };
-
-        };
-        //
 
 
 

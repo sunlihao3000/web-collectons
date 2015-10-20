@@ -154,30 +154,29 @@ figure.effect-line:hover figcaption::after {
 
 .pulse_holder {
     position: absolute;
-    bottom: 110px;
+    bottom: 60px;
     z-index: 10; 
     left: 50%;  
-    margin-left: -36px;        
+    margin-left: -20px;
 }
 
 .pulse_holder .pulse_marker {
     position: relative;
-    margin: 0 auto; 
+    float: left;
+    width:100%;
 }
 
 .pulse_holder .c-icon-down {
     width: 40px;
     height: 40px;
     font-size: 40px;
-    position: absolute;
-    top: 21px;
-    left: 17px;
     z-index: 10;
     color: #fff;
-    opacity:1;
-    visibility: visible;
-    opacity: 1;
-    @include anim(.2s,linear); 
+    @include anim(.2s,linear);
+
+    &:before {
+        margin-left: 2px;
+    }
 }
 
 .pulse_holder [class^="cir-"],

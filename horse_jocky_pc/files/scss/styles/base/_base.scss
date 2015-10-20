@@ -67,6 +67,10 @@ a:focus {
     @include margin(40px);
 }
 
+.padding60 {
+    @include padding(60px);
+}
+
 .padding40 {
     @include padding(40px);
 }
@@ -79,6 +83,7 @@ a:focus {
 .padding10 {
     @include padding(10px);
 }
+
 
 
 article, 
@@ -116,6 +121,9 @@ article form ul li:before {
 
 article h3 { font-size:30px;}
 
+.radius30 {
+    border-radius: 30px;
+}
 
 /* ul center */
 ul.ul-center {
@@ -163,6 +171,26 @@ ul.not-list-style li {
 
 .pos-a {
     position: absolute;
+}
+
+.item {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 3;
+    top:0;
+}
+
+[class^="circle-"],
+[class*=" circle-"],
+[class^="circle__"],
+[class*=" circle__"]{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: $primary-color;
 }
 
 
@@ -291,3 +319,28 @@ ul.not-list-style li {
     background: url(../../files/images/read-more-line--small.png) center center no-repeat;
 }
 
+
+.flexbox-center {
+
+    display: inline-block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+
+.three-columns-carousel-center {
+    .item {
+        img {
+            width:100%;
+            float: left;
+            padding:0;
+            margin:0;
+        }
+    }
+}
