@@ -15,24 +15,41 @@
                 loop:true,
                 autoplay: false,
                 nav:false,
-                center:true,
+
                 mouseDrag:true,
-                autoWidth:true,
+
                 responsive:{
                     0:{
                         items:1,
                         dots:true,
+                        autoWidth:false,
+
                     },
-                    768:{
-                        items:2,
-                        dots:true,
-                        nav:false
+                    1024:{
+                        items:3,
+                        dots:false,
+                        margin:30,
+                        startPosition: 1,
+                        center:true,
+                        autoWidth:true,
+                        autoHeight:true
                     },
                     1200:{
                         items:3,
                         dots:false,
                         margin:30,
                         startPosition: 1,
+                        center:true,
+                        autoWidth:true,
+                        autoHeight:true
+                    },
+                    1441:{
+                        items:3,
+                        dots:false,
+                        margin:30,
+                        startPosition: 1,
+                        center:true,
+                        autoWidth:true,
                     }
                 }
             });
@@ -78,9 +95,38 @@
 
 
 // makes sure the whole site is loaded
-$(window).load(function () {
+    // makes sure the wwole site is loaded
+    $(window).load(function() {
+
+
+        var waypoint1 = new Waypoint({
+            element: document.getElementById('three-columns-carousel-center'),
+            handler: function(direction) {
+
+                $(this.element).toggleClass('into_view', direction === 'down');
+
+                this.destroy();
+
+            },
+            offset: '50%'
+        });
 
 
 
-});
+        var waypoint3 = new Waypoint({
+            element: document.getElementById('map'),
+            handler: function(direction) {
 
+                initialize();
+
+                setTimeout(function(){
+                    $('.one-column-map').addClass('into_view');
+                }, 2000);
+                this.destroy()
+            },
+            offset: '50%'
+        });
+
+
+
+    });

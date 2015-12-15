@@ -2,19 +2,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
-h1, h2.h2toh1 {
-  font-size: 30px;
+h1,
+.toh1 {
+  font-size: 32px;
 }
 
 
-
-.inner h1 {
-    font-size: 30px;
-}
 
 .inner {
     h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
     h2 {
         font-size: 28px;
@@ -28,7 +25,22 @@ h1, h2.h2toh1 {
 }
 
 article a {
-  color: #B1B22C;
+  color: $secondary-color;
+}
+
+article a:hover {
+    color: $primary-color;
+}
+
+.title {
+    h1 {
+        color: #FFFFFF;
+        margin: 20px 0;
+    }
+}
+
+h2.white {
+    color: #FFFFFF;
 }
 
 

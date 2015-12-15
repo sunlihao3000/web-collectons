@@ -39,19 +39,29 @@ label {
 
 .btn-primary,
 .button,
-.submit-wrapper {
-    border: none;
-    color: $secondary-color;
+.submit-wrapper,
+.btn-submit input[type="submit"]{
+
+    border: medium none;
+    border-radius: 3px;
+    color: #333;
+    padding: 7px 22px;
     text-transform: uppercase;
-    padding: 3px 40px;
-    font-size: 13px;
-    background: #fff; /* Old browsers */
-    background-color: rgba(255,255,255,.8);
-    border-radius: 0;
-    margin: 0;
+    text-align: center;
+    background-color: $secondary-color;
+    font-weight: normal;
+    font-size: 14px;
+    margin:0;
     display: inline-block;
+    cursor: pointer;
+    font-family:$secondary-font-family;
 
     @include anim(.2s,linear); 
+}
+
+.btn-primary.white {
+    background: none;
+    border: 1px solid #fff;
 }
 
 .btn-primary:hover, 
@@ -59,8 +69,8 @@ label {
 .btn-primary:active, 
 .btn-primary.active,
 .button:hover {
-    background-color: rgba(255,255,255,1);
-    color: $secondary-color;
+    background-color: $primary-color;
+    color: #fff;
 }
 
 .btn-group,
@@ -105,12 +115,12 @@ label {
     border: medium none;
     border-radius: 3px;
     color: #fff;
-    padding: 7px 22px;
+    padding: 9px 22px;
     text-transform: uppercase;
     text-align: center;
     background-color: $primary-color;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 13px;
     margin:0;
     display: inline-block;    
     cursor: pointer;
@@ -213,7 +223,8 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 /* owl style resettings*/
 
 .owl-theme .owl-controls {
-  margin:0;
+    margin-top: 10px;
+    display:inline-block
 }
 .owl-theme .owl-controls .owl-page span {
   background: none repeat scroll 0 0 #8e1738;
@@ -238,42 +249,23 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 .owl-carousel .owl-item {
-  display: inline-block;
+
   text-align: center;
-  overflow: hidden;
+
 }
 
 .owl-controls {
 
 }
 
-.owlcarousel-holder .owl-controls {
-  position: absolute;
-  right: 0;
-  bottom: 100px;
-  z-index: 3;
-  width: 100%;
-}
- .owl-dots {
 
-
-}
-.owlcarousel-holder .owl-dots {
-  float: right; 
-  width: auto;
-  margin: 0 50px; 
-
-}
-.owlcarousel-holder .owl-dot {
-  float: left;
-}
 
 .owl-theme .owl-dots .owl-dot span {
   margin: 7px;
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: none repeat scroll 0 0 $primary-color;
+  background: none repeat scroll 0 0 $secondary-color;
   height: 14px;
   margin: 5px;
   width: 14px;
@@ -329,7 +321,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
  ------------------------------------------- */
 
 .hasDatepicker {
-  background: url("../images/cal.png") no-repeat scroll 98.5% 1px #FFFFFF !important;
+  background: url("../images/cal.png") no-repeat scroll 96.5% 8px !important;
   cursor: pointer;
 }
 

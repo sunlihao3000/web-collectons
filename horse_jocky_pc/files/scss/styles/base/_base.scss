@@ -88,7 +88,7 @@ a:focus {
 
 article, 
 article p {
-  color: #000;
+  color: $base-font-color;
   font-size: 15px;
   line-height: 24px;
 }
@@ -344,3 +344,17 @@ ul.not-list-style li {
         }
     }
 }
+
+@media (max-width:768px) {
+    .sm-text-center {
+        text-align: center;
+    }
+}
+
+
+@media (max-width:480px) {
+    .xs-text-center {
+        text-align: center;
+    }
+}
+

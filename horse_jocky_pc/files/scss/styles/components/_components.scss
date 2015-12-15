@@ -173,10 +173,22 @@ figure.effect-line:hover figcaption::after {
     z-index: 10;
     color: #fff;
     @include anim(.2s,linear);
-
+    float: left;
+    
     &:before {
         margin-left: 2px;
     }
+}
+
+.pulse_holder i {
+    clear: both;
+    float: left;
+    text-transform: uppercase;
+    margin-left: -3px;
+    margin-top: 5px;
+    font-family: "Playfair Display", sans-serif;
+    color: #fff;
+    font-style: normal;
 }
 
 .pulse_holder [class^="cir-"],
@@ -206,7 +218,8 @@ figure.effect-line:hover figcaption::after {
  
 .scroll-down .pulse_holder [class^="cir-"],
 .scroll-down .pulse_holder [class*=" cir-"],
-.scroll-down .pulse_holder .c-icon-down {
+.scroll-down .pulse_holder .c-icon-down,
+.scroll-down .pulse_holder i {
     opacity: 0;
     visibility: hidden;
 

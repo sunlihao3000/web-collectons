@@ -66,12 +66,14 @@ jQuery(document).ready(function($) {
                 titlePosition: 'inside',
 
                 }
-            }  
+            }
         });
 
 
 
-        //flexslider
+
+
+    //flexslider
         if ($().flexslider) {
             $("#mainslider .flexslider").flexslider({
                 animation: "fade",
@@ -112,7 +114,35 @@ jQuery(document).ready(function($) {
         }
         //
 
-        // drop down menu
+        $('.mobile-pnav .c-icon-menu,.main-nav-overlay .pop-up__close').on('click', function(e) {
+            e.preventDefault();
+            $('.full-screen-pop-up.main-nav-overlay').toggleClass('on');
+        });
+
+        $('.book-now-top-right,.c-icon-calendar,.search-box-pop-up__close').on('click', function(e) {
+            e.preventDefault();
+            $('.search-box-pop-up').toggleClass('on');
+        });
+
+
+        $('.read-more-holder,.welcome .pop-up__close').on('click', function(e) {
+            e.preventDefault();
+            $('.full-screen-pop-up.welcome').toggleClass('on');
+        });
+
+        $('.read-more-holder').one('click', function() {
+            $(".full-screen-pop-up.welcome .container").mCustomScrollbar();
+        });
+
+        $('.mobile-pnav .c-icon-menu').one('click', function() {
+            $(".full-screen-pop-up.main-nav-overlay #pop-up-navs").mCustomScrollbar();
+        });
+
+
+
+
+
+    // drop down menu
         $('ul.navbar-nav > li').each(function() {
 
            if ($(this).children('i').length === 0   ) {
@@ -180,10 +210,6 @@ jQuery(document).ready(function($) {
         };
 
 
-
-
-
-
     });
 
 
@@ -198,10 +224,16 @@ jQuery(document).ready(function($) {
 // makes sure the wwole site is loaded
 $(window).load(function() {
 
-    $(".status").fadeOut('', function() {});
+    $('body').addClass('loaded');
 
-    $(".preloader").delay(600).fadeOut("slow", function() {
-        $('body').addClass('loaded');  
+
+    var waypoint2 = new Waypoint({
+        element: document.getElementById('one-column-carousel'),
+        handler: function(direction) {
+            $(this.element).toggleClass('into_view', direction === 'down');
+            this.destroy()
+        },
+        offset: '50%'
     });
 
 });
