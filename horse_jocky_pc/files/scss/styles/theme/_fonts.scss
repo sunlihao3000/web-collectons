@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?r4ldll');
+    src:url('../fonts/icomoon.eot?r4ldll#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff2?r4ldll') format('woff2'),
+    url('../fonts/icomoon.ttf?r4ldll') format('truetype'),
+    url('../fonts/icomoon.woff?r4ldll') format('woff'),
+    url('../fonts/icomoon.svg?r4ldll#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+[class^="c-icon-"], [class*=" c-icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.c-icon-NA:before {
+    content: "\e606";
+}
+.c-icon-logo:before {
+    content: "\e800";
+}
+.c-icon-calendar:before {
+    content: "\e620";
+}
+.c-icon-menu:before {
+    content: "\e60b";
+}
+.c-icon-prev:before {
+    content: "\e801";
+}
+.c-icon-arrow-left:before {
+    content: "\e802";
+}
+.c-icon-down:before {
+    content: "\e803";
+}
+.c-icon-arrow-right:before {
+    content: "\e804";
+}
+.c-icon-close:before {
+    content: "\e805";
+}
+.c-icon-next:before {
+    content: "\e806";
+}
+.c-icon-plus:before {
+    content: "\e807";
+}
+.c-icon-zoom:before {
+    content: "\e900";
+}

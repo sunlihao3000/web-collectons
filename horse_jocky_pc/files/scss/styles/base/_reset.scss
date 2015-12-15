@@ -1,0 +1,574 @@
+/* Bootsrip resetting */
+
+label {
+  font-weight: normal;
+}
+
+.lt-ie9 label {
+  max-width: auto;
+}
+
+.btn-holder {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background-color: $primary-color;
+    color: #000;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    
+    @include anim(.2s,linear);     
+}
+
+.btn:hover, 
+.btn:focus, 
+.btn:active {
+    background-color: #fff;
+}
+
+.btn-default {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+}
+
+.btn-primary,
+.button,
+.submit-wrapper,
+.btn-submit input[type="submit"]{
+
+    border: medium none;
+    border-radius: 3px;
+    color: #333;
+    padding: 7px 22px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $secondary-color;
+    font-weight: normal;
+    font-size: 14px;
+    margin:0;
+    display: inline-block;
+    cursor: pointer;
+    font-family:$secondary-font-family;
+
+    @include anim(.2s,linear); 
+}
+
+.btn-primary.white {
+    background: none;
+    border: 1px solid #fff;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active,
+.button:hover {
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.btn-group,
+.submit-button {
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 15px 5px;
+    text-transform: uppercase;
+    height: 36px;
+    @include anim(.2s,linear); 
+    text-align: center;
+}
+
+.btn-group.blue,
+.submit-button.blue {
+    background-color: $primary-color; 
+}
+
+.btn-group.white {
+    background-color: #fff; 
+    color: #333;
+    border:1px solid #e5e5e5;
+
+}
+
+.btn-group:hover,
+.btn-group:focus,
+.submit-button:hover {    
+    padding: 5px 20px;
+    font-size: 17px;   
+
+}
+.submit-button:hover {
+   background-color: $primary-color; 
+}
+
+
+.btn-default {
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 9px 22px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $primary-color;
+    font-weight: normal;
+    font-size: 13px;
+    margin:0;
+    display: inline-block;    
+    cursor: pointer;
+    font-family:$secondary-font-family;
+}
+
+
+.btn-default.dark {
+    background-color: #5e5e5e;
+    color: #fff;
+}
+
+.btn-default.gray {
+    background: #888;
+    color: #fff;
+}
+
+.btn-default.yellow {
+  background: $secondary-color;
+  color: #fff;
+}
+
+
+.btn-default.dark:hover {
+    background-color: $primary-color; 
+}
+.btn-default.gray:hover {
+    background-color: $secondary-color;
+}
+
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active {
+  background-color: #000;
+  color: #fff;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+
+.two-buttons {
+    .btn {
+        width: 48%;   
+        margin: 1%;   
+        float: left; 
+    }
+    .btn:nth-child(odd) {
+        margin-left: 0;
+        margin-right: 2%;
+    }
+    .btn:nth-child(even) {
+        margin-left: 2;
+    }
+
+}
+
+@media (max-width:480px) { 
+
+    .text-left,
+    .text-right{
+        text-align: center;
+    }
+
+}
+
+
+/* mobile nav-bar */
+
+.navbar-toggle {
+  border: medium none;
+  border-radius: 0;
+  margin: 5px 0 0;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #636161;
+}
+
+.navbar-toggle .icon-bar {
+  height: 4px;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #8e1738;
+}
+
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #8E1738;
+}
+.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar-inverse .navbar-toggle:focus .icon-bar{
+    background-color: #fff;
+}
+
+
+/* owl style resettings*/
+
+.owl-theme .owl-controls {
+    margin-top: 10px;
+    display:inline-block
+}
+.owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 #8e1738;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  background: none repeat scroll 0 0 #8e1738;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+  top: 35%;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0;
+}
+
+.owl-carousel .owl-item {
+
+  text-align: center;
+
+}
+
+.owl-controls {
+
+}
+
+
+
+.owl-theme .owl-dots .owl-dot span {
+  margin: 7px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: none repeat scroll 0 0 $secondary-color;
+  height: 14px;
+  margin: 5px;
+  width: 14px;
+  padding: 0;
+}
+
+
+.owl-carousel.owl-theme .owl-controls .owl-nav [class*="owl-"] {
+    position: absolute;
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    background: none;
+    margin: 0;
+    padding: 0;
+    top: 25%;
+    border-radius: 0;
+    color: #000;
+    font-size: 30px;
+}
+
+.owl-carousel.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover {
+
+}
+
+.owl-carousel.owl-theme .owl-controls .owl-nav  .owl-prev {
+    left: -10px;
+}
+
+
+.owl-carousel.owl-theme .owl-controls .owl-nav  .owl-next {
+    right: -10px;
+}
+
+
+/* video carousel */
+
+.owl-carousel .item-video {
+    height: 380px;
+} 
+
+.owl-carousel .owl-video-play-icon {
+    height: 146px;
+    width: 146px;
+    left: 50%;
+    top: 50%;
+    margin-left: -76px;
+    margin-top: -76px;    
+    background: url(/files/images/video_play.png) no-repeat; 
+}
+
+/*- jquery UI resetting 
+ ------------------------------------------- */
+
+.hasDatepicker {
+  background: url("../images/cal.png") no-repeat scroll 96.5% 8px !important;
+  cursor: pointer;
+}
+
+/***jquery UI CALENDAR ***/
+
+.ui-datepicker {
+    background: none repeat scroll 0 0 transparent;
+    border: 8px solid rgba(0, 0, 0, 0.26);
+    margin: 20px 0;
+    padding: 0;
+    width: 20em;
+    border-radius:0;
+    z-index: 30!important;
+}
+
+.ui-widget-header .ui-icon {
+  background: none
+}
+
+.ui-datepicker .ui-datepicker-header {
+  padding: 0.79em 0;
+  position:relative;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  background: none repeat scroll 0 0 #f7f7f7;
+  border: 0px solid #e6e6e6;
+  border-radius:0;
+}
+
+.ui-datepicker table {
+  background: none repeat scroll 0 0 #fff;
+  border-color: white;
+  border-style: solid;
+  border-width: 10px 20px 20px;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+
+.ui-datepicker table {
+  border-collapse: collapse;
+  font-size: 0.8em;
+  margin: 0;
+  width: 100%;
+}
+
+.ui-datepicker td, .ui-datepicker th {
+    min-width: 0.8em;
+}
+
+.ui-datepicker th {
+  color: #999;
+  font-family: "Open Sans",sans-serif;
+  font-weight: normal;
+  padding: 0 0 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ui-datepicker th {
+  border: 0 none;
+  font-weight: bold;
+  padding: 0.5em 0.3em;
+  text-align: center;
+}
+
+.ui-datepicker th span {
+  border-bottom: 1px solid #e6e6e6;
+  display: block;
+  padding: 0.3em 0 1em;
+}
+
+.ui-datepicker td {
+  padding: 1px;
+  border: 0 none;
+}
+
+.ui-state-disabled {
+  cursor: default !important;
+}
+
+.ui-datepicker-calendar .ui-state-highlight, .ui-state-active {
+  background: #95813E;
+  border: 1px solid #95813E;
+  color: #fff;
+  outline: medium none;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #000;
+  text-align: center;
+  background: none repeat scroll 0 0 #fff;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: 0.2em;
+  text-align: right;
+  text-decoration: none;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  line-height: 1.8em;
+  margin: 0 2.3em;
+  text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.ui-datepicker-close, .ui-datepicker-current {
+    display: none;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  background: none repeat scroll 0 0 $primary-color;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+  margin: 0;
+  padding: 0;
+}
+.ui-datepicker .ui-datepicker-next {
+  right: 18px;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  height: 2.8em;
+  position: absolute;
+  top: 0;
+  width: 2.8em;
+  border-radius: 0;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border:none;
+    background: rgba(0, 0, 0, 0.66);
+    color: #fff;
+    border-image-width: none;
+}
+
+.ui-widget {
+  font-family: "Open Sans",sans-serif;
+  font-size: 1.1em;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+    top: 0;
+    background-color:transparent;
+    cursor:pointer;
+    font-weight: bold;
+}
+
+.fancybox-nav {
+    width: 10%;
+    border:none;
+    outline: none;
+}
+
+#ui-datepicker-div .ui-icon {
+    text-indent: 0;
+    height: 35px;
+    width: 35px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    cursor: pointer;
+}
+#ui-datepicker-div .ui-state-hover .ui-icon {
+  background-color: $primary-color;
+  background-color: rgba($primary-color,0.6);
+}
+
+
+.ui-datepicker .ui-datepicker-prev span:before, .ui-datepicker .ui-datepicker-next span:before {
+    color: #fff;
+    display: block;
+    font-family: FontAwesome;
+    font-size: 19px;
+    padding: 3px 13px;
+}
+.ui-datepicker .ui-datepicker-next span:before {
+    content: "\f105 ";
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 1px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #efefef;
+}
+.ui-datepicker .ui-datepicker-prev span:before {
+    content: "\f104 ";
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: 1px solid $primary-color;
+    background: $primary-color;
+    background: rgba($primary-color, 0.6);
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width:480px) {
+
+    .text-left,
+    .text-right{
+        text-align: center;
+    }
+
+    .two-buttons {
+        .btn {
+            width:98%;   
+            margin: 1%;   
+            float: left; 
+        }
+        .btn:nth-child(odd) {
+            margin: 1%;  
+        }
+
+        .btn:nth-child(even) {
+            margin: 1%;  
+        }
+
+
+    }
+
+
+}
+
+
+/*flexsilder reset styles*/
+#mainslider .flexslider {
+    opacity:1;
+}
+
+/*hide google logo on map*/
+.gm-style a[title='Click to see this area on Google Maps']{ display: none!important; }
+

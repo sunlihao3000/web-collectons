@@ -1,0 +1,46 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+h1,
+.toh1 {
+  font-size: 32px;
+}
+
+
+
+.inner {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+
+    }
+}
+
+article a {
+  color: $secondary-color;
+}
+
+article a:hover {
+    color: $primary-color;
+}
+
+.title {
+    h1 {
+        color: #FFFFFF;
+        margin: 20px 0;
+    }
+}
+
+h2.white {
+    color: #FFFFFF;
+}
+
+
