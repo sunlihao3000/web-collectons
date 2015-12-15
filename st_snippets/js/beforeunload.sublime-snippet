@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+\$(window).on('beforeunload', function(){
+    ${1}
+});
+
+]]></content>
+<tabTrigger>beforeunload</tabTrigger>
+</snippet>

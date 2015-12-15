@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+jQuery(document).ready(function(\$) {
+    // jqeuery document ready
+    ${1}
+});
+]]></content>
+<tabTrigger>document</tabTrigger>
+</snippet>

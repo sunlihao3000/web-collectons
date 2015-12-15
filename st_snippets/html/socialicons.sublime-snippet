@@ -1,0 +1,55 @@
+<snippet>
+    <content><![CDATA[
+<ul>
+    <li>
+        <a href="https://www.facebook.com/">                                
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-${1:facebook} fa-stack-1x fa-inverse"></i>
+            </span>                                
+        </a>
+    </li>
+    <li>
+        <a href="https://twitter.com/">                                
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>                                    
+        </a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/">
+            <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>                                    
+        </a>
+    </li>
+    <li>
+        <a href="https://plus.google.com">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+            </span>                                
+        </a>
+    </li>
+    <li>
+        <a href="https://www.pinterest.com/">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest-p fa-stack-1x fa-inverse"></i>
+            </span>                                
+        </a>
+    </li>
+    <li>
+        <a href="http://www.sharethis.com/">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
+            </span>                                 
+        </a>
+    </li>
+</ul>
+]]></content>
+<tabTrigger>socialicons</tabTrigger>
+</snippet>

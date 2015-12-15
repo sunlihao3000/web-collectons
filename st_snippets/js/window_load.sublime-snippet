@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+\$(window).load(function () {
+    ${1}
+};
+]]></content>
+<tabTrigger>windowonload</tabTrigger>
+</snippet>

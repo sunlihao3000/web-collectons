@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+\$('${1:.your_class_here}').one( "click", function() {
+     ${2}
+}); 
+]]></content>
+<tabTrigger>oneclick</tabTrigger>
+</snippet>

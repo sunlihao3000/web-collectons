@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+/* Custom  */ 
+@media only screen and (max-width : ${1:767}) {
+    
+}
+]]>
+</content>
+<tabTrigger>mediaonly</tabTrigger>
+</snippet>

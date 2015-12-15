@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+\$('${1:.your_class_here}').each(function() {
+
+    \$(this).on('click', function(e) { 
+        e.preventDefault();
+        ${2}
+
+    });
+
+    \$(this).one( "click", function() {
+
+    });            
+
+});
+]]></content>
+<tabTrigger>eachclick</tabTrigger>
+</snippet>
