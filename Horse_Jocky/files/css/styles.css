@@ -1,6 +1,6 @@
 /*
 Site Name:
-Author: 
+Author: lihao
 */
 /*--------------------------------------------------------------
 1.0 preset
@@ -3778,4 +3778,11 @@ article a {
     padding: 10px 8px;
     font-size: 14px;
   }
+}
+/*test lihao linenumber2*/
+/* line 2, ../scss/styles/theme/_main.scss */
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
 }
