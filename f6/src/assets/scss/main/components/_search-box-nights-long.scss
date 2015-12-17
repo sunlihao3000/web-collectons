@@ -1,0 +1,118 @@
+
+.search-box-nights-long {
+
+    padding: 19px 0 15px 8px;
+
+    .field-wrapper {
+        float: left;
+        padding: 5px;
+
+        .label,
+        label {
+           font-size: 12px;
+           color: #000;
+           padding: 0;
+           margin-bottom: 7px;
+           font-weight: normal;
+           line-height: 16px;
+        }        
+        
+        .label,
+        label,
+        select,
+        #arrival-date {
+            float: left;
+            clear: both;
+        }
+
+        select,
+        #arrival-date {
+            border:1px solid #DAD7D7;
+            border-radius: 5px;
+            font-size: 13px;
+            padding:6px 3px 6px 5px;
+            color: #999;
+            font-family: 'Open Sans', sans-serif; 
+            height: 33px;
+        }
+
+        .bke_dropdown {
+            width: 65px;
+        }
+
+        #arrival-date {
+            width: 130px;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+            width: 167px;
+            padding: 7px 20px;
+        }
+    }
+
+    .country-holder .bke_drop {
+        width: 270px;
+    } 
+
+    .cl-holder .bke_drop {
+        width: 175px; 
+    }
+
+    @media (max-width:1199px) {
+
+        .country-holder .bke_drop {
+            width: 200px;
+        } 
+
+        .cl-holder .bke_drop {
+            width: 150px; 
+        }
+
+    }        
+
+}
+
+.safari .search-box-nights-long .field-wrapper select, 
+.safari .search-box-nights-long .field-wrapper #arrival-date {
+    -webkit-appearance: none;
+}
+
+
+.search-box-nights-long .field-wrapper label,
+.search-box-nights-long .field-wrapper .label  {
+    opacity: 1;
+    overflow: visible;
+    height: auto;
+}
+
+ 
+.scroll-down  .search-box-nights-long.full-width .field-wrapper label,
+.scroll-down  .search-box-nights-long.full-width .field-wrapper .label {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+}
+
+.scroll-down  .search-box-nights-long.full-width .field-wrapper .submit-button {
+    margin-top: 5px;
+}
+  
+.scroll-down  .search-box-nights-long.full-width {
+    padding: 5px 0 7px 8px;
+}
+
+.scroll-down .search-box-holder {
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-small {
+     padding-bottom: 10px;
+     display: inline-block;
+}
+
+ @media (max-width:359px) { 
+    .logo-small {
+        display: none;
+    }
+ }

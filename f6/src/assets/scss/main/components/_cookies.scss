@@ -1,0 +1,142 @@
+
+
+
+/* Cookies */
+#cookies-panel {
+    background-color: #333;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid #222;
+    bottom: 0;
+    color: #aaa;
+    display: none;
+    font-size: 10px;
+    left: 0;
+    margin: 0;
+    padding: 10px 30px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 99; 
+}
+
+#close-cookie {
+    display: block;
+    padding: 17px;
+    position: absolute;
+    right: 0;
+    top: 0; 
+}
+
+#close-cookie:before {
+    font-family: 'FontAwesome';
+    color: #fff;
+    content: "\f00d";
+    font-size: 16px;
+    left: 7px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: 2px; 
+}
+
+#cookies-more {
+    display: none;
+    height: 100%;
+
+}
+
+#cookies-info {
+    overflow: auto;
+    font-family: arial;
+    font-size: 12px;
+    color: #fff;
+    text-align: left; 
+}
+
+#cookies-info h2,
+#cookies-info p, 
+#cookies-info h3 {
+    font-family: arial;
+    color: #fff;
+    padding: 0; 
+}
+
+#cookies-info h2 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 13px 8px; 
+}
+
+#cookies-info h3 {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 20px 12px 6px; 
+}
+
+#cookies-info p {
+    margin: 12px; 
+}
+
+#cookies-info a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+#cookies-info a:hover {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold; 
+}
+
+
+#more-cookie {
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px; 
+}
+
+#more-cookie:hover {
+    color: #fff;
+    font-weight: bold;
+ }
+
+
+@media all and (max-width: 1020px) {
+    #cookies-panel {
+        left: 0;
+        margin: 0;
+        padding: 14px 10%;
+        width: 100%; 
+    } 
+}
+@media all and (max-width: 565px) {
+
+    #cookies-info {
+        width: 98%;
+        margin: -200px auto auto 0;
+        left: 1%; 
+    }
+
+    #less-cookie {
+    margin: -220px 0 0 -6px; } 
+}
+
+@media all and (max-height: 465px) {
+    div#cookies-info {
+        height: 72%;
+        top: 14%;
+        margin-top: 0; 
+    }
+
+    #less-cookie {
+        margin: 0 auto auto -6px;
+        top: 6%; 
+    } 
+}
+
+@media screen and (min-width: 0\0) {
+    div#cookies-panel {
+    background: none repeat scroll 0 0 rgba(31, 31, 31, 0.8); } 
+}

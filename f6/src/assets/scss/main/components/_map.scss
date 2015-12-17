@@ -1,0 +1,110 @@
+
+/* map */
+
+#map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;   
+
+}
+
+
+#map_directions {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#map_directions_controls {
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -350px;
+    padding: 10px;
+    background-color: rgba(0,85,165,0.9);
+    font-size: 12px; 
+    max-width:700px;
+    width: 100%;
+
+    label {
+        color: #fff;
+        font-size: 14px;
+        font-family: $base-font-family;
+        font-weight: lighter;
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    #fromAddress {
+        width: 190px;
+        display: inline-block;
+        padding: 5px;
+    }
+    #toAddress {
+
+        margin-right: 50px;
+
+        span {
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
+
+
+    .submit-button {
+        font-size: 14px;
+        font-weight: lighter;
+        padding-left: 30px;
+        padding-right: 30px;       
+    }
+
+}
+
+
+
+.map_marker {
+    width: 286px;
+    color: #0055a5;
+    text-align: left;
+    padding: 10px 0;
+
+    h4 {
+        color: #0055a5;
+        font-size: 16px;
+    }
+}
+
+#fromAddress {
+    color: #000;
+}
+
+.adp, .adp table {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+
+}
+
+
+@media (max-width:480px) {
+
+    #map_directions_controls {
+        width: 100%;
+        left: 0;
+        margin: 0;
+    }
+
+    .adp-step, .adp-substep {
+        font-size: 12px;
+    }
+
+}

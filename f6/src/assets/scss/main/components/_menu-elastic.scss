@@ -1,0 +1,120 @@
+
+
+
+/* Menu Button */
+
+.menu-button-holder {
+    position: fixed;
+    z-index: 14;
+    span {
+        float: left;
+        clear: both;
+        color: #fff;
+        width: 40px;
+        position: fixed;
+        z-index: 2;
+        top: 62px;
+        left: 30px;  
+        text-align: center;      
+    }
+}
+
+.menu-button {
+	position: fixed;
+	z-index: 10;
+	margin: 1em;
+	padding: 0;
+	width: 2.8em;
+	height: 2.25em;
+	border: none;
+	text-indent: 2.5em;
+	font-size: 1.5em;
+	color: transparent;
+	background: transparent;
+    outline: none;
+    text-align: left;
+}
+
+.menu-button::before {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    background: linear-gradient(#ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%);
+
+    content: '';
+}
+
+.menu-button .fa  {
+    display: none;
+}
+
+.lt-ie10 .menu-button .fa {
+    display: inline-block;
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    left: -75px;
+    top: 5px;
+}
+
+.lt-ie10 .menu-opend .menu-button .fa {
+    color: #000;
+}
+
+
+.show-menu .menu-button::before {
+	background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+}
+
+.show-menu  {
+    .menu-button-holder {
+        span {
+            opacity: 0;
+        }
+    }
+}
+
+.menu-button:hover {
+	opacity: 0.6;
+}
+
+
+/* Menu */
+.menu-wrap {
+	position: fixed;
+	z-index: 3;
+	width: 230px;
+	height: 100%;
+	font-size: 1.15em;
+    
+	-webkit-transform: translate3d(-230px,0,0);
+	transform: translate3d(-230px,0,0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+
+
+/* Morph Shape */
+#morph-shape.morph-shape {
+	position: absolute;
+	width: 230px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	fill: #ffffff;
+	z-index: 10;
+}
+
+.lt-ie10 #morph-shape.morph-shape {
+    width: 500px;
+}
+
+/* Shown menu */
+.show-menu .menu-wrap {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
