@@ -27,7 +27,6 @@ var PATHS = {
     'src/assets/**/*',
     '!src/assets/{!img,js}/**/*'
   ],
-
   // sass: [
   //   'src/assets/scss/'
   // ],
@@ -42,8 +41,9 @@ var PATHS = {
     'src/assets/js/head/*.js'
   ],
   javascript: [
-    // 'bower_components/jquery/dist/jquery.js',
-    //'src/assets/js/**/*.js',
+    // ='bower_components/jquery/dist/jquery.min.js',
+    'src/assets/js/jquery.min.js',
+    'src/assets/js/plugins.js',
     'src/assets/js/app.js'
   ]
 };
@@ -81,11 +81,6 @@ gulp.task('pages', function() {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('pages:reset', function(cb) {
-  panini.refresh();
-  gulp.run('pages');
-  browser.reload();
-});
 
 // Compile plugins Sass into CSS
 //the CSS is compressed
@@ -99,7 +94,7 @@ gulp.task('sassPlugins', function() {
       includePaths: PATHS.sassPlugins
     })
       .on('error', $.sass.logError))
-    .pipe($.autoprefixer({
+      .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
     //.pipe(uncss)
@@ -188,9 +183,7 @@ gulp.task('server', ['build'], function() {
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
-  gulp.watch(['./src/pages/**/*.html'], ['pages', browser.reload]);
-  gulp.watch(['./src/{layouts,partials}/**/*.html'], ['pages:reset']);
-  //gulp.watch(['./src/assets/scss/*.scss'], ['sass', browser.reload]);
+  gulp.watch(['./src/{pages,layouts,partials}/**/*.html'], ['pages', browser.reload]);
   gulp.watch(['./src/assets/scss/*.scss'], ['sassMain', browser.reload]);
   gulp.watch(['./src/assets/scss/*.scss'], ['sassPlugins', browser.reload]);
   gulp.watch(['./src/assets/scss/plugins/**/*.scss'], ['sassPlugins', browser.reload]);
@@ -198,5 +191,6 @@ gulp.task('default', ['build', 'server'], function() {
   gulp.watch(['./src/assets/js/*.js'], ['javascript', browser.reload]);
   gulp.watch(['./src/assets/js/head/*.js'], ['javascriptHead', browser.reload]);
   gulp.watch(['./src/assets/img/**/*'], ['images', browser.reload]);
-  //gulp.watch(['./src/styleguide/**'], ['styleguide', browser.reload]);
+
 });
+
