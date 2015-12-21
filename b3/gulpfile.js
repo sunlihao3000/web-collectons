@@ -81,6 +81,11 @@ gulp.task('pages', function() {
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('pages:reset', function() {
+  panini.refresh();
+  gulp.start('pages');  
+  browser.reload();
+});
 
 // Compile plugins Sass into CSS
 //the CSS is compressed
@@ -183,7 +188,8 @@ gulp.task('server', ['build'], function() {
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
-  gulp.watch(['./src/{pages,layouts,partials}/**/*.html'], ['pages', browser.reload]);
+  //gulp.watch(['./src/pages/**/*.html'], ['pages', browser.reload]);
+  gulp.watch(['./src/{layouts,pages,partials}/**/*.html'], ['pages:reset']);
   gulp.watch(['./src/assets/scss/*.scss'], ['sassMain', browser.reload]);
   gulp.watch(['./src/assets/scss/*.scss'], ['sassPlugins', browser.reload]);
   gulp.watch(['./src/assets/scss/plugins/**/*.scss'], ['sassPlugins', browser.reload]);
