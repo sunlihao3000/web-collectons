@@ -1,0 +1,201 @@
+
+@mixin anim($speed, $ease) {
+    -webkit-transition:all $speed $ease;
+    -moz-transition:all  $speed $ease;
+    -o-transition:all $speed $ease;
+    -ms-transition:all $speed $ease;
+    transition:all $speed $ease;
+}
+
+@mixin delay($speed) {
+    -webkit-animation-delay: $speed; /* Chrome, Safari, Opera */
+    animation-delay: $speed;
+}
+
+
+@mixin gradient{
+background: $primary-color;
+background: -moz-linear-gradient(top, lighten($primary-color, 10%) 0%, $primary-color 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, lighten($primary-color, 10%)), color-stop(100%, $primary-color));
+background: -webkit-linear-gradient(top, lighten($primary-color, 10%) 0%, $primary-color 100%);
+background: -o-linear-gradient(top, lighten($primary-color, 10%) 0%, $primary-color 100%);
+background: -ms-linear-gradient(top, lighten($primary-color, 10%) 0%, $primary-color 100%);
+background: linear-gradient(to bottom, lighten($primary-color, 10%) 0%, $primary-color 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a4a68', endColorstr='#62122f', GradientType=0 );
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  
+}
+
+
+@mixin margin($number){
+    margin-top:$number;
+    margin-bottom:$number 
+}  
+
+@mixin padding($number){
+    padding-top:$number;
+    padding-bottom:$number 
+}   
+
+@mixin rotate($angle){
+    
+    -webkit-transform: rotate($angle); /* Safari and Chrome */
+    -moz-transform: rotate($angle);   /* Firefox */
+    -ms-transform: rotate($angle);   /* IE 9 */
+    -o-transform: rotate($angle);   /* Opera */
+    transform: rotate($angle);
+}   
+
+
+
+/*
+ * pulseplaybutton
+ */
+
+@-webkit-keyframes pulseplaybutton {
+    0% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+
+    25% {
+        -webkit-transform: scale(1.25);
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+    }
+}
+
+@-moz-keyframes pulseplaybutton{
+    0% {
+        -moz-transform: scale(1);
+        opacity: 0;
+    }
+
+    25% {
+        -moz-transform: scale(1.25);
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+        -moz-transform: scale(2);
+    }
+}
+
+@-o-keyframes pulseplaybutton {
+    0% {
+        -o-transform: scale(1);
+        opacity: 0;
+    }
+
+    25% {
+        -o-transform: scale(1.25);
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+        -o-transform: scale(2);
+    }
+}
+
+@keyframes pulseplaybutton {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    25% {
+        transform: scale(1.25);
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+
+/* arrow-down */
+
+@-webkit-keyframes arrow-down
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes arrow-down
+{
+  0% { top: 1px; }
+  50% { top: 2px; }
+  100% { top: 3px;}
+}
+
+@-webkit-keyframes arrow-down {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes arrow-down {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes arrow-down {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes arrow-down {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+
+/*grow*/
+@keyframes grow {
+    0% {
+        -webkit-transform: scale( 0 );
+        -moz-transform: scale( 0 );
+        -o-transform: scale( 0 );
+        -ms-transform: scale( 0 );
+        transform: scale( 0 );
+    }
+
+    100% {
+        -webkit-transform: scale( 1 );
+        -moz-transform: scale( 1 );
+        -o-transform: scale( 1 );
+        -ms-transform: scale( 1 );
+        transform: scale( 1 );
+    }
+}
+
+
+
+

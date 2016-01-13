@@ -1,0 +1,25 @@
+{
+  "name": "site 2015 bootstrap3",
+  "description": "lihao",
+  "main": "gulpfile.js",
+  "authors": [
+    "lihao"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "lihao"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  }
+}

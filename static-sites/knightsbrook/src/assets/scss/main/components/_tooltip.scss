@@ -1,0 +1,56 @@
+a.tooltips {
+
+    position: relative;
+    display: inline;
+    @include anim(.2s,linear);
+
+    span {
+        position: absolute;
+        width:120px;
+        color: #3F3F3F;
+        background: #FFFFFF;
+        border: 1px solid #6D6D6D;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        visibility: hidden;
+        border-radius: 6px;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -12px;
+            width: 0; height: 0;
+            border-bottom: 12px solid #6D6D6D;
+            border-right: 12px solid transparent;
+            border-left: 12px solid transparent;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -10px;
+            width: 0; height: 0;
+            border-bottom: 11px solid #FFFFFF;
+            border-right: 11px solid transparent;
+            border-left: 10px solid transparent;
+        }
+
+    }
+
+    &:hover span {
+        visibility: visible;
+        top: 48px;
+        left: 50%;
+        margin-left: -60px;
+        z-index: 999;
+        font-weight: bold;
+    }
+}
+
