@@ -298,7 +298,7 @@
 
     //call book panel h
     $('.header--book.not-mobile > a,.close-btn-h').on( "click", function() {
-        $('.search-box-horizontal,.header-folding').toggleClass('on');
+        $('.search-box-horizontal,.header-three-columns').toggleClass('on');
         $('.header--book.not-mobile').toggleClass('off');
     });  
 

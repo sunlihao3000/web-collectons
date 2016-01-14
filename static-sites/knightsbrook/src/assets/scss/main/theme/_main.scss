@@ -1,6 +1,23 @@
 
 .header-three-columns {
-    
+
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    margin-top: -10px;
+    height: 90px;
+    @include anim(.4s,linear);   
+
+    .loaded & {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 0;
+    }
+
+    &.on {
+        height: 160px;
+    }
+
     .header--menu {
         padding: 30px 10px;
         > a {
