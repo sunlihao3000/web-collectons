@@ -530,12 +530,12 @@ input[type=submit] {
 .ui-datepicker .ui-datepicker-prev span:before, .ui-datepicker .ui-datepicker-next span:before {
     color: #fff;
     display: block;
-    font-family: FontAwesome;
+    font-family: 'Material-Design-Iconic-Font';
     font-size: 19px;
     padding: 3px 13px;
 }
 .ui-datepicker .ui-datepicker-next span:before {
-    content: "\f105 ";
+    content: "\f2fb ";
 }
 
 .ui-datepicker .ui-datepicker-prev {
@@ -545,7 +545,7 @@ input[type=submit] {
     border: 1px solid #efefef;
 }
 .ui-datepicker .ui-datepicker-prev span:before {
-    content: "\f104 ";
+    content: "\f2fa ";
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
     border: 1px solid $primary-color;

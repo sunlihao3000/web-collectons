@@ -1,0 +1,93 @@
+
+    <div class="full-screen-fixed-top booking">
+        <a class="close-btn">
+
+            <i class="c-icon-cross"></i>
+        </a>
+        <div class="container height100">
+            <div class="row text-center padding20">
+                <a href="/">
+                    <img src="../assets/img/logo-big.png" width="144" alt="">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                    
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-6 search-box-vertical hidden-sm hidden-ms hiddne-lg">
+                            <h2 class="white text-center">hotel reservation</h2>
+
+
+                            <script type="text/javascript">
+
+                                var padout = function(number) {
+                                  var number = String(number);
+                                  return (number.length < 2) ? '0' + number : number;
+                                }
+                                jQuery(document).ready(function(){
+                                jQuery('#arrival-date-v').val(padout(jQuery('#bke_arrival_day_v').val())+'/'+padout(jQuery('#bke_arrival_month_v').val())+'/'+padout(jQuery('#bke_arrival_year_v').val()));
+                                jQuery('#bke_arrival_day_v').val(padout(jQuery('#arrival-date-v').val().split('/')[0]));
+                                jQuery('#bke_arrival_month_v').val(padout(jQuery('#arrival-date-v').val().split('/')[1]));
+                                jQuery('#bke_arrival_year_v').val(padout(jQuery('#arrival-date-v').val().split('/')[2]));
+                                
+                                $("#arrival-date-v").datepicker({
+                                    onSelect: function(selectedDate) {
+                                    // custom callback logic here
+                                    //alert(selectedDate);
+                                    //asdsds
+                                    }
+                                });
+
+
+                                jQuery('#departure-date-v').val(padout(jQuery('#bke_arrival_day_v').val())+'/'+padout(jQuery('#bke_arrival_month_v').val())+'/'+padout(jQuery('#bke_arrival_year_V').val()));
+
+                                $("#departure-date-v").datepicker({
+                                    onSelect: function(selectedDate) {
+                                    // custom callback logic here
+                                    //alert(selectedDate);
+                                    }
+                                });                                
+
+                            });  
+                            </script>
+                                                            
+                                <form style="margin: 0px;" name="bke_search" method="post" action="" onsubmit="return bke_check_search();" _lpchecked="1">
+
+
+                                    <ul id="bke_searchbox_wrapper">
+
+                                        <li class="arrival field-wrapper">
+                                            <label>ArriVAL:</label>
+                                            <input type="text" id="arrival-date-v"  class="has_Datepicker">
+                                            <input type="hidden" name="bke_arrival_day" value="1" id="bke_arrival_day_v">
+                                            <input type="hidden" name="bke_arrival_month" value="10" id="bke_arrival_month_v">
+                                            <input type="hidden" name="bke_arrival_year" value="2015" id="bke_arrival_year_v">
+
+                                        </li>
+                                        <li class="departure field-wrapper"><label>DEPARTURE:</label>
+                                            <input type="text" id="departure-date-v" readonly="readonly" class="has_Datepicker">
+                                            <input type="hidden" name="bke_departure_day" value="22" id="bke_departure_day_v">
+                                            <input type="hidden" name="bke_departure_month" value="10" id="bke_departure_month_v">
+                                            <input type="hidden" name="bke_departure_year" value="2015" id="bke_departure_year_v">
+                                        </li>
+                                        <li class="submit-wrapper">
+                                            <input type="submit" name="bke_submit" class="submit-button" value="Book Now">
+                                        </li>                                        
+                                        <li class="ratecode text-center"><input type="text" name="bke_ratecode" size="8" class="bke_drop" style="text-align: center;" onclick="if (this.value == 'Have a Code?') this.value = '';" value="Have a Code?">
+                                        </li>
+
+
+                                    </ul>
+                                </form>                 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>

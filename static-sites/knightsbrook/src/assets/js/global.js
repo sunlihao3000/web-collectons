@@ -195,7 +195,39 @@ function activeTab(tabTitle,tabContent,activeClass,callBackFunctionName) {
         });
 
     }
-       
+ 
+     function cal_half_element_height2( full_height_element, half_height_element,space_justment,on_my_style){
+
+
+        if (full_height_element && half_height_element) {
+
+            this_height = full_height_element.height();
+            console.log(this_height);
+            var space;
+            
+            if (space_justment > 0 ) {
+                space = space_justment;
+             } else{
+                space = 0;
+            };
+                                    
+            if ( this_height/2 > 0) {
+                this_half_height = (this_height - space)/2;
+                if (on_my_style) {
+                    half_height_element.css(on_my_style, this_half_height);
+                } else{
+                    half_height_element.css('height', this_half_height);
+                };
+                
+            };
+
+           
+        } else{
+            console.log('this fucntion parameters setting not correctly!');
+            return false
+        };
+
+    }      
     
 
 

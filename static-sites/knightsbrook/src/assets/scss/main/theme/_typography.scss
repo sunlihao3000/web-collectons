@@ -18,10 +18,29 @@ h1,
 }
 
 .inner {
-    h1 {
-        font-size: 32px;
-        margin: 23px 0px 25px;
+    h1,
+    .toh1 {
+        font-size: 46px;
+        
     }
+
+    @media only screen and (max-width : 420px) {
+
+    h1,
+    .toh1 {
+      font-size: 30px;
+    } 
+           
+    }
+
+    h1 {
+        margin: 5px 0px 25px;
+    }
+
+    .toh1 {
+
+    }
+    
     h2 {
         font-size: 28px;
         &.big {
