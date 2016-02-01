@@ -1,0 +1,84 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-family: $secondary-font-family;
+}
+
+h1,
+.toh1 {
+  font-size: 46px;
+}
+/* Custom  */ 
+@media only screen and (max-width : 420px) {
+
+    h1,
+    .toh1 {
+      font-size: 30px;
+    } 
+       
+}
+
+.inner {
+    h1,
+    .toh1 {
+        font-size: 46px;
+        
+    }
+
+    @media only screen and (max-width : 420px) {
+
+    h1,
+    .toh1 {
+      font-size: 30px;
+    } 
+           
+    }
+
+    h1 {
+        margin: 5px 0px 25px;
+    }
+
+    .toh1 {
+
+    }
+    
+    h2 {
+        font-size: 28px;
+        &.big {
+            font-size: 42px;
+        }
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+
+    }
+}
+
+article a {
+  color: $secondary-color;
+}
+
+article a:hover {
+    color: $primary-color;
+}
+
+.title {
+    h1 {
+        color: #FFFFFF;
+        margin: 20px 0;
+    }
+}
+
+h2.white {
+    color: #FFFFFF;
+}
+
+@media(max-width:768px) {
+
+    .inner h2.big {
+        font-size: 30px;
+    }
+    
+    
+}

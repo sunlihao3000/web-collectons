@@ -1,0 +1,586 @@
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+	font-family:$base-font-family;
+	font-size:160%;
+	color:$base-font-color;
+    
+    @include anim(.2s,linear);   
+
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+.overflow-h {
+    overflow: hidden;
+}
+
+a {
+
+  color:$base-font-color;
+  text-decoration: none;
+  outline: none;
+  @include anim(.2s,linear);  
+
+  &:hover{
+    text-decoration:none;
+  };
+
+}
+
+.small {
+    font-size: $base-font-size - 2; 
+    text-transform: uppercase;
+    color: #7f8f96;
+}
+
+small {
+    font-size: 14px; 
+    text-transform: uppercase;
+    color: #7f8f96;
+    letter-spacing: 2px;
+    font-family: $secondary-font-family;
+}
+
+.large {
+  font-size: $base-font-size + 4;
+}
+
+button {
+    border: none;
+}
+
+.white,
+.white article,
+.white a,
+.white p,
+.white h2,
+.white article a,
+.white article p{
+  color: #fff;
+}
+
+.margin100 {
+    @include margin(100px);
+}
+.margin30 {
+    @include margin(30px);
+}
+.margin40 {
+    @include margin(40px);
+}
+
+.padding60 {
+    @include padding(60px);
+}
+.padding40 {
+    @include padding(40px);
+}
+.padding30 {
+    @include padding(30px);
+}
+.padding20 {
+    @include padding(20px);
+}
+.padding10 {
+    @include padding(10px);
+}
+
+
+article, 
+article p {
+  color: $base-font-color;
+  font-size: $base-font-size;
+  line-height: 24px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+article a {
+  color: $primary-color;
+}
+
+article  ul {
+  list-style: none;
+}
+
+article  ul li {
+  padding: 0.3em 0;
+}
+
+article  ul li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  padding-right: 10px;
+}
+
+article form ul li:before {
+  content: '';
+  display: none;
+}
+
+
+/* ul center */
+ul.ul-center {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+ul.ul-center li {
+  display: inline-block;
+  text-align: center;
+}
+
+ul.ul-center li a {
+  float: left;
+}
+
+/* ul inline */
+ul.ul-inline {
+  display: inline-block;
+}
+
+ul.ul-inline li {
+  display: inline-block;
+  float: left;
+}
+ul.ul-inline li a {
+  float: left;
+}
+
+/* ul not list-style */
+ul,
+ul li {
+    list-style: none;
+}
+
+/* text-shadow */
+.text-shd {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.pos-r {
+    position: relative;
+}
+
+.pos-a {
+    position: absolute;
+}
+
+.item {
+    position: relative;
+}
+.bg-white {
+    background-color: #fff;
+}
+.fixed {
+    position: fixed;
+    z-index: 10;
+}
+.top {
+    top: 0;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 3;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.overlay.bottom {
+    top: auto;
+    bottom: 0;
+
+}
+
+.row.no-padding > [class^="col-"],
+.row.no-padding > [class*=" col-"]{
+    padding: 0;
+}
+
+.full-width {
+    width: 100%;
+    float: left;
+}
+
+/* Custom  */ 
+@media only screen and (min-width : 1440px) {
+    .md-full-width {
+        width: 100%;
+    }
+}
+
+/* Custom  */ 
+@media only screen and (max-width : 420px) {
+    .xs-full-width {
+        width: 100%;
+    }
+}
+
+.left {
+    float: left;
+}
+.right {
+
+    float: right;
+}
+.half {
+    width: 50%;
+    float: left;
+}
+
+.three {
+    width: 33.3%;
+    float: left;
+}
+
+/* Custom  */ 
+@media only screen and (min-width: 420px) and (max-width : 1023px) {
+    .sm-half {
+        width: 50%;
+    }
+
+    .sm-full {
+        width: 100%;
+    }
+}
+
+/* Custom  */ 
+@media only screen and (max-width : 767px) {
+    .three {
+        width: 100%;
+    }
+}
+
+/* Custom  */ 
+@media only screen and (max-width : 420px) {
+    .row.xs-not-padding {
+        [class^="col-"], [class*=" col-"] {
+            padding: 0;
+        }
+    }
+    
+}
+
+.for-old-browser {
+    display: none;
+}
+
+.no-cssanimations .for-old-browser {
+    display: block;
+}
+
+.gray-light {
+    background-color: #f5f6f7;
+}
+
+.gray {
+    background-color: #eeedee;
+}
+
+.dark {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+.darker {
+    background-color: #0f1316;
+}
+.black {
+    background-color: #090b0d;
+}
+
+.light {
+    background-color:#fff;
+}
+
+.click-link {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    float: left;
+}
+
+.item-content-overlay {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+
+/* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* svg  */
+.not-svg {
+    display: block;
+}
+
+.svg .not-svg {
+    display: none;
+}
+
+
+.circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.css-animate {
+    visibility: hidden;
+}
+
+.border-1px {
+    border: 1px solid #fff;
+}
+.border-top {
+    border-top: 1px solid #fff;
+}
+
+.line-1px {
+    width: 100%;
+    height: 1px;
+    float: left;
+    background-color: #333;
+}
+
+
+.css-animate {
+    visibility: hidden;
+}
+      
+.rotate180 {
+ @include rotate(180deg);       
+}
+
+.border-right {
+    border-right: 1px solid #3e555c;
+
+    
+}
+
+.vertical-links {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+
+        > ul {
+            visibility: hidden;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            float: left;
+            padding:0;
+            width: 100%;
+            @include anim(.4s,linear);   
+
+            > li {
+
+                > a {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 12px;  
+                    
+                }
+            }
+
+        }
+        
+
+
+        a {
+            float: left;
+            width: 100%;
+            color: rgba(255,255,255,0.8);
+            font-family: $secondary-font-family;      
+            border-bottom:1px solid #3e555c;
+        }
+
+        > a {
+            font-size: 16px;
+            padding: 10px 30px;
+            color: #fff;
+            &:hover {
+              color:rgba($secondary-color,.8);  
+            };
+        }
+
+        &.has-children {
+            position: relative;
+
+            > a {
+
+
+            }
+
+            > ul {
+                > li {
+                    > a{
+                        &:hover {
+                            color:#fff;
+                            background-color:rgba($secondary-color,.8);  
+                        };
+                    }
+                }
+            }
+
+            >span {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 10px 20px;
+
+                .touch & {
+                    background-color:darken( $primary-color, 3% );
+                }
+                
+                i {
+                    display: inline-block;                    
+                    color: #fff;
+                    @include anim(.4s,linear);   
+                }               
+
+            }
+
+        }
+
+        &.hover {
+
+            > ul {
+                visibility: visible;
+                opacity: 1;
+                height: auto;
+            }
+
+            > span {
+
+                i {
+                    @include rotate(180deg);  
+                }
+                 
+            }
+        }        
+    }
+}
+
+.height100 {
+    height: 100%;
+}
+
+
+.horizontal-links  {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+
+    li  {
+        display: inline-block;
+        a {
+            float: left;
+            
+        }
+    }
+}
+    
+.close-btn {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.left {
+    left: 0;
+}
+.bottom {
+    bottom: 0;
+}
+
+.close-mega-menu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    font-size: 30px;
+}
+
+.item-trigger {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 54px;
+    height: 54px;
+    background-color: #f5f6f7;
+    color: #888;
+    margin-left: -27px;
+    font-size: 20px;
+    padding-top: 15px;
+    cursor: pointer;   
+    text-align: center;
+    opacity: 0;
+
+    i {
+        display: inline-block;
+        @include anim(.4s,linear);  
+    }
+
+    &.show {
+        opacity: 1;
+    }
+
+    &.on {
+        i {
+            @include rotate(180deg);            
+        }
+    }
+
+
+}
+
+.clicked {
+    @include rotate(90deg);   
+}
+ 

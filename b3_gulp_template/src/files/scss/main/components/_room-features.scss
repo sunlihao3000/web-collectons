@@ -1,0 +1,63 @@
+
+.room-features {
+    padding-bottom: 60px;
+
+    h2 {
+        padding-top: 30px;
+    }
+    .room-feature-icons {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 0 10%;
+        overflow: hidden;
+        margin-bottom: 60px;
+        @include anim(.4s,linear);   
+
+
+        li {
+            display: inline-block;
+
+            a {
+
+                line-height: 42px;
+                color: #bebcbc;
+                padding: 0 10px;
+                margin: 10px 0;
+                display: inline-block;
+
+                /* Custom  */ 
+                /* @media only screen and (min-width : 1200px) {
+                    border-right: 1px solid #ccc;
+                } */
+                
+
+                > * {
+                    vertical-align: middle;
+                    line-height: normal;                    
+                }
+
+                i {
+                    font-size: 38px;
+                    display: inline-block;
+                }
+
+                span {
+                    display: inline-block;
+                    font-size: 12px;
+                    text-align: left;
+                    margin-left: 5px;
+                    line-height: 14px;
+                }
+
+            }
+
+            &.no-border {
+                a {
+                    border: none;
+                }
+            }
+        }
+    }
+
+}

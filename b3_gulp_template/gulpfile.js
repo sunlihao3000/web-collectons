@@ -19,32 +19,38 @@ var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
 // File paths to various assets are defined here.
 var PATHS = {
   assets: [
-    'src/assets/**/*',
-    '!src/assets/{!img,js,scss}/**/*',
-    //'!src/assets/{!img,js}/**/*'
+    'src/files/**/*',
+    '!src/files/{!img,js,scss}/**/*',
+    //'!src/files/{!img,js}/**/*'
   ],
   assetsBuild: [
-    'src/assets/**/*',
-    '!src/assets/{!img,js}/**/*'
+    'src/files/**/*',
+    '!src/files/{!img,js}/**/*'
   ],
   // sass: [
-  //   'src/assets/scss/'
+  //   'src/files/scss/'
   // ],
   sassPlugins: [
-    'src/assets/scss/plugins/'
+    'src/files/scss/plugins/'
   ], 
   sassMain: [
-    'src/assets/scss/main/'
+    'src/files/scss/main/'
   ], 
   javascriptHead: [
-    //'src/assets/js/**/*.js',
-    'src/assets/js/head/*.js'
+    //'src/files/js/**/*.js',
+    //'src/files/js/head/*.js'
+    'src/files/js/head/modernizr-2.8.3.min.js',
+    'src/files/js/head/jquery.min.js',
+    'src/files/js/head/jquery-ui.min.js',
+    'src/files/js/head/skrollr.min.js'    
   ],
+
   javascript: [
     // ='bower_components/jquery/dist/jquery.min.js',
-    'src/assets/js/jquery.min.js',
-    'src/assets/js/plugins.js',
-    'src/assets/js/app.js'
+    'src/files/js/global.js',
+    'src/files/js/plugins.js',
+    'src/files/js/app.js',
+    'src/files/js/app_junior.js'
   ]
 };
 
@@ -59,12 +65,12 @@ gulp.task('clean', function(done) {
 gulp.task('copy', function() {
     //gulp.src(PATHS.assets)
     return gulp.src(!!(argv.production) ? PATHS.assetsBuild : PATHS.assets)
-    .pipe(gulp.dest('./dist/assets'));
+    .pipe(gulp.dest('./dist/files'));
 });
 
 gulp.task('copyBuild', function() {
     gulp.src(PATHS.assetsBuild)
-    .pipe(gulp.dest('./dist/assets'));
+    .pipe(gulp.dest('./dist/files'));
 });
 
 
@@ -81,11 +87,12 @@ gulp.task('pages', function() {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('pages:reset', function() {
+gulp.task('pages:reset', function(cb) {
   panini.refresh();
-  gulp.start('pages');  
+  gulp.run('pages');
   browser.reload();
 });
+
 
 // Compile plugins Sass into CSS
 //the CSS is compressed
@@ -93,7 +100,7 @@ gulp.task('sassPlugins', function() {
 
   var minifycss = $.minifyCss();
 
-  return gulp.src('./src/assets/scss/plugins/plugins.scss')
+  return gulp.src('./src/files/scss/plugins/plugins.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sassPlugins
@@ -105,7 +112,7 @@ gulp.task('sassPlugins', function() {
     //.pipe(uncss)
     .pipe(minifycss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('./dist/assets/css'));
+    .pipe(gulp.dest('./dist/files/css'));
 });
 
 // Compile plugins Sass into CSS
@@ -114,7 +121,7 @@ gulp.task('sassMain', function() {
 
   var minifycss = $.if(isProduction, $.minifyCss());
 
-  return gulp.src('./src/assets/scss/main/main.scss')
+  return gulp.src('./src/files/scss/main/styles.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sassMain
@@ -126,7 +133,7 @@ gulp.task('sassMain', function() {
     //.pipe(uncss)
     .pipe(minifycss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('./dist/assets/css'));
+    .pipe(gulp.dest('./dist/files/css'));
 });
 
 // 
@@ -141,7 +148,7 @@ gulp.task('javascriptHead', function() {
     .pipe($.concat('stack.js'))
     .pipe(uglify)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('./dist/assets/js'));
+    .pipe(gulp.dest('./dist/files/js'));
 });
 
 // Combine JavaScript into one file
@@ -157,7 +164,7 @@ gulp.task('javascript', function() {
     .pipe($.concat('app.js'))
     .pipe(uglify)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('./dist/assets/js'));
+    .pipe(gulp.dest('./dist/files/js'));
 });
 
 // Copy images to the "dist" folder
@@ -167,9 +174,9 @@ gulp.task('images', function() {
     progressive: true
   }));
 
-  return gulp.src('./src/assets/img/**/*')
+  return gulp.src('./src/files/img/**/*')
     .pipe(imagemin)
-    .pipe(gulp.dest('./dist/assets/img'));
+    .pipe(gulp.dest('./dist/files/img'));
 });
 
 // Build the "dist" folder by running all of the above tasks
@@ -188,15 +195,15 @@ gulp.task('server', ['build'], function() {
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
-  //gulp.watch(['./src/pages/**/*.html'], ['pages', browser.reload]);
-  gulp.watch(['./src/{layouts,pages,partials}/**/*.html'], ['pages:reset']);
-  gulp.watch(['./src/assets/scss/*.scss'], ['sassMain', browser.reload]);
-  gulp.watch(['./src/assets/scss/*.scss'], ['sassPlugins', browser.reload]);
-  gulp.watch(['./src/assets/scss/plugins/**/*.scss'], ['sassPlugins', browser.reload]);
-  gulp.watch(['./src/assets/scss/main/**/*.scss'], ['sassMain', browser.reload]);
-  gulp.watch(['./src/assets/js/*.js'], ['javascript', browser.reload]);
-  gulp.watch(['./src/assets/js/head/*.js'], ['javascriptHead', browser.reload]);
-  gulp.watch(['./src/assets/img/**/*'], ['images', browser.reload]);
+  gulp.watch(['./src/pages/**/*.html'], ['pages', browser.reload]);
+  gulp.watch(['./src/{layouts,partials}/**/*.html'], ['pages:reset']);
+  gulp.watch(['./src/files/scss/*.scss'], ['sassMain', browser.reload]);
+  gulp.watch(['./src/files/scss/*.scss'], ['sassPlugins', browser.reload]);
+  gulp.watch(['./src/files/scss/plugins/**/*.scss'], ['sassPlugins', browser.reload]);
+  gulp.watch(['./src/files/scss/main/**/*.scss'], ['sassMain', browser.reload]);
+  gulp.watch(['./src/files/js/*.js'], ['javascript', browser.reload]);
+  gulp.watch(['./src/files/js/head/*.js'], ['javascriptHead', browser.reload]);
+  gulp.watch(['./src/files/img/**/*'], ['images', browser.reload]);
 
 });
 

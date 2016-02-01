@@ -1,0 +1,36 @@
+/*
+Site Name:
+Author: lihao
+*/
+
+
+/*--------------------------------------------------------------
+1.0 preset
+--------------------------------------------------------------*/
+
+@import "../_settings";
+@import "theme/_fonts";
+@import "theme/_mixins";
+
+/*--------------------------------------------------------------
+2.0 Components
+--------------------------------------------------------------*/
+@import "components/_components";
+@import "components/_forms";
+@import "components/_full-screen-fixed-top";
+@import "components/_search-box-vertical";
+@import "components/_search-box-horizontal";
+@import "components/_footer-gallery";
+@import "components/_snav";
+@import "components/_mega-menu";
+@import "components/_room-features";
+
+/*--------------------------------------------------------------
+3.0 Theme & Layouts
+--------------------------------------------------------------*/
+@import "theme/_base";
+@import "theme/_reset";
+@import "theme/_typography";
+@import "theme/_main";
+@import "theme/_main-junior";
+@import "theme/_lt-ie10";

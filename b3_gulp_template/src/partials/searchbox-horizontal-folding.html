@@ -1,0 +1,88 @@
+
+<div class="container search-box-horizontal">
+    <div class="row pos-r ">
+        <div class="folding-container searchbox-folding">
+
+            <div class="folding-parent1">
+                <div class="folding-parent2">
+                    <div class="folding-parent3">
+                        <div class="full-width">
+
+                            <div class="col-lg-10 col-lg-offset-1 inner-holder">                                    
+                                <div class="">                                    
+                                    <h2 class="hidden-sm hidden-xs" ><i class="zmdi zmdi-search"></i> Book a room</h2>
+
+                                    <script type="text/javascript">
+
+                                        var padout = function(number) {
+                                          var number = String(number);
+                                          return (number.length < 2) ? '0' + number : number;
+                                        }
+                                        jQuery(document).ready(function(){
+                                        jQuery('#arrival-date_h').val(padout(jQuery('#bke_arrival_day').val())+'/'+padout(jQuery('#bke_arrival_month').val())+'/'+padout(jQuery('#bke_arrival_year_h').val()));
+                                        jQuery('#bke_arrival_day_h').val(padout(jQuery('#arrival-date_h').val().split('/')[0]));
+                                        jQuery('#bke_arrival_month_h').val(padout(jQuery('#arrival-date_h').val().split('/')[1]));
+                                        jQuery('#bke_arrival_year_h').val(padout(jQuery('#arrival-date_h').val().split('/')[2]));
+                                        
+                                        $("#arrival-date_h").datepicker({
+                                            onSelect: function(selectedDate) {
+                                            // custom callback logic here
+                                            //alert(selectedDate);
+                                            }
+                                        });
+
+
+                                        jQuery('#departure-date_h').val(padout(jQuery('#bke_arrival_day_h').val())+'/'+padout(jQuery('#bke_arrival_month_h').val())+'/'+padout(jQuery('#bke_arrival_year_h').val()));
+
+                                        $("#departure-date_h").datepicker({
+                                            onSelect: function(selectedDate) {
+                                            // custom callback logic here
+                                            //alert(selectedDate);
+                                            }
+                                        });                                
+
+                                    });  
+                                    </script>
+                                                                    
+                                    <form style="margin: 0px;" name="bke_search" method="post" action="" onsubmit="return bke_check_search();" _lpchecked="1">
+
+
+                                        <ul id="bke_searchbox_wrapper">
+
+                                            <li class="arrival field-wrapper">
+                                                <label>Check-In</label>
+                                                <input type="text" id="arrival-date_h"  class="has_Datepicker">
+                                                <input type="hidden" name="bke_arrival_day" value="1" id="bke_arrival_day_h">
+                                                <input type="hidden" name="bke_arrival_month" value="10" id="bke_arrival_month_h">
+                                                <input type="hidden" name="bke_arrival_year" value="2015" id="bke_arrival_year_h">
+
+                                            </li>
+                                            <li class="departure field-wrapper"><label>Check-Out</label>
+                                                <input type="text" id="departure-date_h" readonly="readonly" class="has_Datepicker">
+                                                <input type="hidden" name="bke_departure_day" value="22" id="bke_departure_day_h">
+                                                <input type="hidden" name="bke_departure_month" value="10" id="bke_departure_month_h">
+                                                <input type="hidden" name="bke_departure_year" value="2015" id="bke_departure_year_h">
+                                            </li>
+                                            <li class="ratecode text-center"><input type="text" name="bke_ratecode" size="8" class="bke_drop" style="text-align: center;" onclick="if (this.value == 'Have a Code?') this.value = '';" value="Have a Code?">
+                                            </li>
+                                            <li class="submit-wrapper">
+                                                <input type="submit" name="bke_submit" class="submit-button" value="Book Now"><span></span>
+                                            </li>
+
+                                        </ul>
+                                    </form>  
+                                    
+                                </div> 
+
+                            </div>
+                        </div>
+                       <a class="close-btn-h"><i class="zmdi zmdi-close-circle-o"></i></a>
+                   </div> 
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
