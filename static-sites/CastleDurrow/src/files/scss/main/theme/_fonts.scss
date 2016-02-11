@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?bjl1sg');
+    src:url('../fonts/icomoon.eot?bjl1sg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff2?bjl1sg') format('woff2'),
+        url('../fonts/icomoon.ttf?bjl1sg') format('truetype'),
+        url('../fonts/icomoon.woff?bjl1sg') format('woff'),
+        url('../fonts/icomoon.svg?bjl1sg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="c-icon-"], [class*=" c-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.c-icon-marriage:before {
+    content: "\e900";
+}
+.c-icon-NA:before {
+    content: "\e606";
+}
+.c-icon-calendar:before {
+    content: "\e620";
+}
+.c-icon-menu:before {
+    content: "\e60b";
+}
+.c-icon-cal-text:before {
+    content: "\e609";
+}
+.c-icon-play:before {
+    content: "\e903";
+}
+.c-icon-zoom:before {
+    content: "\e908";
+}
+.c-icon-prev:before {
+    content: "\e801";
+}
+.c-icon-left:before {
+    content: "\e802";
+}
+.c-icon-down:before {
+    content: "\e803";
+}
+.c-icon-right:before {
+    content: "\e804";
+}
+.c-icon-minus-rounded:before {
+    content: "\e805";
+}
+.c-icon-next:before {
+    content: "\e806";
+}
+.c-icon-plus:before {
+    content: "\e807";
+}
+.c-icon-minus-thin:before {
+    content: "\e615";
+}
+.c-icon-plus-thin:before {
+    content: "\e614";
+}
+.c-icon-close:before {
+    content: "\e60a";
+}
+.c-icon-left-thin:before {
+    content: "\e607";
+}
+.c-icon-right-thin:before {
+    content: "\e608";
+}
+.c-icon-down-thin:before {
+    content: "\e601";
+}
+.c-icon-facebook:before {
+    content: "\e902";
+}
+.c-icon-twitter:before {
+    content: "\e906";
+}
+.c-icon-instagram:before {
+    content: "\e904";
+}
+.c-icon-shareit:before {
+    content: "\e905";
+}
+.c-icon-pinterest:before {
+    content: "\e907";
+}
+.c-icon-calendar2:before {
+    content: "\e621";
+}
+
+
+
+
+

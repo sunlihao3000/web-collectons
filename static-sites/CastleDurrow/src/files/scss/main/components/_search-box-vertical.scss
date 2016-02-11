@@ -1,0 +1,172 @@
+.search-box-vertical {
+
+    width: 100%;
+    padding: 0 5%;
+    
+    h2 {
+        font-size: 38px;
+        margin: 20px 0;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        .field-wrapper,
+        .ratecode {
+            label {
+                width: 100%;
+                color: #fff;
+                padding: 0 10px;
+                font-size: 15px;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+            input {
+                width: 100%;
+                background-color: #fff;
+                padding:5px 10px;
+                color: #000;
+                font-size: 15px;
+                border: none;
+                font-weight: lighter;
+
+            }
+
+        }
+        .ratecode {
+            input {
+    
+                &:focus {
+                }
+            }
+        }
+    }
+
+    .submit-wrapper .submit-button {
+        background-color: $secondary-color;
+
+        .wedding & {
+            background-color: #846992;
+        }
+        border:none;
+        border-radius: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $secondary-font-family;
+        @include anim(.2s,linear); 
+        text-align: center;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .submit-wrapper:hover .submit-button {
+        background-color: #dcd9d1;
+        color: #333;
+    }
+    
+}
+
+
+    .search-box-vertical.small-width {
+        width: 220px;
+        padding: 10px;
+        float: left;
+        background-color: rgba(0,0,0,.5);
+        visibility: hidden;
+        opacity: 0;
+
+        
+        @include anim(.4s,linear);   
+
+        .on & {
+            visibility: visible;
+            opacity: 1;            
+        }
+
+
+
+        /* Custom  */ 
+        @media only screen and (max-width : 1023px) {
+            
+            & {
+                display: none;
+            }
+        }
+
+
+            
+             #bke_searchbox_wrapper {
+
+
+                > li {
+                    width: 100%;
+                    float: left;
+                    margin: 5px 0;
+
+                    label,
+                    input {
+                        width: auto;
+                        float: left;                  
+                    }
+
+                    label {
+                        width: 40%;
+                        font-size: 11px;
+                        font-family: $secondary-font-family
+                    }
+
+                    input {
+                        width: 60%;
+                    }
+
+                    &.submit-wrapper {
+                        input {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+    }
+
+    .full-screen-fixed-top .search-box-vertical {
+            h2 {
+                font-size: 35px;
+                text-transform: uppercase;
+            }
+            ul  {
+                li {
+                    display: inline-block;
+                    margin: 5px 0;
+                    width: 100%;
+                    padding: 5px;
+
+                    label {
+                        display: none;
+                    }
+                    
+                    &.field-wrapper,
+                    &.ratecode  {
+                        input {
+                            background-color: rgba(16, 26, 15, 0.1);
+                            border: 1px solid rgba(255,255,255,.8);
+                            padding: 10px;  
+                            color: #fff;    
+                            text-align: left;          
+                        }                        
+                    }
+
+
+
+                }
+            }
+    }
+
+
+
